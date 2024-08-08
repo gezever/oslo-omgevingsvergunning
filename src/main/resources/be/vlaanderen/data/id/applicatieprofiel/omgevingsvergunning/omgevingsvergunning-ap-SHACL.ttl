@@ -1,0 +1,977 @@
+@prefix dc: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix shacl: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20> rdfs:member <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#AanvraagShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BestuurlijkeRechtshandelingShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InhoudShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroepShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#JuridischWerkShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#JuridischeCategorieShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#JuridischeGebeurtenisShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#NormatieveBepalingShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedurestapShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechterlijkeUitspraakShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtscollegeShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtssubjectShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VerbintenisShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergunningShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PubliekeOrganisatieShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VlaremRubriekShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdstipShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsbepalingShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PersoonShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#KadastraalPatrimoniumperceelShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#KadastraalPlanperceelShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#AanvraagShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#AanvraagShape/1f7c484831275581d5580415309840454568ad35>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#AanvraagShape/24738cfef016e656308ba6a39ee600ab3c78d211>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#AanvraagShape/1f7c484831275581d5580415309840454568ad35> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Aanvraag.aanvrager";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>;
+  shacl:description "Rechtssubject of rechtssubjecten die de aanvraag indient(-en) of namens wie deze wordt ingediend."@nl;
+  shacl:name "aanvrager"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#aanvrager> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#AanvraagShape/24738cfef016e656308ba6a39ee600ab3c78d211> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Aanvraag.aanvrager";
+  shacl:description "Rechtssubject of rechtssubjecten die de aanvraag indient(-en) of namens wie deze wordt ingediend."@nl;
+  shacl:maxCount 1;
+  shacl:name "aanvrager"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#aanvrager> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/4a16176c26d8d5526c76974a1530f1ffdd596e93>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/6ff8fb95193fdc26868de855cb436d9f3fb07150>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/20fc127c7d294b91eee511f7dacb75683e00ee75>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/7066bf98cb136244d4013a5e50ea92dd2f6c31b3>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/97a90eadb3cdd253fd8e1aa83ee67faa2a689a20>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/d982ae870b8c7f97b68d4c407ae00ecea0b31821>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/0e9a7d4dbf6ec19568d474169ad717f71e882319> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Activiteit.beschrijving";
+  shacl:datatype rdf:langString;
+  shacl:description "De beschrijving van de Activiteit."@nl;
+  shacl:name "beschrijving"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/20fc127c7d294b91eee511f7dacb75683e00ee75> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Activiteit.isdeelvan";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit>;
+  shacl:description "Verwijzing naar omvattende Activiteit."@nl;
+  shacl:name "is deel van"@nl;
+  shacl:path dc:isPartOf .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/4a16176c26d8d5526c76974a1530f1ffdd596e93> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Activiteit.beschrijving";
+  shacl:description "De beschrijving van de Activiteit."@nl;
+  shacl:maxCount 1;
+  shacl:name "beschrijving"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/634c9034242d42f92452dc2ddbbe2a5f49265cbd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Activiteit.locatie";
+  shacl:class <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid>;
+  shacl:description "Aanduiding van de plaats waar een Activiteit plaatsvindt, zal vinden, of zou hebben gevonden."@nl;
+  shacl:name "locatie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#locatie> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/6ff8fb95193fdc26868de855cb436d9f3fb07150> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Activiteit.betrokkene";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>;
+  shacl:name "betrokkene"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#betrokkene> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/7066bf98cb136244d4013a5e50ea92dd2f6c31b3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Activiteit.isdeelvan";
+  shacl:description "Verwijzing naar omvattende Activiteit."@nl;
+  shacl:maxCount 1;
+  shacl:name "is deel van"@nl;
+  shacl:path dc:isPartOf .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/97a90eadb3cdd253fd8e1aa83ee67faa2a689a20> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Activiteit.juridischekwalificatie";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie>;
+  shacl:description "De Juridische Kwalificatie van de Activiteit."@nl;
+  shacl:name "juridische kwalificatie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.juridischeKwalificatie> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ActiviteitShape/d982ae870b8c7f97b68d4c407ae00ecea0b31821> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Activiteit.tijdsbestek";
+  shacl:class <http://www.w3.org/2006/time#Interval>;
+  shacl:description "Aanduiding van het tijdsbestek van de Activiteit."@nl;
+  shacl:name "tijdsbestek"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.tijdsbestek> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape/e3c283828f70da9cc209870780d46c0fabeedc8c>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape/e705b2c431e68bd4d527713ee7bdc960bf65d1d8>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape/8ba5f67b438722535c515fd705dd22bba3296a4d>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape/ccf1ffd0c509ea01cbf720de421416f710600752>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape/8ba5f67b438722535c515fd705dd22bba3296a4d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Beroepsmogelijkheid.bevoegdeoverheid";
+  shacl:class <http://data.europa.eu/m8g/PublicOrganisation>;
+  shacl:description "De Publieke Organisatie bevoegd om zich over het Rechtsmiddel uit te spreken."@nl;
+  shacl:name "bevoegde overheid"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid.bevoegdeOverheid> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape/ccf1ffd0c509ea01cbf720de421416f710600752> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Beroepsmogelijkheid.bevoegdeoverheid";
+  shacl:description "De Publieke Organisatie bevoegd om zich over het Rechtsmiddel uit te spreken."@nl;
+  shacl:maxCount 1;
+  shacl:name "bevoegde overheid"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid.bevoegdeOverheid> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape/e3c283828f70da9cc209870780d46c0fabeedc8c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Beroepsmogelijkheid.aanwendingstermijn";
+  shacl:description "Termijn binnen dewelke het Rechtsmiddel aangewend mag worden."@nl;
+  shacl:maxCount 1;
+  shacl:name "aanwendingstermijn"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BeroepsmogelijkheidShape/e705b2c431e68bd4d527713ee7bdc960bf65d1d8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Beroepsmogelijkheid.aanwendingstermijn";
+  shacl:class <http://www.w3.org/2006/time#Interval>;
+  shacl:description "Termijn binnen dewelke het Rechtsmiddel aangewend mag worden."@nl;
+  shacl:name "aanwendingstermijn"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BestuurlijkeRechtshandelingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BestuurlijkeRechtshandelingShape/25eec7676674c9257a3333d5295b669d5ab2c824>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BestuurlijkeRechtshandelingShape/6f6f64db25021594dfd8c5d0aa1242a13ba5ad58>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BestuurlijkeRechtshandelingShape/25eec7676674c9257a3333d5295b669d5ab2c824> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BestuurlijkeRechtshandeling.verantwoordelijke";
+  shacl:class <http://data.europa.eu/m8g/PublicOrganisation>;
+  shacl:name "verantwoordelijke"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling.verantwoordelijke> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BestuurlijkeRechtshandelingShape/6f6f64db25021594dfd8c5d0aa1242a13ba5ad58> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#BestuurlijkeRechtshandeling.verantwoordelijke";
+  shacl:maxCount 1;
+  shacl:name "verantwoordelijke"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling.verantwoordelijke> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass xsd:date .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape/3a640497a6655bb21d5f216cca1dd616a270948e>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape/c15be7526009adb10e62881c3a8290214787096e>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape/40ab2edacb55638785470c9bb1c8f7d04e375f01>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape/74948a30379ffa880b954109d19c42e0b069111e>;
+  shacl:targetClass <http://www.w3.org/2006/time#ProperInterval> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape/3a640497a6655bb21d5f216cca1dd616a270948e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeInterval.begintijdstip";
+  shacl:class <http://www.w3.org/2006/time#Instant>;
+  shacl:name "begintijdstip"@nl;
+  shacl:path <http://www.w3.org/2006/time#hasBeginning> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape/40ab2edacb55638785470c9bb1c8f7d04e375f01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeInterval.eindtijdstip";
+  shacl:class <http://www.w3.org/2006/time#Instant>;
+  shacl:name "eindtijdstip"@nl;
+  shacl:path <http://www.w3.org/2006/time#End> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape/74948a30379ffa880b954109d19c42e0b069111e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeInterval.eindtijdstip";
+  shacl:maxCount 1;
+  shacl:name "eindtijdstip"@nl;
+  shacl:path <http://www.w3.org/2006/time#End> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeIntervalShape/c15be7526009adb10e62881c3a8290214787096e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DateTimeInterval.begintijdstip";
+  shacl:maxCount 1;
+  shacl:name "begintijdstip"@nl;
+  shacl:path <http://www.w3.org/2006/time#hasBeginning> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape/74e4b7df66d1f8e79ee804d7a75adbe10713f8d9>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape/ff4ac49a85a841ca6810ac31a4b86fe6d9b7c6b9>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape/9d71d58a4fec4be940aeace1d244d8d5af5a31e0>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/generiek#Document> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Document.identificator";
+  shacl:class <http://www.w3.org/ns/adms#Identifier>;
+  shacl:description "Gestructureerde identificator van het Document."@nl;
+  shacl:name "identificator"@nl;
+  shacl:path <http://www.w3.org/ns/adms#identifier> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape/74e4b7df66d1f8e79ee804d7a75adbe10713f8d9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Document.vindplaats";
+  shacl:class prov:Location;
+  shacl:description "De fysieke of digitale locatie waar het Document zich bevindt."@nl;
+  shacl:name "vindplaats"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#vindplaats> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape/9d71d58a4fec4be940aeace1d244d8d5af5a31e0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Document.waarmerk";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Waarmerk>;
+  shacl:description "Waarheidskenmerk, zoals een (elektronische) ondertekening of zegel uitgaande van een bevoegd Rechtssubject."@nl;
+  shacl:name "waarmerk"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#waarmerk> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DocumentShape/ff4ac49a85a841ca6810ac31a4b86fe6d9b7c6b9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Document.vindplaats";
+  shacl:description "De fysieke of digitale locatie waar het Document zich bevindt."@nl;
+  shacl:maxCount 1;
+  shacl:name "vindplaats"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#vindplaats> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/1399bd400d4637b15d5fe38202d6572f82150aac>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/5fceb068938b8a837e254da418f45825d992aec8>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/dossier#Dossier> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Dossier.identificator";
+  shacl:class <http://www.w3.org/ns/adms#Identifier>;
+  shacl:description "Een identificator voor het dossier."@nl;
+  shacl:name "identificator"@nl;
+  shacl:path <http://www.w3.org/ns/adms#identifier> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/1399bd400d4637b15d5fe38202d6572f82150aac> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Dossier.naam";
+  shacl:datatype xsd:string;
+  shacl:description "De naam van het dossier."@nl;
+  shacl:name "naam"@nl;
+  shacl:path dc:title .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/5fceb068938b8a837e254da418f45825d992aec8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Dossier.naam";
+  shacl:description "De naam van het dossier."@nl;
+  shacl:maxCount 1;
+  shacl:name "naam"@nl;
+  shacl:path dc:title .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/dee91a0c104b9eca8df95ed28a4c56445b1c13c4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Dossier.informatieclassificatie";
+  shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Dossier."@nl;
+  shacl:maxCount 1;
+  shacl:name "informatieclassificatie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/dossier#informatieclassificatie> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/e9d8e42e8041e72c4534134d5a9044b03bed7ec5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Dossier.naam";
+  shacl:description "De naam van het dossier."@nl;
+  shacl:minCount 1;
+  shacl:name "naam"@nl;
+  shacl:path dc:title .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#DossierShape/f9184e9b3d65880dd277daa3ae2ba9b2fe6ed7cd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Dossier.informatieclassificatie";
+  shacl:class skos:Concept;
+  shacl:description "Duidt aan welke veiligheidsmaatregelen (waaronder toegangsmaatregelen) genomen moeten worden voor het Dossier."@nl;
+  shacl:name "informatieclassificatie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/dossier#informatieclassificatie> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InhoudShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroepShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroepShape/092f55d084a7a9d6c0e8e1d2f3ce0a3ba027769a>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroepShape/a871a5867cb238ba7993aee9d434f2cba69f9999>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroepShape/cb5b96e8268d0ed2e5388e774253598a23ba57d9>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroepShape/092f55d084a7a9d6c0e8e1d2f3ce0a3ba027769a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroep.ingesteldrechtsmiddel";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid>;
+  shacl:description "Verwijzing naar het ingesteld rechtsmiddel."@nl;
+  shacl:name "ingesteld rechtsmiddel"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#ingesteldRechtsmiddel> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroepShape/a871a5867cb238ba7993aee9d434f2cba69f9999> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroep.verzoekendepartij";
+  shacl:description "Partij die het Rechtsmiddel aanwendt."@nl;
+  shacl:maxCount 1;
+  shacl:name "verzoekende partij"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#verzoekendePartij> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroepShape/cb5b96e8268d0ed2e5388e774253598a23ba57d9> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#InstellingBeroep.verzoekendepartij";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>;
+  shacl:description "Partij die het Rechtsmiddel aanwendt."@nl;
+  shacl:name "verzoekende partij"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#verzoekendePartij> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#JuridischWerkShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#JuridischWerkShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#JuridischWerkShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#JuridischWerk.identificator";
+  shacl:class <http://www.w3.org/ns/adms#Identifier>;
+  shacl:description "Gestructureerde identificator van het Juridisch Werk."@nl;
+  shacl:name "identificator"@nl;
+  shacl:path <http://www.w3.org/ns/adms#identifier> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#JuridischeCategorieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#JuridischeGebeurtenisShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#KadastraalPatrimoniumperceelShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/perceel#KadastraalPatrimoniumperceel> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#KadastraalPlanperceelShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/perceel#KadastraalPlanperceel> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#NormatieveBepalingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#NormatieveBepalingShape/59a2cacf48a348bf6f395b923c551558e2010f24>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#NormatieveBepalingShape/d982ae870b8c7f97b68d4c407ae00ecea0b31821>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#NormatieveBepalingShape/59a2cacf48a348bf6f395b923c551558e2010f24> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#NormatieveBepaling.rechtsobject";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit>;
+  shacl:description "Het voorwerp van de Normatieve Bepaling."@nl;
+  shacl:name "rechtsobject"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsobject> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#NormatieveBepalingShape/d982ae870b8c7f97b68d4c407ae00ecea0b31821> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#NormatieveBepaling.tijdsbestek";
+  shacl:class <http://www.w3.org/2006/time#Interval>;
+  shacl:description "Aanduiding van het tijdsbestek van de Normatieve Bepaling."@nl;
+  shacl:name "tijdsbestek"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling.tijdsbestek> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/4b124f0924fab01fc5967b50aacaf82bcf846710>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/bd32c9364485a2a85965fbee55f90a75d8d8fdef>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/b567f41f6cac602586580d2c01ee8221e0ba5fd0>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/dec1490408b1bea457bc40436431406882288252>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/f8712dd0e04b5c6b79d939432a639019c7295c6f>;
+  shacl:targetClass org:Organization .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/4b124f0924fab01fc5967b50aacaf82bcf846710> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Organisatie.contactinfo";
+  shacl:class schema:ContactPoint;
+  shacl:description """Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren.
+"""@nl;
+  shacl:name "contactinfo"@nl;
+  shacl:path schema:contactPoint .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/b567f41f6cac602586580d2c01ee8221e0ba5fd0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Organisatie.voorkeurslabel";
+  shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+  shacl:minCount 1;
+  shacl:name "voorkeurslabel"@nl;
+  shacl:path skos:prefLabel .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/bd32c9364485a2a85965fbee55f90a75d8d8fdef> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Organisatie.contactinfo";
+  shacl:description """Informatie zoals email, telefoon... die toelaat de Organisatie te contacteren.
+"""@nl;
+  shacl:maxCount 1;
+  shacl:name "contactinfo"@nl;
+  shacl:path schema:contactPoint .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/dec1490408b1bea457bc40436431406882288252> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Organisatie.voorkeurslabel";
+  shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+  shacl:maxCount 1;
+  shacl:name "voorkeurslabel"@nl;
+  shacl:path skos:prefLabel .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#OrganisatieShape/f8712dd0e04b5c6b79d939432a639019c7295c6f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Organisatie.voorkeurslabel";
+  shacl:datatype rdf:langString;
+  shacl:description "Naam waarmee de Organisatie bij voorkeur wordt aangeduid."@nl;
+  shacl:name "voorkeurslabel"@nl;
+  shacl:path skos:prefLabel .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PersoonShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PersoonShape/ccc60f000e8255577f863856ca86c69a40f97951>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PersoonShape/b0322adf9cb5f87dacab4018e57d8e895d4bb8ec>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PersoonShape/f99a0a001c6328fb6d3e116e93de1a4b09946095>;
+  shacl:targetClass <http://www.w3.org/ns/person#Person> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PersoonShape/b0322adf9cb5f87dacab4018e57d8e895d4bb8ec> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Persoon.voornaam";
+  shacl:description "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."@nl;
+  shacl:minCount 1;
+  shacl:name "voornaam"@nl;
+  shacl:path foaf:givenName .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PersoonShape/ccc60f000e8255577f863856ca86c69a40f97951> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Persoon.alternatievenaam";
+  shacl:datatype xsd:string;
+  shacl:description "Alternatief voor de volledige naam vd persoon."@nl;
+  shacl:name "alternatieve naam"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/persoon#alternatieveNaam> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PersoonShape/f99a0a001c6328fb6d3e116e93de1a4b09946095> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Persoon.voornaam";
+  shacl:datatype xsd:string;
+  shacl:description "Naam die een kind bij geboorte wordt gegeven. Onderscheidt het kind van de andere kinderen in de familie."@nl;
+  shacl:name "voornaam"@nl;
+  shacl:path foaf:givenName .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/0fa78c5d12d6f890feb0b9533384cfecf24c4d59>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/96c6ea66f25abd7f1efb9d4d4f805c8d49f2e58e>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/8e9eabe3a3bacf1839ad5260366b77c1faa8e94c>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/289f0bc5a680b15cbf301414c8fca024f2524d57>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/39390b57d436bb7f59bff800ce8f77eae01019ce>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/0fa78c5d12d6f890feb0b9533384cfecf24c4d59> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Procedure.procedurestap";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap>;
+  shacl:name "procedurestap"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/289f0bc5a680b15cbf301414c8fca024f2524d57> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Procedure.termijn";
+  shacl:description "Termijn binnen dewelke de Procedure toegepast mag worden."@nl;
+  shacl:maxCount 1;
+  shacl:name "termijn"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#termijn> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/39390b57d436bb7f59bff800ce8f77eae01019ce> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Procedure.termijn";
+  shacl:class <http://www.w3.org/2006/time#Interval>;
+  shacl:description "Termijn binnen dewelke de Procedure toegepast mag worden."@nl;
+  shacl:name "termijn"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#termijn> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/8e9eabe3a3bacf1839ad5260366b77c1faa8e94c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Procedure.rechtsgrond";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk>;
+  shacl:description "Verwijzingen naar de Juridische Werken die de grondslag vormen van de Procedure."@nl;
+  shacl:name "rechtsgrond"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsgrond> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedureShape/96c6ea66f25abd7f1efb9d4d4f805c8d49f2e58e> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Procedure.publiekeOrganisatie";
+  shacl:class <http://data.europa.eu/m8g/PublicOrganisation>;
+  shacl:description "De Publieke Organisaties die bevoegdheid kunnen hebben over de Procedure."@nl;
+  shacl:name "publiekeOrganisatie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#publiekeOrganisatie> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ProcedurestapShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#PubliekeOrganisatieShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://data.europa.eu/m8g/PublicOrganisation> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Recht> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechterlijkeUitspraakShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechterlijkeUitspraakShape/070e9431de76932eb0050dd58f063d6b320e5c4f>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechterlijkeUitspraakShape/13e7ddbed1b985aa84a2bdd6eed1cd09823a2814>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechterlijkeUitspraakShape/070e9431de76932eb0050dd58f063d6b320e5c4f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechterlijkeUitspraak.rechtscollege";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtscollege>;
+  shacl:name "rechtscollege"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#rechtscollege> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechterlijkeUitspraakShape/13e7ddbed1b985aa84a2bdd6eed1cd09823a2814> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechterlijkeUitspraak.rechtscollege";
+  shacl:maxCount 1;
+  shacl:name "rechtscollege"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#rechtscollege> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtscollegeShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtscollege> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/2669b54c128cc8f2ef1865bbe8c552a3901617e2>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/3b870ffa52e5691cfebfb5ea499c6b5516793f54>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/9e73ecdb3bc4001c09c9051b8d71b989c22345f4>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/0cdc11943214cd6d602e83aa3b183b68a6dbd775>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/4a50f9cb39aef64c870e9dbfcaebff289dd951d2>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/77a687b1ad21f7f4bda83b161404cd08b20403fd>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/c25aca74a244fbca5778b4b28eaf3771512b4198>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/f1aa271a1eb52cd3d46298212686936394680dda>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/fd2472f16c1e3eb2ac2e28fbef061ac192ddfff3>;
+  shacl:targetClass <http://data.europa.eu/eli/ontology#LegalResource> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/0cdc11943214cd6d602e83aa3b183b68a6dbd775> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtsgrond.inwerkingtreding";
+  shacl:description "De datum waarop de regelgeving van kracht wordt."@nl;
+  shacl:maxCount 1;
+  shacl:name "inwerkingtreding"@nl;
+  shacl:path <http://data.europa.eu/eli/ontology#first_date_entry_in_force> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/2669b54c128cc8f2ef1865bbe8c552a3901617e2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtsgrond.buitenwerkingtreding";
+  shacl:datatype xsd:date;
+  shacl:description "De laatste dag waarop de regelgeving nog van kracht is."@nl;
+  shacl:name "buitenwerkingtreding"@nl;
+  shacl:path <http://data.europa.eu/eli/ontology#date_no_longer_in_force> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/3b870ffa52e5691cfebfb5ea499c6b5516793f54> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtsgrond.buitenwerkingtreding";
+  shacl:description "De laatste dag waarop de regelgeving nog van kracht is."@nl;
+  shacl:minCount 1;
+  shacl:name "buitenwerkingtreding"@nl;
+  shacl:path <http://data.europa.eu/eli/ontology#date_no_longer_in_force> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/4a50f9cb39aef64c870e9dbfcaebff289dd951d2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtsgrond.inwerkingtreding";
+  shacl:description "De datum waarop de regelgeving van kracht wordt."@nl;
+  shacl:minCount 1;
+  shacl:name "inwerkingtreding"@nl;
+  shacl:path <http://data.europa.eu/eli/ontology#first_date_entry_in_force> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/77a687b1ad21f7f4bda83b161404cd08b20403fd> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtsgrond.inwerkingtreding";
+  shacl:datatype xsd:date;
+  shacl:description "De datum waarop de regelgeving van kracht wordt."@nl;
+  shacl:name "inwerkingtreding"@nl;
+  shacl:path <http://data.europa.eu/eli/ontology#first_date_entry_in_force> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/9e73ecdb3bc4001c09c9051b8d71b989c22345f4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtsgrond.buitenwerkingtreding";
+  shacl:description "De laatste dag waarop de regelgeving nog van kracht is."@nl;
+  shacl:maxCount 1;
+  shacl:name "buitenwerkingtreding"@nl;
+  shacl:path <http://data.europa.eu/eli/ontology#date_no_longer_in_force> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/c25aca74a244fbca5778b4b28eaf3771512b4198> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtsgrond.typedocument";
+  shacl:class <http://data.europa.eu/eli/ontology#ResourceType>;
+  shacl:description "Het type van de rechtsgrond."@nl;
+  shacl:name "type document"@nl;
+  shacl:path <http://data.europa.eu/eli/ontology#type_document> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/f1aa271a1eb52cd3d46298212686936394680dda> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtsgrond.typedocument";
+  shacl:description "Het type van de rechtsgrond."@nl;
+  shacl:maxCount 1;
+  shacl:name "type document"@nl;
+  shacl:path <http://data.europa.eu/eli/ontology#type_document> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtsgrondShape/fd2472f16c1e3eb2ac2e28fbef061ac192ddfff3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtsgrond.typedocument";
+  shacl:description "Het type van de rechtsgrond."@nl;
+  shacl:minCount 1;
+  shacl:name "type document"@nl;
+  shacl:path <http://data.europa.eu/eli/ontology#type_document> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/9f596b9031ea547e1e4460ed7d0c1b2501a4d3e7>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/10238f20248c4a8851251daa05d9a6f17ba672d5>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/7fdf6bdec9441fed832a5e7dab4b16af13d323f3>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/9234063bc3f88ef0f115e60fe043b4a382b74008>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/ba43c3d188022f476c8ec09c23252e50af5c54b6>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/e021b3c1242f4b5e2f3ce2bdde50e8d299386b70>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/97a90eadb3cdd253fd8e1aa83ee67faa2a689a20>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/25eec7676674c9257a3333d5295b669d5ab2c824>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtshandeling.identificator";
+  shacl:class <http://www.w3.org/ns/adms#Identifier>;
+  shacl:name "identificator"@nl;
+  shacl:path <http://www.w3.org/ns/adms#identifier> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/10238f20248c4a8851251daa05d9a6f17ba672d5> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtshandeling.document";
+  shacl:class foaf:Document;
+  shacl:description "Neerslag van de Rechtshandeling in een Document."@nl;
+  shacl:name "document"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#document> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/25eec7676674c9257a3333d5295b669d5ab2c824> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtshandeling.verantwoordelijke";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>;
+  shacl:description "Rechtssubject dat juridisch verantwoordelijk is voor de Rechtshandeling."@nl;
+  shacl:name "verantwoordelijke"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.verantwoordelijke> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/7fdf6bdec9441fed832a5e7dab4b16af13d323f3> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtshandeling.ingangsdatum";
+  shacl:datatype xsd:date;
+  shacl:name "ingangsdatum"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/9234063bc3f88ef0f115e60fe043b4a382b74008> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtshandeling.ingangsdatum";
+  shacl:minCount 1;
+  shacl:name "ingangsdatum"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/97a90eadb3cdd253fd8e1aa83ee67faa2a689a20> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtshandeling.juridischekwalificatie";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie>;
+  shacl:name "juridische kwalificatie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.juridischeKwalificatie> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/9f596b9031ea547e1e4460ed7d0c1b2501a4d3e7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtshandeling.bekendmaking";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Bekendmaking>;
+  shacl:description "Bekendmaking van de Rechtshandeling."@nl;
+  shacl:name "bekendmaking"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#bekendmaking> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/ba43c3d188022f476c8ec09c23252e50af5c54b6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtshandeling.ingangsdatum";
+  shacl:maxCount 1;
+  shacl:name "ingangsdatum"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtshandelingShape/e021b3c1242f4b5e2f3ce2bdde50e8d299386b70> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Rechtshandeling.inhoud";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud>;
+  shacl:name "inhoud"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#inhoud> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RechtssubjectShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/e7a0ed955d2934a53c7112ed7389c018fdb42422>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/722a1f18cabb107c684fe4ca857876ade00b0d01>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/48d31730f73f81de13a17912fcec04efe46ca746>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/b1be2fa83f88c69bd5262547bc44330e168c329a>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/c77d05384fec2594a29b6b7e0a5ddbd5719b3376>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/67ea555474378d8510c3e840a9b9a4b5d91045bf>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/da7b20fa5672e1efac8134dc00bf3f008dc299c8>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/864cdc326c1157097b7cc41cd71094247fdc96b6>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/236f0210baaf149903750c43bbe7012c21debb2a>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/322371a77364a50f049d46180f6192532eea26dc>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.identificator";
+  shacl:class <http://www.w3.org/ns/adms#Identifier>;
+  shacl:description "De identificator van de Ruimtelijke Eenheid."@nl;
+  shacl:name "identificator"@nl;
+  shacl:path <http://www.w3.org/ns/adms#identifier> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/236f0210baaf149903750c43bbe7012c21debb2a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.type";
+  shacl:description "De aard van een ruimtelijke eenheid."@nl;
+  shacl:maxCount 1;
+  shacl:name "type"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.type> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.type";
+  shacl:class skos:Concept;
+  shacl:description "De aard van een ruimtelijke eenheid."@nl;
+  shacl:name "type"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.type> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/48d31730f73f81de13a17912fcec04efe46ca746> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.landgebruik";
+  shacl:class skos:Concept;
+  shacl:description "Geeft het gebruik aan van de ruimtelijke eenheid."@nl;
+  shacl:name "landgebruik"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#landgebruik> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/67ea555474378d8510c3e840a9b9a4b5d91045bf> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.niveau";
+  shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
+  shacl:maxCount 1;
+  shacl:name "niveau"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#niveau> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/722a1f18cabb107c684fe4ca857876ade00b0d01> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.geometrie";
+  shacl:class <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie>;
+  shacl:description "Geometrie van de ruimtelijke eenheid en metadata over hoe deze werd bepaald."@nl;
+  shacl:name "geometrie"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.geometrie> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/864cdc326c1157097b7cc41cd71094247fdc96b6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.oppervlakte";
+  shacl:class <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte>;
+  shacl:description "Oppervlakte van de ruimtelijke eenheid en metadata over de manier waarop deze bepaald werd."@nl;
+  shacl:name "oppervlakte"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.oppervlakte> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/b1be2fa83f88c69bd5262547bc44330e168c329a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.landgebruik";
+  shacl:description "Geeft het gebruik aan van de ruimtelijke eenheid."@nl;
+  shacl:name "landgebruik"@nl;
+  shacl:node [
+    a shacl:NodeShape;
+    rdfs:comment "codelist restriction";
+    shacl:property [
+      shacl:class skos:ConceptScheme;
+      shacl:hasValue <http://inspire.ec.europa.eu/codelist/HILUCSValue/>;
+      shacl:minCount 1;
+      shacl:nodeKind shacl:IRI;
+      shacl:path skos:inScheme
+    ]
+  ];
+  shacl:nodeKind shacl:IRI;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#landgebruik>;
+  shacl:severity shacl:Warning .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/c77d05384fec2594a29b6b7e0a5ddbd5719b3376> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.landgebruik";
+  shacl:description "Geeft het gebruik aan van de ruimtelijke eenheid."@nl;
+  shacl:maxCount 1;
+  shacl:name "landgebruik"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#landgebruik> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/da7b20fa5672e1efac8134dc00bf3f008dc299c8> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.niveau";
+  shacl:datatype xsd:integer;
+  shacl:description "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
+  shacl:name "niveau"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#niveau> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheidShape/e7a0ed955d2934a53c7112ed7389c018fdb42422> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#RuimtelijkeEenheid.adres";
+  shacl:class <http://www.w3.org/ns/locn#Address>;
+  shacl:description "Adres van de Ruimtelijke Eenheid."@nl;
+  shacl:name "adres"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/perceel#adres> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsbepalingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.w3.org/2006/time#TemporalEntity> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/5e34a81a4432e2c6b5242b94dad6986bfe911280>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/be0c68c7e6e2a6a6199fcb681e04bc4643f41a02>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/5242fb26cd0697ff6f8009d3d4adf649fb852e6d>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/bded2eb3b250cdea7877f534c01c3e63b838fe9c>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/762f5094731b213d88d8a29332598749ea0eaa46>;
+  shacl:targetClass <http://www.w3.org/2006/time#DurationDescription> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/09b9910c25556782aaecc7a4c636d19c1ffcf8a6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Tijdsduurbeschrijving.waarde";
+  shacl:datatype xsd:integer;
+  shacl:name "waarde"@nl;
+  shacl:path <http://www.w3.org/2006/time#numericDuration> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/5242fb26cd0697ff6f8009d3d4adf649fb852e6d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Tijdsduurbeschrijving.tijdseenheid";
+  shacl:maxCount 1;
+  shacl:name "tijdseenheid"@nl;
+  shacl:path <http://www.w3.org/2006/time#unitType> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/5e34a81a4432e2c6b5242b94dad6986bfe911280> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Tijdsduurbeschrijving.tekstbeschrijving";
+  shacl:datatype rdf:langString;
+  shacl:name "tekstbeschrijving"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#tekstbeschrijving> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/762f5094731b213d88d8a29332598749ea0eaa46> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Tijdsduurbeschrijving.waarde";
+  shacl:maxCount 1;
+  shacl:name "waarde"@nl;
+  shacl:path <http://www.w3.org/2006/time#numericDuration> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/bded2eb3b250cdea7877f534c01c3e63b838fe9c> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Tijdsduurbeschrijving.tijdseenheid";
+  shacl:class <http://www.w3.org/2006/time#TemporalUnit>;
+  shacl:name "tijdseenheid"@nl;
+  shacl:path <http://www.w3.org/2006/time#unitType> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurBeschrijvingShape/be0c68c7e6e2a6a6199fcb681e04bc4643f41a02> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Tijdsduurbeschrijving.tekstbeschrijving";
+  shacl:maxCount 1;
+  shacl:name "tekstbeschrijving"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/generiek#tekstbeschrijving> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdsduurShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.w3.org/2006/time#Interval> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#TijdstipShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <http://www.w3.org/2006/time#Instant> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/69274fdede2e8731fbaa58f7b24d28fa3ec72d59>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/76dfa9563b6d36fce246758a15446e104b15506f>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/f988739495cf1b382f1fd96b7cff83a7a9a6cf4f>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/25eec7676674c9257a3333d5295b669d5ab2c824>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/6f6f64db25021594dfd8c5d0aa1242a13ba5ad58>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/25eec7676674c9257a3333d5295b669d5ab2c824> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestand.verantwoordelijke";
+  shacl:class <http://data.europa.eu/m8g/PublicOrganisation>;
+  shacl:description "De Publieke Organisatie verantwoordelijk voor het bepalen van de Vergunde Toestand."@nl;
+  shacl:name "verantwoordelijke"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand.verantwoordelijke> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/69274fdede2e8731fbaa58f7b24d28fa3ec72d59> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestand.gebeurtenis";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis>;
+  shacl:description "Gebeurtenissen waarvan de Vergunde Toestand is afgeleid."@nl;
+  shacl:name "gebeurtenis"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#gebeurtenis> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/6f6f64db25021594dfd8c5d0aa1242a13ba5ad58> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestand.verantwoordelijke";
+  shacl:description "De Publieke Organisatie verantwoordelijk voor het bepalen van de Vergunde Toestand."@nl;
+  shacl:maxCount 1;
+  shacl:name "verantwoordelijke"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand.verantwoordelijke> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/76dfa9563b6d36fce246758a15446e104b15506f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestand.vaststellingtijdstip";
+  shacl:description "Tijdstip van vaststelling."@nl;
+  shacl:maxCount 1;
+  shacl:name "vaststellingtijdstip"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingTijdstip> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestandShape/f988739495cf1b382f1fd96b7cff83a7a9a6cf4f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VaststellingVergundeToestand.vaststellingtijdstip";
+  shacl:class <http://www.w3.org/2006/time#Instant>;
+  shacl:description "Tijdstip van vaststelling."@nl;
+  shacl:name "vaststellingtijdstip"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingTijdstip> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VerbintenisShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Verbintenis> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/f0a51eb142bbe2ca3e603087b113b9fbbf413d08>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/6b184785645f133b7101681e0f910db0647b20b1>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/d7a1c5952c2401a174f6cbfe9179fee27a628e8f>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/3a1bf23fafcad3c6f4bf616995ec1998eed6bfb4>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/716918cd7d73f782b0dcd3e7051e6a2bfcee92c2>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/b63afa80e03562d61e005dec131c641203c988c6>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/6fa5673564522b1e65c5bef6f04cf1201cc459b0>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/3a1bf23fafcad3c6f4bf616995ec1998eed6bfb4> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestand.vaststellingvergundetoestand";
+  shacl:maxCount 1;
+  shacl:name "vaststelling vergunde toestand"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingVergundeToestand> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/6b184785645f133b7101681e0f910db0647b20b1> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestand.toestanddatum";
+  shacl:datatype xsd:date;
+  shacl:description "Aanduiding van de datum van de Vergunde Toestand."@nl;
+  shacl:name "toestand datum"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#toestandDatum> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/6fa5673564522b1e65c5bef6f04cf1201cc459b0> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestand.voorwerp";
+  shacl:class <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid>;
+  shacl:description "De ruimtelijke bepaling waarvoor de vergunde toestand wordt vastgesteld."@nl;
+  shacl:name "voorwerp"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/716918cd7d73f782b0dcd3e7051e6a2bfcee92c2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestand.vaststellingvergundetoestand";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand>;
+  shacl:name "vaststelling vergunde toestand"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingVergundeToestand> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/b63afa80e03562d61e005dec131c641203c988c6> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestand.vaststellingvergundetoestand";
+  shacl:minCount 1;
+  shacl:name "vaststelling vergunde toestand"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingVergundeToestand> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/d7a1c5952c2401a174f6cbfe9179fee27a628e8f> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestand.toestanddatum";
+  shacl:description "Aanduiding van de datum van de Vergunde Toestand."@nl;
+  shacl:maxCount 1;
+  shacl:name "toestand datum"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#toestandDatum> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestandShape/f0a51eb142bbe2ca3e603087b113b9fbbf413d08> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergundeToestand.normatievebepaling";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling>;
+  shacl:name "normatieve bepaling"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#normatieveBepaling> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VergunningShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Vergunning> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#VlaremRubriekShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:targetClass skos:Concept .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/3ab70f0160b3adc415c1d468a40cb0443c75ef30>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/97d7a9c6efa99a7cadbc1c3cfe0968deb6b5124a>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/a6b82045e2b0570810c9150bcfe56b9e6c29e4e7>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/d1634e5f725006f2c1375affe48b2731cfa94dc2>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/25eec7676674c9257a3333d5295b669d5ab2c824>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/6f6f64db25021594dfd8c5d0aa1242a13ba5ad58>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/669337e4ea7ef401c24721617ecb0dfa60193b2b>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/709c2bcd18a314952fdff295cb49b0f723fcbf1a>;
+  shacl:targetClass <https://dbpedia.org/ontology/Case> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/05134c4e7c34157d6f7ac1128713a08418e0fe7d> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaak.identificator";
+  shacl:class <http://www.w3.org/ns/adms#Identifier>;
+  shacl:description "Gestructureerde identificator van de Zaak."@nl;
+  shacl:name "identificator"@nl;
+  shacl:path <http://www.w3.org/ns/adms#identifier> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/25eec7676674c9257a3333d5295b669d5ab2c824> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaak.verantwoordelijke";
+  shacl:class <http://data.europa.eu/m8g/PublicOrganisation>;
+  shacl:description "De Publieke Organisatie verantwoordelijk voor de opvolging van de Zaak."@nl;
+  shacl:name "verantwoordelijke"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaak.verantwoordelijke> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/3ab70f0160b3adc415c1d468a40cb0443c75ef30> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaak.aanleiding";
+  shacl:maxCount 1;
+  shacl:name "aanleiding"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#aanleiding> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/669337e4ea7ef401c24721617ecb0dfa60193b2b> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaak.verwanteZaak";
+  shacl:class <https://dbpedia.org/ontology/Case>;
+  shacl:description "Verwijzingen naar verwante Zaken."@nl;
+  shacl:name "verwanteZaak"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/6f6f64db25021594dfd8c5d0aa1242a13ba5ad58> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaak.verantwoordelijke";
+  shacl:description "De Publieke Organisatie verantwoordelijk voor de opvolging van de Zaak."@nl;
+  shacl:maxCount 1;
+  shacl:name "verantwoordelijke"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaak.verantwoordelijke> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/709c2bcd18a314952fdff295cb49b0f723fcbf1a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaak.zaakhandeling";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>;
+  shacl:name "zaakhandeling"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/97d7a9c6efa99a7cadbc1c3cfe0968deb6b5124a> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaak.aanleiding";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk>;
+  shacl:name "aanleiding"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#aanleiding> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/a6b82045e2b0570810c9150bcfe56b9e6c29e4e7> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaak.procedure";
+  shacl:maxCount 1;
+  shacl:name "procedure"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#procedure> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakShape/d1634e5f725006f2c1375affe48b2731cfa94dc2> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaak.procedure";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure>;
+  shacl:name "procedure"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#procedure> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape> a shacl:NodeShape;
+  shacl:closed false;
+  shacl:property <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/0fa78c5d12d6f890feb0b9533384cfecf24c4d59>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/3cc5e4785f73bee6df2dec3895da1b95b3cf2d47>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/322371a77364a50f049d46180f6192532eea26dc>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/25eec7676674c9257a3333d5295b669d5ab2c824>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/9da9d7b717d192a103cad2e9214222ce2f957029>,
+    <https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/fdd26bb099a4aa0d0a639eafcfe9ea11ef6abc40>;
+  shacl:targetClass <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/0fa78c5d12d6f890feb0b9533384cfecf24c4d59> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaakhandeling.procedurestap";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap>;
+  shacl:name "procedurestap"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/25eec7676674c9257a3333d5295b669d5ab2c824> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaakhandeling.verantwoordelijke";
+  shacl:class <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>;
+  shacl:name "verantwoordelijke"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.verantwoordelijke> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/322371a77364a50f049d46180f6192532eea26dc> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaakhandeling.type";
+  shacl:class skos:Concept;
+  shacl:name "type"@nl;
+  shacl:path dc:type .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/3cc5e4785f73bee6df2dec3895da1b95b3cf2d47> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaakhandeling.procedurestap";
+  shacl:maxCount 1;
+  shacl:name "procedurestap"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/9da9d7b717d192a103cad2e9214222ce2f957029> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaakhandeling.zaak";
+  shacl:class <https://dbpedia.org/ontology/Case>;
+  shacl:name "zaak"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.zaak> .
+
+<https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#ZaakhandelingShape/fdd26bb099a4aa0d0a639eafcfe9ea11ef6abc40> rdfs:seeAlso "https://data.vlaanderen.be/doc/applicatieprofiel/omgevingsvergunning/kandidaatstandaard/2024-06-20#Zaakhandeling.zaak";
+  shacl:maxCount 1;
+  shacl:name "zaak"@nl;
+  shacl:path <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.zaak> .
