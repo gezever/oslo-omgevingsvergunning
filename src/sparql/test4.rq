@@ -1,0 +1,10 @@
+prefix graph: <https://data.vlaanderen.be/id/graph/>
+
+SELECT DISTINCT ?uri
+WHERE
+{
+    { ?s ?p ?uri .
+    FILTER regex(str(?uri), "https://data.vlaanderen.be/ns/perceel#adres", "i") }
+}
+
+ORDER BY ?uri
