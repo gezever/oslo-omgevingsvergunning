@@ -1,0 +1,13 @@
+prefix graph: <https://data.vlaanderen.be/id/graph/>
+
+    SELECT DISTINCT ?uri
+    WHERE
+
+        {
+            { ?uri ?p ?o.
+            FILTER regex(str(?uri), "https://data.vlaanderen.be/ns/omgevingsvergunning#", "i") }
+        }
+
+
+    ORDER BY ?uri
+
