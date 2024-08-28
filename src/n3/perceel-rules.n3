@@ -1,0 +1,69 @@
+
+{ ?x <https://data.vlaanderen.be/ns/perceel#Recht.agent> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#Recht> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Recht.ruimtelijkeEenheid> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#Recht> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Recht.type> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#Recht> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Restrictie.agent> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#Restrictie> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Restrictie.ruimtelijkeEenheid> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#Restrictie> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Restrictie.type> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#Restrictie> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.geometrie> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.oppervlakte> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.type> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie.geometrie> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte.oppervlakte> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.agent> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.ruimtelijkeEenheid> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.type> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.agent> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#ZakelijkRecht> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.kadastraalPatrimoniumperceel> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#ZakelijkRecht> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.type> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#ZakelijkRecht> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#aandeel> ?y } => { ?x a <http://www.w3.org/2000/01/rdf-schema#Resource> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#agentMetRecht> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#agentMetRestrictie> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#agentMetVerantwoordelijkheid> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#agentMetZakelijkRecht> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#KadastraalPatrimoniumperceel> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#datumbijwerking> ?y } => { ?x a <http://www.w3.org/2000/01/rdf-schema#Resource> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#default> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#dimensie> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#geldigheidsperiode> ?y } => { ?x a <http://www.w3.org/2000/01/rdf-schema#Resource> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#landgebruik> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#methode> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#niveau> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#officieleOppervlakte> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#oppervlaktetype> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte> } .
+
+{ ?x <https://data.vlaanderen.be/ns/perceel#Recht.agent> ?y } => { ?y a <http://purl.org/dc/terms/Agent> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Recht.ruimtelijkeEenheid> ?y } => { ?y a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Recht.type> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Restrictie.agent> ?y } => { ?y a <http://purl.org/dc/terms/Agent> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Restrictie.ruimtelijkeEenheid> ?y } => { ?y a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Restrictie.type> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.geometrie> ?y } => { ?y a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie> } .
+
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.type> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie.geometrie> ?y } => { ?y a <http://www.w3.org/ns/locn#Geometry> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte.oppervlakte> ?y } => { ?y a <https://schema.org/QuantitativeValue> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.agent> ?y } => { ?y a <http://purl.org/dc/terms/Agent> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.ruimtelijkeEenheid> ?y } => { ?y a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+
+{ ?x <https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.type> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.agent> ?y } => { ?y a <http://purl.org/dc/terms/Agent> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.kadastraalPatrimoniumperceel> ?y } => { ?y a <https://data.vlaanderen.be/ns/perceel#KadastraalPatrimoniumperceel> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.type> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#aandeel> ?y } => { ?y a <http://www.w3.org/2001/XMLSchema#double> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#agentMetRecht> ?y } => { ?y a <http://purl.org/dc/terms/Agent> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#agentMetRestrictie> ?y } => { ?y a <http://purl.org/dc/terms/Agent> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#agentMetVerantwoordelijkheid> ?y } => { ?y a <http://purl.org/dc/terms/Agent> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#agentMetZakelijkRecht> ?y } => { ?y a <http://purl.org/dc/terms/Agent> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#datumbijwerking> ?y } => { ?y a <http://www.w3.org/2001/XMLSchema#dateTime> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#default> ?y } => { ?y a <http://www.w3.org/2001/XMLSchema#boolean> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#dimensie> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#geldigheidsperiode> ?y } => { ?y a <http://data.europa.eu/m8g/PeriodOfTime> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#landgebruik> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#methode> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#niveau> ?y } => { ?y a <http://www.w3.org/2001/XMLSchema#integer> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#officieleOppervlakte> ?y } => { ?y a <http://www.w3.org/2001/XMLSchema#boolean> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#oppervlaktetype> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+
+##
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.oppervlakte> ?y } => { ?y a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte> } .
