@@ -1,6 +1,7 @@
 PREFIX activiteit:           <https://data.omv.vlaanderen.be/id/activiteit/>
 PREFIX adms:                 <http://www.w3.org/ns/adms#>
 PREFIX concept:              <https://data.omv.vlaanderen.be/id/concept/>
+PREFIX cpsv:                 <http://purl.org/vocab/cpsv#>
 PREFIX cs:                   <https://data.vlaanderen.be/ns/chemische_stof#>
 PREFIX csc:                  <https://data.omgeving.vlaanderen.be/id/concept/chemische_stof/>
 PREFIX dbo:                  <http://dbpedia.org/ontology/>
@@ -13,6 +14,7 @@ PREFIX geometry:             <https://data.omv.vlaanderen.be/id/geometry/>
 PREFIX ident:                <https://data.omv.vlaanderen.be/id/identificator/>
 PREFIX inh:                  <https://data.omv.vlaanderen.be/id/inhoud/>
 PREFIX juridische_categorie: <https://data.omv.vlaanderen.be/id/concept/juridische_categorie/>
+PREFIX m8g:                  <http://data.europa.eu/m8g/>
 PREFIX omv:                  <https://data.vlaanderen.be/ns/omgevingsvergunning#>
 PREFIX omv_id:               <https://data.omv.vlaanderen.be/id/concept/identifier/>
 PREFIX owl:                  <http://www.w3.org/2002/07/owl#>
@@ -31,9 +33,12 @@ PREFIX zaak_handeling:       <https://data.omv.vlaanderen.be/id/zaakhandeling/>
 
 dbo:Case  rdf:type         "rdfs:Resource";
         adms:identifier    adms:Identifier;
-        omv:procedure      omv:Procedure , <http://purl.org/vocab/cpsv#Rule>;
+        omv:procedure      <http://purl.org/vocab/frbr/core#Expression> , omv:Procedure , cpsv:Rule , <http://purl.org/vocab/frbr/core#Endeavour>;
         omv:verwanteZaak   dbo:Case;
-        omv:zaakhandeling  omv:JuridischeGebeurtenis , omv:JuridischWerk , omv:Rechtshandeling , <http://data.europa.eu/m8g/Event> , omv:Zaakhandeling .
+        omv:zaakhandeling  omv:JuridischeGebeurtenis , omv:JuridischWerk , omv:Rechtshandeling , m8g:Event , omv:Zaakhandeling .
+
+<http://purl.org/vocab/frbr/core#Expression>
+        rdf:type  "rdfs:Resource" .
 
 omv:Inhoud  rdf:type      "rdfs:Resource";
         <http://uit.te.klaren#modaliteit>
@@ -80,8 +85,7 @@ perceel:RuimtelijkeEenheidGeometrie
         rdf:type   "rdfs:Resource";
         geo:asWKT  "http://www.opengis.net/ont/geosparql#wktLiteral" .
 
-<http://data.europa.eu/m8g/Event>
-        rdf:type          "rdfs:Resource";
+m8g:Event  rdf:type       "rdfs:Resource";
         omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
         omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk .
 
@@ -94,7 +98,9 @@ perceel:RuimtelijkeEenheid
                 "http://www.w3.org/2001/XMLSchema#integer";
         perceel:landgebruik  skos:Concept .
 
-<http://purl.org/vocab/cpsv#Rule>
+cpsv:Rule  rdf:type  "rdfs:Resource" .
+
+<http://purl.org/vocab/frbr/core#Endeavour>
         rdf:type  "rdfs:Resource" .
 
 omv:Activiteit  rdf:type            "rdfs:Resource";
