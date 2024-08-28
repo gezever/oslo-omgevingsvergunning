@@ -81,7 +81,7 @@
     "@type": "@id"
   },
   "geometrie": {
-    "@id": "http://www.opengis.net/ont/geosparql#hasGeometry",
+    "@id": "https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.geometrie",
     "@type": "@id"
   },
   "landgebruik": {
@@ -104,7 +104,7 @@
   },
   "beschrijving": {
     "@id": "https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving",
-    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    "@language" : "nl"
   },
   "betrokkene": {
     "@id": "https://data.vlaanderen.be/ns/omgevingsvergunning#betrokkene",

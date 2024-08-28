@@ -104,7 +104,7 @@
   },
   "beschrijving": {
     "@id": "https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving",
-    "@type": "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    "@language" : "nl"
   },
   "betrokkene": {
     "@id": "https://data.vlaanderen.be/ns/omgevingsvergunning#betrokkene",

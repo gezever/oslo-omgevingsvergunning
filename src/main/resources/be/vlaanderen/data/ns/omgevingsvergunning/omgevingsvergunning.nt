@@ -1,0 +1,893 @@
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Vlarem Rubriek"@nl .
+<https://dbpedia.org/ontology/Case> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://dbpedia.org/ontology/Case> <http://www.w3.org/2000/01/rdf-schema#label> "Zaak"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.juridischeKwalificatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.juridischeKwalificatie> <http://www.w3.org/2000/01/rdf-schema#label> "juridische kwalificatie"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.juridischeKwalificatie> <http://www.w3.org/2000/01/rdf-schema#comment> "De Juridische Kwalificatie van de Activiteit."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.juridischeKwalificatie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.juridischeKwalificatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.juridischeKwalificatie> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.tijdsbestek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#label> "tijdsbestek"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#comment> "Aanduiding van het tijdsbestek van de Activiteit."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid.bevoegdeOverheid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid.bevoegdeOverheid> <http://www.w3.org/2000/01/rdf-schema#label> "bevoegde overheid"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid.bevoegdeOverheid> <http://www.w3.org/2000/01/rdf-schema#comment> "De Publieke Organisatie bevoegd om zich over het Rechtsmiddel uit te spreken."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid.bevoegdeOverheid> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid.bevoegdeOverheid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid.bevoegdeOverheid> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/m8g/PublicOrganisation> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling.verantwoordelijke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#label> "verantwoordelijke"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/m8g/PublicOrganisation> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling.tijdsbestek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#label> "tijdsbestek"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling.tijdsbestek> <http://purl.org/vocab/vann/usageNote> "De toelating om een bepaalde Activiteit uit te voeren kan beperkt zijn in de tijd."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#comment> "Aanduiding van het tijdsbestek van de Normatieve Bepaling."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling.tijdsbestek> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Recht> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Recht> <http://www.w3.org/2000/01/rdf-schema#label> "Recht"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Recht> <http://www.w3.org/2000/01/rdf-schema#comment> "De toestemming om een bepaalde activiteit uit te voeren op een bepaalde locatie, waarvoor, op het moment van aanvraag of melding, een specifieke vergunning of melding vereist is volgens de geldende regelgeving op het gebied van ruimtelijke ordening en milieu."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Recht> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Recht> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.juridischeKwalificatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.juridischeKwalificatie> <http://www.w3.org/2000/01/rdf-schema#label> "juridische kwalificatie"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.juridischeKwalificatie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.juridischeKwalificatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.juridischeKwalificatie> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.verantwoordelijke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#label> "verantwoordelijke"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#comment> "Rechtssubject dat juridisch verantwoordelijk is voor de Rechtshandeling."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand.verantwoordelijke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#label> "verantwoordelijke"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#comment> "De Publieke Organisatie verantwoordelijk voor het bepalen van de Vergunde Toestand."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/m8g/PublicOrganisation> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Verbintenis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Verbintenis> <http://www.w3.org/2000/01/rdf-schema#label> "Verbintenis"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Verbintenis> <http://purl.org/vocab/vann/usageNote> "Bijvoorbeeld, een last of voorwaarde in een omgevingsvergunning."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Verbintenis> <http://www.w3.org/2000/01/rdf-schema#comment> "Rechtsplicht die rechtssubjecten tegen elkaar opnemen (rechtshandelingen) of oplopen (rechtsfeiten)."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Verbintenis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Verbintenis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Vergunning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Vergunning> <http://www.w3.org/2000/01/rdf-schema#label> "Vergunning"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Vergunning> <http://www.w3.org/2000/01/rdf-schema#comment> "De Rechtshandeling, zijnde een beslissing, die toelating inhoudt voor een Activiteit."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Vergunning> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Vergunning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Vergunning> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaak.verantwoordelijke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaak.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#label> "verantwoordelijke"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaak.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/ontology/Case> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaak.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaak.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/m8g/PublicOrganisation> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.verantwoordelijke> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#label> "verantwoordelijke"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.verantwoordelijke> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.zaak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.zaak> <http://www.w3.org/2000/01/rdf-schema#label> "zaak"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.zaak> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.zaak> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling.zaak> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/ontology/Case> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanleiding> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanleiding> <http://www.w3.org/2000/01/rdf-schema#label> "aanleiding"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanleiding> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/ontology/Case> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanleiding> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanleiding> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanvrager> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanvrager> <http://www.w3.org/2000/01/rdf-schema#label> "aanvrager"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanvrager> <http://www.w3.org/2000/01/rdf-schema#comment> "Rechtssubject of rechtssubjecten die de aanvraag indient(-en) of namens wie deze wordt ingediend."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanvrager> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanvrager> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanvrager> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> <http://www.w3.org/2000/01/rdf-schema#label> "aanwendingstermijn"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> <http://www.w3.org/2000/01/rdf-schema#comment> "Termijn binnen dewelke het Rechtsmiddel aangewend mag worden."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#aanwendingsermijn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#bekendmaking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#bekendmaking> <http://www.w3.org/2000/01/rdf-schema#label> "bekendmaking"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#bekendmaking> <http://www.w3.org/2000/01/rdf-schema#comment> "Bekendmaking van de Rechtshandeling."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#bekendmaking> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#bekendmaking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#bekendmaking> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Bekendmaking> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving> <http://www.w3.org/2000/01/rdf-schema#label> "beschrijving"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving> <http://www.w3.org/2000/01/rdf-schema#comment> "De beschrijving van de Activiteit."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#beschrijving> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#betrokkene> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#betrokkene> <http://www.w3.org/2000/01/rdf-schema#label> "betrokkene"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#betrokkene> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#betrokkene> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#betrokkene> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#document> <http://www.w3.org/2000/01/rdf-schema#label> "document"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#document> <http://www.w3.org/2000/01/rdf-schema#comment> "Neerslag van de Rechtshandeling in een Document."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#document> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#document> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#document> <http://www.w3.org/2000/01/rdf-schema#range> <http://xmlns.com/foaf/0.1/Document> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#gebeurtenis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#gebeurtenis> <http://www.w3.org/2000/01/rdf-schema#label> "gebeurtenis"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#gebeurtenis> <http://www.w3.org/2000/01/rdf-schema#comment> "Gebeurtenissen waarvan de Vergunde Toestand is afgeleid."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#gebeurtenis> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#gebeurtenis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#gebeurtenis> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> <http://www.w3.org/2000/01/rdf-schema#label> "ingangsdatum"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> <http://purl.org/vocab/vann/usageNote> "Bijvoorbeeld, de datum van een arrest."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingesteldRechtsmiddel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingesteldRechtsmiddel> <http://www.w3.org/2000/01/rdf-schema#label> "ingesteld rechtsmiddel"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingesteldRechtsmiddel> <http://www.w3.org/2000/01/rdf-schema#comment> "Verwijzing naar het ingesteld rechtsmiddel."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingesteldRechtsmiddel> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingesteldRechtsmiddel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#ingesteldRechtsmiddel> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#inhoud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#inhoud> <http://www.w3.org/2000/01/rdf-schema#label> "inhoud"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#inhoud> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#inhoud> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#inhoud> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#locatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#locatie> <http://www.w3.org/2000/01/rdf-schema#label> "locatie"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#locatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Aanduiding van de plaats waar een Activiteit plaatsvindt, zal vinden, of zou hebben gevonden."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#locatie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#locatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#locatie> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#normatieveBepaling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#normatieveBepaling> <http://www.w3.org/2000/01/rdf-schema#label> "normatieve bepaling"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#normatieveBepaling> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#normatieveBepaling> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#normatieveBepaling> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedure> <http://www.w3.org/2000/01/rdf-schema#label> "procedure"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedure> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/ontology/Case> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedure> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> <http://www.w3.org/2000/01/rdf-schema#label> "procedurestap"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#publiekeOrganisatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#publiekeOrganisatie> <http://www.w3.org/2000/01/rdf-schema#label> "publiekeOrganisatie"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#publiekeOrganisatie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#publiekeOrganisatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#publiekeOrganisatie> <http://www.w3.org/2000/01/rdf-schema#range> <http://data.europa.eu/m8g/PublicOrganisation> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtscollege> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtscollege> <http://www.w3.org/2000/01/rdf-schema#label> "rechtscollege"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtscollege> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtscollege> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtscollege> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtscollege> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsgrond> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsgrond> <http://www.w3.org/2000/01/rdf-schema#label> "rechtsgrond"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsgrond> <http://purl.org/vocab/vann/usageNote> "Bijvoorbeeld, de procedure voor de vereenvoudigde vergunningsprocedure is vastgesteld in de artikelen 37 en volgende van het Omgevingsdecreet, zoals van kracht op een bepaalde datum."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsgrond> <http://www.w3.org/2000/01/rdf-schema#comment> "Verwijzingen naar de Juridische Werken die de grondslag vormen van de Procedure."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsgrond> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsgrond> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsgrond> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsobject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsobject> <http://www.w3.org/2000/01/rdf-schema#label> "rechtsobject"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsobject> <http://www.w3.org/2000/01/rdf-schema#comment> "Het voorwerp van de Normatieve Bepaling."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsobject> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsobject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#rechtsobject> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#termijn> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#termijn> <http://www.w3.org/2000/01/rdf-schema#label> "termijn"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#termijn> <http://www.w3.org/2000/01/rdf-schema#comment> "Termijn binnen dewelke de Procedure toegepast mag worden."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#termijn> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#termijn> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#termijn> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Interval> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#toestandDatum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#toestandDatum> <http://www.w3.org/2000/01/rdf-schema#label> "toestand datum"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#toestandDatum> <http://www.w3.org/2000/01/rdf-schema#comment> "Aanduiding van de datum van de Vergunde Toestand."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#toestandDatum> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#toestandDatum> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#toestandDatum> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingTijdstip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingTijdstip> <http://www.w3.org/2000/01/rdf-schema#label> "vaststellingtijdstip"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingTijdstip> <http://www.w3.org/2000/01/rdf-schema#comment> "Tijdstip van vaststelling."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingTijdstip> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingTijdstip> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingTijdstip> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2006/time#Instant> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingVergundeToestand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingVergundeToestand> <http://www.w3.org/2000/01/rdf-schema#label> "vaststelling vergunde toestand"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingVergundeToestand> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingVergundeToestand> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#vaststellingVergundeToestand> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak> <http://www.w3.org/2000/01/rdf-schema#label> "verwanteZaak"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak> <http://purl.org/vocab/vann/usageNote> "Verwantschappen kunnen verschillende doelstellingen hebben. De doelstelling mag een aangegeven worden in een gekwalificeerde relatie."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak> <http://www.w3.org/2000/01/rdf-schema#comment> "Verwijzingen naar verwante Zaken."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/ontology/Case> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak> <http://www.w3.org/2000/01/rdf-schema#range> <https://dbpedia.org/ontology/Case> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verzoekendePartij> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verzoekendePartij> <http://www.w3.org/2000/01/rdf-schema#label> "verzoekende partij"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verzoekendePartij> <http://www.w3.org/2000/01/rdf-schema#comment> "Partij die het Rechtsmiddel aanwendt."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verzoekendePartij> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verzoekendePartij> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#verzoekendePartij> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp> <http://www.w3.org/2000/01/rdf-schema#label> "voorwerp"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp> <http://www.w3.org/2000/01/rdf-schema#comment> "De ruimtelijke bepaling waarvoor de vergunde toestand wordt vastgesteld."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#voorwerp> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling> <http://www.w3.org/2000/01/rdf-schema#label> "zaakhandeling"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling> <http://www.w3.org/2000/01/rdf-schema#domain> <https://dbpedia.org/ontology/Case> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is deel van"@nl .
+<http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "type"@nl .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificator"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> <http://www.w3.org/2000/01/rdf-schema#label> "Aanvraag"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> <http://purl.org/vocab/vann/usageNote> "In de context van omgevingsvergunningen betreft dit alle aanvragen van of met betrekking tot omgevingsvergunningen."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> <http://www.w3.org/2000/01/rdf-schema#comment> "Aanspraak op de uitoefening van een bevoegdheid; formeel verzoek van een rechtssubject aan een bevoegde instantie om informatie te verstrekken of een beslissing te nemen, in het bijzonder een beslissing om ergens toelating voor te verlenen."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Aanvraag> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> <http://www.w3.org/2000/01/rdf-schema#label> "Rechterlijke Uitspraak"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> <http://purl.org/vocab/vann/usageNote> "In de context van omgevingsvergunningen omvat dit de uitspraken van de Raad voor Vergunningsbetwistingen en de Raad van State."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> <http://www.w3.org/2000/01/rdf-schema#comment> "Een formele beslissing of oordeel van een rechtscollege, uitgesproken door een rechter of een panel van rechters."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#RechterlijkeUitspraak> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtscollege> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtscollege> <http://www.w3.org/2000/01/rdf-schema#label> "Rechtscollege"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtscollege> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtscollege> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/PublicOrganisation> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> <http://www.w3.org/2000/01/rdf-schema#label> "Bestuurlijke Rechtshandeling"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> <http://purl.org/vocab/vann/usageNote> "Voorbeelden van eenzijdige bestuurlijke rechtshandelingen zijn: besluiten van algemene strekking, uitvaardiging van voorschriften, beschikkingen zoals erkenningen en vergunningen en aktenamen. Breid deze klasse uit met de nodige specilisaties of typeringen."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> <http://www.w3.org/2000/01/rdf-schema#comment> "Handeling, uitgaande van een bestuur, die de rechtstoestand wijzigt, dan wel belet dat deze wordt gewijzigd."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#BestuurlijkeRechtshandeling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> <http://www.w3.org/2000/01/rdf-schema#label> "Inhoud"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> <http://purl.org/vocab/vann/usageNote> "Kan een verzoek zijn, een melding, een vaststelling, een normatieve bepaling, een procedurele beslissing, enzovoort. Eén rechtshandeling kan meerdere inhoudelijke punten inhouden."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> <http://www.w3.org/2000/01/rdf-schema#comment> "Dat wat een rechtshandeling inhoudt."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> <http://www.w3.org/2000/01/rdf-schema#label> "Instelling Beroep"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> <http://purl.org/vocab/vann/usageNote> "Bijvoorbeeld, de instelling van een administratief beroep tegen een welbepaalde gemeentelijke vergunningsbeslissing in eerste aanleg. Instelling van een jurisdictioneel beroep tegen een welbepaalde beslissing in laatste administratieve aanleg."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> <http://www.w3.org/2000/01/rdf-schema#comment> "Instellen van een beroep met betrekking tot een concrete aanvechtbare Rechtshandeling."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#InstellingBeroep> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> <http://www.w3.org/2000/01/rdf-schema#label> "Juridische Categorie"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> <http://purl.org/vocab/vann/usageNote> "Een juridische kwalificatie gebeurt aan de hand van juridische verwijzingen, nl. verwijzingen naar Juridische Werken. Het is mogelijk om een juridische kwalificatie op verschillende dimensies (bv. een activiteit kwalificeren op vlak van indelingsrubrieken en op vlak van Sevezo-regelgeving) te doen."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> <http://www.w3.org/2000/01/rdf-schema#comment> "Onder Juridische Categorie verstaan we rubrieken, klasseringen of juridisch-verankerde typeringen."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> <http://www.w3.org/2000/01/rdf-schema#label> "Juridische Gebeurtenis"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> <http://purl.org/vocab/vann/usageNote> "Is een abstract klasse: gebruik specialisaties. Deze gebeurtenissen vormen de basis waarop de Vergunde Toestand wordt bepaald."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> <http://www.w3.org/2000/01/rdf-schema#comment> "Rechtsfeiten alsook rechtshandelingen en zaakhandelingen binnen de context van omgevingsvergunning."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://data.europa.eu/m8g/Event> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> <http://www.w3.org/2000/01/rdf-schema#label> "Procedurestap"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> <http://purl.org/vocab/vann/usageNote> "Wordt gebruikt om aan te geven welke soort handeling de Procedure voorschrijft. De Zaakhandeling geeft uitvoering aan de Procedurestap met betrekking tot een concrete Zaak."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> <http://www.w3.org/2000/01/rdf-schema#comment> "Een Procedurestap is een voorgeschreven handeling binnen een Procedure."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> <http://www.w3.org/2000/01/rdf-schema#label> "Beroepsmogelijkheid"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> <http://purl.org/vocab/vann/usageNote> "Mogelijkheid om in beroep te gaaan tegen een gemeentelijke vergunningsbeslissing in eerste aanleg. Of jurisdictioneel beroep tegen een beslissing in laatste administratieve aanleg."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> <http://www.w3.org/2000/01/rdf-schema#comment> "Procedure die de mogelijkheid biedt om een bestuurlijke rechtshandeling of gerechtelijke beslissing aan te vechten."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Beroepsmogelijkheid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> <http://www.w3.org/2000/01/rdf-schema#label> "Vaststelling Vergunde Toestand"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> <http://www.w3.org/2000/01/rdf-schema#comment> "De vaststelling/bepaling van de vergunde toestand op een bepaald moment in de tijd, op basis van de op dat moment beschikbare informatie over relevante rechtsfeiten (omgevingsvergunning:Gebeurtenissen) die op de vergunde toestand van invloed zijn geweest."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VaststellingVergundeToestand> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> <http://www.w3.org/2000/01/rdf-schema#label> "Vergunde Toestand"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> <http://purl.org/vocab/vann/usageNote> "Een vergunde toestand bevat (verwijzingen naar) Normatieve Bepalingen. In de context van de omgevingsvergunning is het voorwerp van de vergunde toestand vaak een Ruimtelijke Eenheid zoals een gebouw, een Perceel of een gebied. Een Vergunde Toestand is onlosmakelijk verbonden met de Vaststelling ervan."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> <http://www.w3.org/2000/01/rdf-schema#comment> "Het geheel van rechten en plichten, voor wat betreft het toepassingsgebied van de omgevingsvergunningen, die op een bepaald moment in de tijd van toepassing zijn op het voorwerp van de vergunde toestand."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#VergundeToestand> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> <http://www.w3.org/2000/01/rdf-schema#label> "Juridisch Werk"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> <http://purl.org/vocab/vann/usageNote> "Omvat o.a. wetgeving en regelgeving, publiek- en privaatrechtelijke rechtshandelingen van rechtscolleges, bestuurlijke instanties en andere rechtssubjecten. Rechtsleer valt hier ook onder, alsook juridische typologieën (Juridische Categorie). Technocratische instrumenten, zoals standaarden, specificaties en implementaties daarvan die een juridische functie vervullen zijn door deze entiteit gedekt. Een Juridisch Werk vindt doorgaans zijn neerslag in één of meer Documenten. De rechtswaarde van een Juridisch Werk hangt o.a. af van het bestaan van een authentieke versie (Document) die is bekendgemaakt volgens de voorziene voorschriften. Breder dan http://data.europa.eu/eli/ontology#LegalResource die beperkt is tot wetgevende werken."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> <http://www.w3.org/2000/01/rdf-schema#comment> "Werken opgemaakt voor juridische doeleinden."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> <http://www.w3.org/2000/01/rdf-schema#label> "Normatieve Bepaling"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> <http://purl.org/vocab/vann/usageNote> "Kan van algemene en individuele strekking zijn. Het kan gaan om een recht of verbintenis."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> <http://www.w3.org/2000/01/rdf-schema#comment> "Een bepaling die een rechtsnorm in het leven roept, wijzigt, beëindigt of bevestigt."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> <http://www.w3.org/2000/01/rdf-schema#label> "Procedure"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> <http://purl.org/vocab/vann/usageNote> "Het bevat Procedurestappen zoals bijvoorbeeld een Rechtsmiddel. De Procedurestappen bepalen wat de mogelijke vervolghandelingen zijn in de Zaak en welke termijnen er gelden. In casemanagement systemen die CMMN implementeren komt deze entiteit overeen met een CasePlanModel."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> <http://www.w3.org/2000/01/rdf-schema#comment> "Een Procedure is de blauwdruk voor de afhandeling van een Zaak."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/cpsv#Rule> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> <http://www.w3.org/2000/01/rdf-schema#label> "Rechtssubject"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> <http://purl.org/vocab/vann/usageNote> "Omvat zowel natuurlijke personen (mensen) als rechtspersonen. Omvat zowel privaat- als publiekrechtelijke entiteiten. Kan contracten aangaan, eigendommen bezitten, aansprakelijk  worden gesteld voor misdaden, enzovoort. In de context van omgevingsvergunningen: de aanvrager van een vergunning, de vergunningverlenende overheid, de Raad voor Vergunningsbetwistingen, de exploitant van een hinderlijke inrichting, de uitvoerder van stedenbouwkundige handelingen, de melder van een onregelmatigheid, enzovoort. Rechtssubject is als begrip gelijkaardig aan OSLO-generiek:Agent (eveneens verzamelnaam voor natuurlijke en rechtspersonen en gedefinieerd als iemand die of iets dat kan handelen of een effect kan teweeg brengen ), maar is enger dan Agent en eigen aan de juridische context (met inbegrip van het bestuursrecht, waaronder het vergunningenbeleid), en geniet omwille van deze juridische connotatie in de context van omgevingsvergunningen dan ook de voorkeur."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> <http://www.w3.org/2000/01/rdf-schema#comment> "Entiteit die aan het recht onderworpen is, die drager is of kan zijn van rechten en plichten (Rechtsverhoudingen), en die in staat wordt geacht om juridische handelingen uit te voeren of in haar naam (voor haar rekening) te laten uitvoeren."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Agent> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> <http://www.w3.org/2000/01/rdf-schema#label> "Activiteit"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> <http://purl.org/vocab/vann/usageNote> "Maakt het voorwerp uit van vergunningsaanvragen, meldingen, vergunningsbesluiten, vaststellingen."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> <http://www.w3.org/2000/01/rdf-schema#comment> "Geheel van handelingen die een of meerdere Rechtssubjecten binnen een welbepaald tijdsbestek en op een welbepaalde locatie ten uitvoer (willen) (laten) brengen en die gezien hun aard te kwalificeren zijn en dus geregeld zijn onder één of meer welbepaalde Juridische Categorieën."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> <http://www.w3.org/2000/01/rdf-schema#label> "Zaakhandeling"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> <http://purl.org/vocab/vann/usageNote> "Het kan gaan om Rechtshandelingen, maar ook administratieve handelingen. In casemanagement systemen die CMMN implementeren komt deze entiteit overeen met een PlanItem."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> <http://www.w3.org/2000/01/rdf-schema#comment> "Een formele handeling die in het kader van een Zaak wordt uitgevoerd."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> <http://www.w3.org/2000/01/rdf-schema#label> "Rechtshandeling"@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> <http://purl.org/vocab/vann/usageNote> "Omvat Bestuurlijke Handeling en Rechterlijke Uitspraken. Omvat ook aanvragen, meldingen, formele vastleggingen en andere administratieve en gerechtelijke rechtshandelingen gepleegd door zowel overheidsinstanties als ook burgers en bedrijven. Omvat ook stilzwijgende handelingen, zoals stilzwijgende aktename of weigering."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> <http://www.w3.org/2000/01/rdf-schema#comment> "Handeling met beoogde rechtsgevolgen. Bewuste actie die gericht is op het tot stand brengen, wijzigen, overdragen, beëindigen of bevestigen van juridische verplichtingen of rechten."@nl .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/omgevingsvergunning> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2000/01/rdf-schema#label> "omgevingsvergunning"@en .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2000/01/rdf-schema#label> "omgevingsvergunning"@nl .
+_:Bc6a9fa31afb7c1c77f37507578eb30b5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B3920468f912314f91ad2bdd6ecb83268 <http://xmlns.com/foaf/0.1/homepage> <https://www.aquafin.be/nl-be/particulieren> .
+_:B3920468f912314f91ad2bdd6ecb83268 <http://xmlns.com/foaf/0.1/name> "Aquafin nv" .
+_:Bc6a9fa31afb7c1c77f37507578eb30b5 <http://schema.org/affiliation> _:B3920468f912314f91ad2bdd6ecb83268 .
+_:Bc6a9fa31afb7c1c77f37507578eb30b5 <http://xmlns.com/foaf/0.1/firstName> "Iggino" .
+_:Bc6a9fa31afb7c1c77f37507578eb30b5 <http://xmlns.com/foaf/0.1/lastName> "Alcide" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bc6a9fa31afb7c1c77f37507578eb30b5 .
+_:Bb8ccb9bca14633dda85135cb53b60a51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B916b99003d6dfc82e3de4d1fbe94173f <http://xmlns.com/foaf/0.1/homepage> <https://www.antwerpen.be/> .
+_:B916b99003d6dfc82e3de4d1fbe94173f <http://xmlns.com/foaf/0.1/name> "Stad Antwerpen" .
+_:Bb8ccb9bca14633dda85135cb53b60a51 <http://schema.org/affiliation> _:B916b99003d6dfc82e3de4d1fbe94173f .
+_:Bb8ccb9bca14633dda85135cb53b60a51 <http://xmlns.com/foaf/0.1/firstName> "Fatiha" .
+_:Bb8ccb9bca14633dda85135cb53b60a51 <http://xmlns.com/foaf/0.1/lastName> "Andichi" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bb8ccb9bca14633dda85135cb53b60a51 .
+_:B766a3f07e60f2b7b0df08eb5a21942a8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B62dec393897e88c250fbba5ed789843a <http://xmlns.com/foaf/0.1/homepage> <https://www.infrabel.be/nl> .
+_:B62dec393897e88c250fbba5ed789843a <http://xmlns.com/foaf/0.1/name> "Infrabel" .
+_:B766a3f07e60f2b7b0df08eb5a21942a8 <http://schema.org/affiliation> _:B62dec393897e88c250fbba5ed789843a .
+_:B766a3f07e60f2b7b0df08eb5a21942a8 <http://xmlns.com/foaf/0.1/firstName> "Marc" .
+_:B766a3f07e60f2b7b0df08eb5a21942a8 <http://xmlns.com/foaf/0.1/lastName> "Beeckman" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B766a3f07e60f2b7b0df08eb5a21942a8 .
+_:Bf38253af44bf1250b4e3a049c7a38356 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B2dabec57b541e7a9fc5b53d832570915 <http://xmlns.com/foaf/0.1/homepage> <https://ovam.vlaanderen.be/> .
+_:B2dabec57b541e7a9fc5b53d832570915 <http://xmlns.com/foaf/0.1/name> "Openbare Vlaamse Afvalstoffenmaatschappij" .
+_:Bf38253af44bf1250b4e3a049c7a38356 <http://schema.org/affiliation> _:B2dabec57b541e7a9fc5b53d832570915 .
+_:Bf38253af44bf1250b4e3a049c7a38356 <http://xmlns.com/foaf/0.1/firstName> "Bruno" .
+_:Bf38253af44bf1250b4e3a049c7a38356 <http://xmlns.com/foaf/0.1/lastName> "Billiaert" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bf38253af44bf1250b4e3a049c7a38356 .
+_:B259e5859caf913fae6726127d9916b73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B2fcd4fcd675bda0ba6c6b08beeeec4c7 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/departement-zorg> .
+_:B2fcd4fcd675bda0ba6c6b08beeeec4c7 <http://xmlns.com/foaf/0.1/name> "Departement Zorg" .
+_:B259e5859caf913fae6726127d9916b73 <http://schema.org/affiliation> _:B2fcd4fcd675bda0ba6c6b08beeeec4c7 .
+_:B259e5859caf913fae6726127d9916b73 <http://xmlns.com/foaf/0.1/firstName> "Inge" .
+_:B259e5859caf913fae6726127d9916b73 <http://xmlns.com/foaf/0.1/lastName> "Bos" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B259e5859caf913fae6726127d9916b73 .
+_:B1758c3843fa2daac9f253d36e4c247dd <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B752e3d264c770d32fb50a5b39be69490 <http://xmlns.com/foaf/0.1/homepage> <https://www.dbrc.be/dbrc> .
+_:B752e3d264c770d32fb50a5b39be69490 <http://xmlns.com/foaf/0.1/name> "Dienst van de Bestuursrechtscolleges" .
+_:B1758c3843fa2daac9f253d36e4c247dd <http://schema.org/affiliation> _:B752e3d264c770d32fb50a5b39be69490 .
+_:B1758c3843fa2daac9f253d36e4c247dd <http://xmlns.com/foaf/0.1/firstName> "Arnoud" .
+_:B1758c3843fa2daac9f253d36e4c247dd <http://xmlns.com/foaf/0.1/lastName> "Buitenhuis" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B1758c3843fa2daac9f253d36e4c247dd .
+_:B6faf82006c4c4b59f9368e0995950c2e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B3976fcc237a76ca04bebfc3b66fe4991 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:B3976fcc237a76ca04bebfc3b66fe4991 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:B6faf82006c4c4b59f9368e0995950c2e <http://schema.org/affiliation> _:B3976fcc237a76ca04bebfc3b66fe4991 .
+_:B6faf82006c4c4b59f9368e0995950c2e <http://xmlns.com/foaf/0.1/firstName> "Ruben" .
+_:B6faf82006c4c4b59f9368e0995950c2e <http://xmlns.com/foaf/0.1/lastName> "Capiau" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B6faf82006c4c4b59f9368e0995950c2e .
+_:B3ece7f3bfb892bd453bb5d6871dd83be <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Ba8ba80803a01445559fad4c983fc2c09 <http://xmlns.com/foaf/0.1/homepage> <https://www.heusden-zolder.be/> .
+_:Ba8ba80803a01445559fad4c983fc2c09 <http://xmlns.com/foaf/0.1/name> "Gemeente Heusden-Zolder" .
+_:B3ece7f3bfb892bd453bb5d6871dd83be <http://schema.org/affiliation> _:Ba8ba80803a01445559fad4c983fc2c09 .
+_:B3ece7f3bfb892bd453bb5d6871dd83be <http://xmlns.com/foaf/0.1/firstName> "Ann" .
+_:B3ece7f3bfb892bd453bb5d6871dd83be <http://xmlns.com/foaf/0.1/lastName> "Cuppens" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B3ece7f3bfb892bd453bb5d6871dd83be .
+_:B199347a6f0bd466d122ea084c77b9e1e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bbf6a5a2e51e8ac2fa2d2e98304ec8e94 <http://xmlns.com/foaf/0.1/homepage> <https://stad.gent/nl> .
+_:Bbf6a5a2e51e8ac2fa2d2e98304ec8e94 <http://xmlns.com/foaf/0.1/name> "Stad Gent" .
+_:B199347a6f0bd466d122ea084c77b9e1e <http://schema.org/affiliation> _:Bbf6a5a2e51e8ac2fa2d2e98304ec8e94 .
+_:B199347a6f0bd466d122ea084c77b9e1e <http://xmlns.com/foaf/0.1/firstName> "Kathleen" .
+_:B199347a6f0bd466d122ea084c77b9e1e <http://xmlns.com/foaf/0.1/lastName> "De Clercq" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B199347a6f0bd466d122ea084c77b9e1e .
+_:B0885b156f65b468711f01174da4afdad <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bbb0068152a1f242ff11823dadbd8e7ee <http://xmlns.com/foaf/0.1/homepage> <https://www.oostende.be/> .
+_:Bbb0068152a1f242ff11823dadbd8e7ee <http://xmlns.com/foaf/0.1/name> "stad Oostende" .
+_:B0885b156f65b468711f01174da4afdad <http://schema.org/affiliation> _:Bbb0068152a1f242ff11823dadbd8e7ee .
+_:B0885b156f65b468711f01174da4afdad <http://xmlns.com/foaf/0.1/firstName> "Joeri" .
+_:B0885b156f65b468711f01174da4afdad <http://xmlns.com/foaf/0.1/lastName> "De Jonghe" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B0885b156f65b468711f01174da4afdad .
+_:Bc0d3fdada6655267ebb27e73ef0db836 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Ba1fc3be10d6b706478623806fd6797a8 <http://xmlns.com/foaf/0.1/homepage> <https://www.farys.be/nl> .
+_:Ba1fc3be10d6b706478623806fd6797a8 <http://xmlns.com/foaf/0.1/name> "FARYS" .
+_:Bc0d3fdada6655267ebb27e73ef0db836 <http://schema.org/affiliation> _:Ba1fc3be10d6b706478623806fd6797a8 .
+_:Bc0d3fdada6655267ebb27e73ef0db836 <http://xmlns.com/foaf/0.1/firstName> "Gwenda" .
+_:Bc0d3fdada6655267ebb27e73ef0db836 <http://xmlns.com/foaf/0.1/lastName> "De Regge" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bc0d3fdada6655267ebb27e73ef0db836 .
+_:B6ebbbb0589c8ec1cd74e2c6f145277bc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B26fd59e99c172ccbcd1e7bae481fbd66 <http://xmlns.com/foaf/0.1/name> "DEVLOED.COM" .
+_:B6ebbbb0589c8ec1cd74e2c6f145277bc <http://schema.org/affiliation> _:B26fd59e99c172ccbcd1e7bae481fbd66 .
+_:B6ebbbb0589c8ec1cd74e2c6f145277bc <http://xmlns.com/foaf/0.1/firstName> "Boris" .
+_:B6ebbbb0589c8ec1cd74e2c6f145277bc <http://xmlns.com/foaf/0.1/lastName> "De Vloed" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B6ebbbb0589c8ec1cd74e2c6f145277bc .
+_:B38308a6c67238d99e9d7c273e25e124d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Be3c3c42ed95ebd74a0eccd4cd39a49f8 <http://xmlns.com/foaf/0.1/homepage> <https://www.geoit.be/en> .
+_:Be3c3c42ed95ebd74a0eccd4cd39a49f8 <http://xmlns.com/foaf/0.1/name> "Geo-IT" .
+_:B38308a6c67238d99e9d7c273e25e124d <http://schema.org/affiliation> _:Be3c3c42ed95ebd74a0eccd4cd39a49f8 .
+_:B38308a6c67238d99e9d7c273e25e124d <http://xmlns.com/foaf/0.1/firstName> "Wouter" .
+_:B38308a6c67238d99e9d7c273e25e124d <http://xmlns.com/foaf/0.1/lastName> "De Wilde" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B38308a6c67238d99e9d7c273e25e124d .
+_:B435311204d2cb9318cc1a26ffbd3d442 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B98ccc4a83f317a243989a41cfa8e88fe <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/departement-zorg> .
+_:B98ccc4a83f317a243989a41cfa8e88fe <http://xmlns.com/foaf/0.1/name> "Departement Zorg" .
+_:B435311204d2cb9318cc1a26ffbd3d442 <http://schema.org/affiliation> _:B98ccc4a83f317a243989a41cfa8e88fe .
+_:B435311204d2cb9318cc1a26ffbd3d442 <http://xmlns.com/foaf/0.1/firstName> "Tim" .
+_:B435311204d2cb9318cc1a26ffbd3d442 <http://xmlns.com/foaf/0.1/lastName> "De Winter" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B435311204d2cb9318cc1a26ffbd3d442 .
+_:B77e82ebd3f72b5031ae3db1c9efcd2fb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B77e82ebd3f72b5031ae3db1c9efcd2fb <http://xmlns.com/foaf/0.1/firstName> "Manja" .
+_:B77e82ebd3f72b5031ae3db1c9efcd2fb <http://xmlns.com/foaf/0.1/lastName> "Decat" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B77e82ebd3f72b5031ae3db1c9efcd2fb .
+_:Bbafa357e084ec08836289b11a0894769 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bc9b2ed91d82a8230ed36caa058ff73df <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaio.be/nl> .
+_:Bc9b2ed91d82a8230ed36caa058ff73df <http://xmlns.com/foaf/0.1/name> "Agentschap Innoveren en Ondernemen - Oost-Vlaanderen" .
+_:Bbafa357e084ec08836289b11a0894769 <http://schema.org/affiliation> _:Bc9b2ed91d82a8230ed36caa058ff73df .
+_:Bbafa357e084ec08836289b11a0894769 <http://xmlns.com/foaf/0.1/firstName> "Els" .
+_:Bbafa357e084ec08836289b11a0894769 <http://xmlns.com/foaf/0.1/lastName> "Demil" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bbafa357e084ec08836289b11a0894769 .
+_:Bfca0f221c58f6567ded982755d66fac0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Be907d63227101ce9ee4f6c13bb614a69 <http://xmlns.com/foaf/0.1/homepage> <https://athumi.be/> .
+_:Be907d63227101ce9ee4f6c13bb614a69 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:Bfca0f221c58f6567ded982755d66fac0 <http://schema.org/affiliation> _:Be907d63227101ce9ee4f6c13bb614a69 .
+_:Bfca0f221c58f6567ded982755d66fac0 <http://xmlns.com/foaf/0.1/firstName> "Evelyne" .
+_:Bfca0f221c58f6567ded982755d66fac0 <http://xmlns.com/foaf/0.1/lastName> "Devos" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bfca0f221c58f6567ded982755d66fac0 .
+_:B8a4ddf6e6b804779afc611b3d7a77835 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B571523f7d1c922d4aceb87a34a20446d <http://xmlns.com/foaf/0.1/homepage> <https://www.west-vlaanderen.be/> .
+_:B571523f7d1c922d4aceb87a34a20446d <http://xmlns.com/foaf/0.1/name> "Provincie West-Vlaanderen" .
+_:B8a4ddf6e6b804779afc611b3d7a77835 <http://schema.org/affiliation> _:B571523f7d1c922d4aceb87a34a20446d .
+_:B8a4ddf6e6b804779afc611b3d7a77835 <http://xmlns.com/foaf/0.1/firstName> "Koen" .
+_:B8a4ddf6e6b804779afc611b3d7a77835 <http://xmlns.com/foaf/0.1/lastName> "Dewulf" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B8a4ddf6e6b804779afc611b3d7a77835 .
+_:B174d52fa5934ab4a561ae0c89e55c269 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bb5f2996412e8fb3a0503ff64ba80dbdc <http://xmlns.com/foaf/0.1/homepage> <https://leuven.be/> .
+_:Bb5f2996412e8fb3a0503ff64ba80dbdc <http://xmlns.com/foaf/0.1/name> "Stad Leuven" .
+_:B174d52fa5934ab4a561ae0c89e55c269 <http://schema.org/affiliation> _:Bb5f2996412e8fb3a0503ff64ba80dbdc .
+_:B174d52fa5934ab4a561ae0c89e55c269 <http://xmlns.com/foaf/0.1/firstName> "Leslie" .
+_:B174d52fa5934ab4a561ae0c89e55c269 <http://xmlns.com/foaf/0.1/lastName> "Engelen" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B174d52fa5934ab4a561ae0c89e55c269 .
+_:B76234fa02773256fb7750e067fa4f073 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B58c445a0a89607014bc01dcff37fecbc <http://xmlns.com/foaf/0.1/homepage> <https://omgeving.vlaanderen.be/> .
+_:B58c445a0a89607014bc01dcff37fecbc <http://xmlns.com/foaf/0.1/name> "Departement Omgeving" .
+_:B76234fa02773256fb7750e067fa4f073 <http://schema.org/affiliation> _:B58c445a0a89607014bc01dcff37fecbc .
+_:B76234fa02773256fb7750e067fa4f073 <http://xmlns.com/foaf/0.1/firstName> "Virgini" .
+_:B76234fa02773256fb7750e067fa4f073 <http://xmlns.com/foaf/0.1/lastName> "Geranios" .
+_:B76234fa02773256fb7750e067fa4f073 <http://xmlns.com/foaf/0.1/mbox> <mailto:virgini.geranios@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B76234fa02773256fb7750e067fa4f073 .
+_:B3e43b17a5f2f334a3ac1bcc951322131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B3e43b17a5f2f334a3ac1bcc951322131 <http://xmlns.com/foaf/0.1/firstName> "Lieve" .
+_:B3e43b17a5f2f334a3ac1bcc951322131 <http://xmlns.com/foaf/0.1/lastName> "Gielis" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B3e43b17a5f2f334a3ac1bcc951322131 .
+_:B4b75443fd046204495c80aec4c67f8cb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B4b1139a276a4c6466f99496ccb488d5c <http://xmlns.com/foaf/0.1/homepage> <https://www.dbrc.be/dbrc> .
+_:B4b1139a276a4c6466f99496ccb488d5c <http://xmlns.com/foaf/0.1/name> "Dienst van de Bestuursrechtscolleges" .
+_:B4b75443fd046204495c80aec4c67f8cb <http://schema.org/affiliation> _:B4b1139a276a4c6466f99496ccb488d5c .
+_:B4b75443fd046204495c80aec4c67f8cb <http://xmlns.com/foaf/0.1/firstName> "Jens" .
+_:B4b75443fd046204495c80aec4c67f8cb <http://xmlns.com/foaf/0.1/lastName> "Hoofd" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B4b75443fd046204495c80aec4c67f8cb .
+_:B32e0ad33a198bc9ec5ed539963af94f0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B840de7c5c5471a5ba7d47a2eb1655ac6 <http://xmlns.com/foaf/0.1/homepage> <https://www.mechelen.be/> .
+_:B840de7c5c5471a5ba7d47a2eb1655ac6 <http://xmlns.com/foaf/0.1/name> "Stad Mechelen" .
+_:B32e0ad33a198bc9ec5ed539963af94f0 <http://schema.org/affiliation> _:B840de7c5c5471a5ba7d47a2eb1655ac6 .
+_:B32e0ad33a198bc9ec5ed539963af94f0 <http://xmlns.com/foaf/0.1/firstName> "Luc" .
+_:B32e0ad33a198bc9ec5ed539963af94f0 <http://xmlns.com/foaf/0.1/lastName> "Janssens" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B32e0ad33a198bc9ec5ed539963af94f0 .
+_:B18e9663a679361172c8feaecbd4133d9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bdc680f0f1d9a11e8731e28f65d088a2c <http://xmlns.com/foaf/0.1/homepage> <https://www.heusden-zolder.be/> .
+_:Bdc680f0f1d9a11e8731e28f65d088a2c <http://xmlns.com/foaf/0.1/name> "Gemeente Heusden-Zolder" .
+_:B18e9663a679361172c8feaecbd4133d9 <http://schema.org/affiliation> _:Bdc680f0f1d9a11e8731e28f65d088a2c .
+_:B18e9663a679361172c8feaecbd4133d9 <http://xmlns.com/foaf/0.1/firstName> "Els" .
+_:B18e9663a679361172c8feaecbd4133d9 <http://xmlns.com/foaf/0.1/lastName> "Jennen" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B18e9663a679361172c8feaecbd4133d9 .
+_:B7b439a8354db044227a786e8c2c568dc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B7b439a8354db044227a786e8c2c568dc <http://xmlns.com/foaf/0.1/firstName> "Philippe" .
+_:B7b439a8354db044227a786e8c2c568dc <http://xmlns.com/foaf/0.1/lastName> "Kempf" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B7b439a8354db044227a786e8c2c568dc .
+_:B831fa38875331d7df65d343e82bc3a4e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B0a168903b50da5d527b769188a24f57f <http://xmlns.com/foaf/0.1/homepage> <https://www.wienerberger.be/> .
+_:B0a168903b50da5d527b769188a24f57f <http://xmlns.com/foaf/0.1/name> "Wienerberger NV" .
+_:B831fa38875331d7df65d343e82bc3a4e <http://schema.org/affiliation> _:B0a168903b50da5d527b769188a24f57f .
+_:B831fa38875331d7df65d343e82bc3a4e <http://xmlns.com/foaf/0.1/firstName> "Nick" .
+_:B831fa38875331d7df65d343e82bc3a4e <http://xmlns.com/foaf/0.1/lastName> "Kiekens" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B831fa38875331d7df65d343e82bc3a4e .
+_:B48e104424f7ad660877c365a95c0138d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B44bb2457a66aff10b599d91d0b45d026 <http://xmlns.com/foaf/0.1/homepage> <https://lv.vlaanderen.be/> .
+_:B44bb2457a66aff10b599d91d0b45d026 <http://xmlns.com/foaf/0.1/name> "Departement Landbouw en Visserij" .
+_:B48e104424f7ad660877c365a95c0138d <http://schema.org/affiliation> _:B44bb2457a66aff10b599d91d0b45d026 .
+_:B48e104424f7ad660877c365a95c0138d <http://xmlns.com/foaf/0.1/firstName> "Bart" .
+_:B48e104424f7ad660877c365a95c0138d <http://xmlns.com/foaf/0.1/lastName> "Laridon" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B48e104424f7ad660877c365a95c0138d .
+_:B92c1c1e9da6aef3d3077c4840b48c87f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B38330bb0b6a35fd62b607b8d5b25ea53 <http://xmlns.com/foaf/0.1/homepage> <https://www.infrabel.be/nl> .
+_:B38330bb0b6a35fd62b607b8d5b25ea53 <http://xmlns.com/foaf/0.1/name> "Infrabel" .
+_:B92c1c1e9da6aef3d3077c4840b48c87f <http://schema.org/affiliation> _:B38330bb0b6a35fd62b607b8d5b25ea53 .
+_:B92c1c1e9da6aef3d3077c4840b48c87f <http://xmlns.com/foaf/0.1/firstName> "Bram" .
+_:B92c1c1e9da6aef3d3077c4840b48c87f <http://xmlns.com/foaf/0.1/lastName> "Leroy" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B92c1c1e9da6aef3d3077c4840b48c87f .
+_:B2eb45ec2420ed537b14a3286a92ff7e6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B2bb0dd7185740311c6e73f7ab7b2ea84 <http://xmlns.com/foaf/0.1/homepage> <https://ovam.vlaanderen.be/> .
+_:B2bb0dd7185740311c6e73f7ab7b2ea84 <http://xmlns.com/foaf/0.1/name> "Openbare Vlaamse Afvalstoffenmaatschappij" .
+_:B2eb45ec2420ed537b14a3286a92ff7e6 <http://schema.org/affiliation> _:B2bb0dd7185740311c6e73f7ab7b2ea84 .
+_:B2eb45ec2420ed537b14a3286a92ff7e6 <http://xmlns.com/foaf/0.1/firstName> "Tim" .
+_:B2eb45ec2420ed537b14a3286a92ff7e6 <http://xmlns.com/foaf/0.1/lastName> "Lieben" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B2eb45ec2420ed537b14a3286a92ff7e6 .
+_:B6013c47db09b69bd136779068bda344a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B500d043166d490bf780194c99bffa08d <http://xmlns.com/foaf/0.1/homepage> <https://www.vlario.be/> .
+_:B500d043166d490bf780194c99bffa08d <http://xmlns.com/foaf/0.1/name> "VLARIO" .
+_:B6013c47db09b69bd136779068bda344a <http://schema.org/affiliation> _:B500d043166d490bf780194c99bffa08d .
+_:B6013c47db09b69bd136779068bda344a <http://xmlns.com/foaf/0.1/firstName> "Riet" .
+_:B6013c47db09b69bd136779068bda344a <http://xmlns.com/foaf/0.1/lastName> "Lismont" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B6013c47db09b69bd136779068bda344a .
+_:B8af6c1401e3209c5bd7ca04231fc5f46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B89bcfdbf5e3b532fb66af4c018dce1ae <http://xmlns.com/foaf/0.1/homepage> <https://vlaamsbrabant.be/nl> .
+_:B89bcfdbf5e3b532fb66af4c018dce1ae <http://xmlns.com/foaf/0.1/name> "Provincie Vlaams-Brabant" .
+_:B8af6c1401e3209c5bd7ca04231fc5f46 <http://schema.org/affiliation> _:B89bcfdbf5e3b532fb66af4c018dce1ae .
+_:B8af6c1401e3209c5bd7ca04231fc5f46 <http://xmlns.com/foaf/0.1/firstName> "Sophie" .
+_:B8af6c1401e3209c5bd7ca04231fc5f46 <http://xmlns.com/foaf/0.1/lastName> "Meirens" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B8af6c1401e3209c5bd7ca04231fc5f46 .
+_:B5a5a27693fc5ce1a9e95190e7733b454 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bc41ac3e88b67b9d82612dcd07a55c599 <http://xmlns.com/foaf/0.1/homepage> <https://www.vmm.be/> .
+_:Bc41ac3e88b67b9d82612dcd07a55c599 <http://xmlns.com/foaf/0.1/name> "Vlaamse Milieumaatschappij" .
+_:B5a5a27693fc5ce1a9e95190e7733b454 <http://schema.org/affiliation> _:Bc41ac3e88b67b9d82612dcd07a55c599 .
+_:B5a5a27693fc5ce1a9e95190e7733b454 <http://xmlns.com/foaf/0.1/firstName> "Jurgen" .
+_:B5a5a27693fc5ce1a9e95190e7733b454 <http://xmlns.com/foaf/0.1/lastName> "Meirlaen" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B5a5a27693fc5ce1a9e95190e7733b454 .
+_:Bae65935d4c30e5bf7a8272712a63bea6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B0f5146020956ec0d05c229b19d707745 <http://xmlns.com/foaf/0.1/homepage> <https://www.provincieantwerpen.be/> .
+_:B0f5146020956ec0d05c229b19d707745 <http://xmlns.com/foaf/0.1/name> "Provincie Antwerpen" .
+_:Bae65935d4c30e5bf7a8272712a63bea6 <http://schema.org/affiliation> _:B0f5146020956ec0d05c229b19d707745 .
+_:Bae65935d4c30e5bf7a8272712a63bea6 <http://xmlns.com/foaf/0.1/firstName> "Britt" .
+_:Bae65935d4c30e5bf7a8272712a63bea6 <http://xmlns.com/foaf/0.1/lastName> "Mertens" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bae65935d4c30e5bf7a8272712a63bea6 .
+_:B6ff557ad6c9cde92593a1576907475fb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B5ab34ff88f3a2adbcb781a2f8d806f0a <http://xmlns.com/foaf/0.1/homepage> <https://www.brugge.be/> .
+_:B5ab34ff88f3a2adbcb781a2f8d806f0a <http://xmlns.com/foaf/0.1/name> "Stad Brugge" .
+_:B6ff557ad6c9cde92593a1576907475fb <http://schema.org/affiliation> _:B5ab34ff88f3a2adbcb781a2f8d806f0a .
+_:B6ff557ad6c9cde92593a1576907475fb <http://xmlns.com/foaf/0.1/firstName> "Mathieu" .
+_:B6ff557ad6c9cde92593a1576907475fb <http://xmlns.com/foaf/0.1/lastName> "Nollet" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B6ff557ad6c9cde92593a1576907475fb .
+_:Bd29b976495d739c9cc265ca351f7748f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B91414c417862603ff23ea605959e2854 <http://xmlns.com/foaf/0.1/homepage> <https://wegenenverkeer.be/> .
+_:B91414c417862603ff23ea605959e2854 <http://xmlns.com/foaf/0.1/name> "Agentschap Wegen en Verkeer" .
+_:Bd29b976495d739c9cc265ca351f7748f <http://schema.org/affiliation> _:B91414c417862603ff23ea605959e2854 .
+_:Bd29b976495d739c9cc265ca351f7748f <http://xmlns.com/foaf/0.1/firstName> "Timothy" .
+_:Bd29b976495d739c9cc265ca351f7748f <http://xmlns.com/foaf/0.1/lastName> "Nuttens" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bd29b976495d739c9cc265ca351f7748f .
+_:Baa17589296f5052ac256f3ce1e4e1828 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B94c614fc33a5a7b537c7e0293a57a99c <http://xmlns.com/foaf/0.1/homepage> <https://www.vmx.be/> .
+_:B94c614fc33a5a7b537c7e0293a57a99c <http://xmlns.com/foaf/0.1/name> "VMx" .
+_:Baa17589296f5052ac256f3ce1e4e1828 <http://schema.org/affiliation> _:B94c614fc33a5a7b537c7e0293a57a99c .
+_:Baa17589296f5052ac256f3ce1e4e1828 <http://xmlns.com/foaf/0.1/firstName> "Nicole" .
+_:Baa17589296f5052ac256f3ce1e4e1828 <http://xmlns.com/foaf/0.1/lastName> "Otten" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Baa17589296f5052ac256f3ce1e4e1828 .
+_:B7e415c80a26c66bccc2a516e4749ec73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B80e0f6db5d72f04d7b5acc79fb8e2853 <http://xmlns.com/foaf/0.1/homepage> <https://www.ibz.be/nl> .
+_:B80e0f6db5d72f04d7b5acc79fb8e2853 <http://xmlns.com/foaf/0.1/name> "Federale Overheidsdienst Binnenlandse Zaken" .
+_:B7e415c80a26c66bccc2a516e4749ec73 <http://schema.org/affiliation> _:B80e0f6db5d72f04d7b5acc79fb8e2853 .
+_:B7e415c80a26c66bccc2a516e4749ec73 <http://xmlns.com/foaf/0.1/firstName> "Peter" .
+_:B7e415c80a26c66bccc2a516e4749ec73 <http://xmlns.com/foaf/0.1/lastName> "Pollet" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B7e415c80a26c66bccc2a516e4749ec73 .
+_:Be93b68c7a06ff10ad75b4d6fcb26e5ba <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Be93b68c7a06ff10ad75b4d6fcb26e5ba <http://xmlns.com/foaf/0.1/firstName> "Petra" .
+_:Be93b68c7a06ff10ad75b4d6fcb26e5ba <http://xmlns.com/foaf/0.1/lastName> "Romelart" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Be93b68c7a06ff10ad75b4d6fcb26e5ba .
+_:B7a79c3e56877a1ad7acf93474153c264 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bdeadf9502d527c0d261ed9f0d2fcd62c <http://xmlns.com/foaf/0.1/homepage> <https://www.provincieantwerpen.be/> .
+_:Bdeadf9502d527c0d261ed9f0d2fcd62c <http://xmlns.com/foaf/0.1/name> "Provincie Antwerpen" .
+_:B7a79c3e56877a1ad7acf93474153c264 <http://schema.org/affiliation> _:Bdeadf9502d527c0d261ed9f0d2fcd62c .
+_:B7a79c3e56877a1ad7acf93474153c264 <http://xmlns.com/foaf/0.1/firstName> "Pieter" .
+_:B7a79c3e56877a1ad7acf93474153c264 <http://xmlns.com/foaf/0.1/lastName> "Sannen" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B7a79c3e56877a1ad7acf93474153c264 .
+_:B183182cabeea2c3603c6afe7d056b508 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bc4a1c89f3cebac6eb90c4e1e6b06e60a <http://xmlns.com/foaf/0.1/homepage> <https://www.provincieantwerpen.be/> .
+_:Bc4a1c89f3cebac6eb90c4e1e6b06e60a <http://xmlns.com/foaf/0.1/name> "Provincie Antwerpen" .
+_:B183182cabeea2c3603c6afe7d056b508 <http://schema.org/affiliation> _:Bc4a1c89f3cebac6eb90c4e1e6b06e60a .
+_:B183182cabeea2c3603c6afe7d056b508 <http://xmlns.com/foaf/0.1/firstName> "Liesbeth" .
+_:B183182cabeea2c3603c6afe7d056b508 <http://xmlns.com/foaf/0.1/lastName> "Scheerlinck" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B183182cabeea2c3603c6afe7d056b508 .
+_:B1fcaef73e30e1742b28507ba5d6bc12f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B4f2ab7a6c579c239c3b32a3be7950edb <http://xmlns.com/foaf/0.1/homepage> <https://omgeving.vlaanderen.be/> .
+_:B4f2ab7a6c579c239c3b32a3be7950edb <http://xmlns.com/foaf/0.1/name> "Departement Omgeving" .
+_:B1fcaef73e30e1742b28507ba5d6bc12f <http://schema.org/affiliation> _:B4f2ab7a6c579c239c3b32a3be7950edb .
+_:B1fcaef73e30e1742b28507ba5d6bc12f <http://xmlns.com/foaf/0.1/firstName> "Frieke" .
+_:B1fcaef73e30e1742b28507ba5d6bc12f <http://xmlns.com/foaf/0.1/lastName> "Segers" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B1fcaef73e30e1742b28507ba5d6bc12f .
+_:Bf44e17b86653088750c0857c3dda3b4e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bbb17c39b84bb10b6288a731f73de54d2 <http://xmlns.com/foaf/0.1/homepage> <https://www.digipolisantwerpen.be/> .
+_:Bbb17c39b84bb10b6288a731f73de54d2 <http://xmlns.com/foaf/0.1/name> "AG Digipolis Antwerpen" .
+_:Bf44e17b86653088750c0857c3dda3b4e <http://schema.org/affiliation> _:Bbb17c39b84bb10b6288a731f73de54d2 .
+_:Bf44e17b86653088750c0857c3dda3b4e <http://xmlns.com/foaf/0.1/firstName> "Daniel" .
+_:Bf44e17b86653088750c0857c3dda3b4e <http://xmlns.com/foaf/0.1/lastName> "Sevenhans" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bf44e17b86653088750c0857c3dda3b4e .
+_:Bfa61953a0f1c813c801f00687a91266f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B767e9daec0d7791c76e2f46c25f45044 <http://xmlns.com/foaf/0.1/homepage> <https://leuven.be/> .
+_:B767e9daec0d7791c76e2f46c25f45044 <http://xmlns.com/foaf/0.1/name> "Stad Leuven" .
+_:Bfa61953a0f1c813c801f00687a91266f <http://schema.org/affiliation> _:B767e9daec0d7791c76e2f46c25f45044 .
+_:Bfa61953a0f1c813c801f00687a91266f <http://xmlns.com/foaf/0.1/firstName> "Amelie" .
+_:Bfa61953a0f1c813c801f00687a91266f <http://xmlns.com/foaf/0.1/lastName> "Simeon" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bfa61953a0f1c813c801f00687a91266f .
+_:B0e41fb7e1490178f0402ce1467b179d4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Ba685d03d418a03b4ca1e79ec0b31752c <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/agentschap-binnenlands-bestuur> .
+_:Ba685d03d418a03b4ca1e79ec0b31752c <http://xmlns.com/foaf/0.1/name> "Agentschap Binnenlands Bestuur" .
+_:B0e41fb7e1490178f0402ce1467b179d4 <http://schema.org/affiliation> _:Ba685d03d418a03b4ca1e79ec0b31752c .
+_:B0e41fb7e1490178f0402ce1467b179d4 <http://xmlns.com/foaf/0.1/firstName> "Bart" .
+_:B0e41fb7e1490178f0402ce1467b179d4 <http://xmlns.com/foaf/0.1/lastName> "Stichelmans" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B0e41fb7e1490178f0402ce1467b179d4 .
+_:B4489e7c7b8544a31c6c58260ee8ee356 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B47643b8242d8097bfbb88edf71800401 <http://xmlns.com/foaf/0.1/homepage> <https://www.pidpa.be/> .
+_:B47643b8242d8097bfbb88edf71800401 <http://xmlns.com/foaf/0.1/name> "PIDPA" .
+_:B4489e7c7b8544a31c6c58260ee8ee356 <http://schema.org/affiliation> _:B47643b8242d8097bfbb88edf71800401 .
+_:B4489e7c7b8544a31c6c58260ee8ee356 <http://xmlns.com/foaf/0.1/firstName> "Nele" .
+_:B4489e7c7b8544a31c6c58260ee8ee356 <http://xmlns.com/foaf/0.1/lastName> "Struyfs" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B4489e7c7b8544a31c6c58260ee8ee356 .
+_:Babc2a9157dbf020fbb5e48c4024c90e0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B9d76c63c14c25ab999d5476b61efff48 <http://xmlns.com/foaf/0.1/homepage> <https://omgeving.vlaanderen.be/> .
+_:B9d76c63c14c25ab999d5476b61efff48 <http://xmlns.com/foaf/0.1/name> "Departement Omgeving" .
+_:Babc2a9157dbf020fbb5e48c4024c90e0 <http://schema.org/affiliation> _:B9d76c63c14c25ab999d5476b61efff48 .
+_:Babc2a9157dbf020fbb5e48c4024c90e0 <http://xmlns.com/foaf/0.1/firstName> "Jos" .
+_:Babc2a9157dbf020fbb5e48c4024c90e0 <http://xmlns.com/foaf/0.1/lastName> "Tits" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Babc2a9157dbf020fbb5e48c4024c90e0 .
+_:Be9ddbbad170257815fc2066e4e6632e3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Be9ddbbad170257815fc2066e4e6632e3 <http://xmlns.com/foaf/0.1/firstName> "Piet" .
+_:Be9ddbbad170257815fc2066e4e6632e3 <http://xmlns.com/foaf/0.1/lastName> "Van Houtte" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Be9ddbbad170257815fc2066e4e6632e3 .
+_:B388a19fde7f5121420e38dee2fc76841 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B99faef11a7a4ca891c8741048b4ca78c <http://xmlns.com/foaf/0.1/homepage> <https://lv.vlaanderen.be/> .
+_:B99faef11a7a4ca891c8741048b4ca78c <http://xmlns.com/foaf/0.1/name> "Departement Landbouw en Visserij" .
+_:B388a19fde7f5121420e38dee2fc76841 <http://schema.org/affiliation> _:B99faef11a7a4ca891c8741048b4ca78c .
+_:B388a19fde7f5121420e38dee2fc76841 <http://xmlns.com/foaf/0.1/firstName> "Ine" .
+_:B388a19fde7f5121420e38dee2fc76841 <http://xmlns.com/foaf/0.1/lastName> "Van Immerzeele" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B388a19fde7f5121420e38dee2fc76841 .
+_:Bcaae1ed7f7cb17a338dad3dabaa0c5aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B7dad8fbb66b8bd5fc02042510dced90b <http://xmlns.com/foaf/0.1/homepage> <https://www.antwerpen.be/> .
+_:B7dad8fbb66b8bd5fc02042510dced90b <http://xmlns.com/foaf/0.1/name> "Stad Antwerpen" .
+_:Bcaae1ed7f7cb17a338dad3dabaa0c5aa <http://schema.org/affiliation> _:B7dad8fbb66b8bd5fc02042510dced90b .
+_:Bcaae1ed7f7cb17a338dad3dabaa0c5aa <http://xmlns.com/foaf/0.1/firstName> "Gert" .
+_:Bcaae1ed7f7cb17a338dad3dabaa0c5aa <http://xmlns.com/foaf/0.1/lastName> "Van Oost" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bcaae1ed7f7cb17a338dad3dabaa0c5aa .
+_:Bc1b3966412f2ccdaea83d6568525fe5b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B07294d462a05eea280a6e889595bdadc <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/departement-zorg> .
+_:B07294d462a05eea280a6e889595bdadc <http://xmlns.com/foaf/0.1/name> "Departement Zorg" .
+_:Bc1b3966412f2ccdaea83d6568525fe5b <http://schema.org/affiliation> _:B07294d462a05eea280a6e889595bdadc .
+_:Bc1b3966412f2ccdaea83d6568525fe5b <http://xmlns.com/foaf/0.1/firstName> "Liesbet" .
+_:Bc1b3966412f2ccdaea83d6568525fe5b <http://xmlns.com/foaf/0.1/lastName> "Van Rooy" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bc1b3966412f2ccdaea83d6568525fe5b .
+_:Bbd140a6159b116db29c23f874dbd85a9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bbd140a6159b116db29c23f874dbd85a9 <http://xmlns.com/foaf/0.1/firstName> "Stefaan" .
+_:Bbd140a6159b116db29c23f874dbd85a9 <http://xmlns.com/foaf/0.1/lastName> "Van Rossum" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bbd140a6159b116db29c23f874dbd85a9 .
+_:B87f58093587568f784c206a6082be18e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B8ac1cf1eaff01a51313bf9e982adfd52 <http://xmlns.com/foaf/0.1/homepage> <https://www.antwerpen.be/> .
+_:B8ac1cf1eaff01a51313bf9e982adfd52 <http://xmlns.com/foaf/0.1/name> "Stad Antwerpen" .
+_:B87f58093587568f784c206a6082be18e <http://schema.org/affiliation> _:B8ac1cf1eaff01a51313bf9e982adfd52 .
+_:B87f58093587568f784c206a6082be18e <http://xmlns.com/foaf/0.1/firstName> "Tessa" .
+_:B87f58093587568f784c206a6082be18e <http://xmlns.com/foaf/0.1/lastName> "Van de Poel" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B87f58093587568f784c206a6082be18e .
+_:B56966232be9cca88129188b7eb259715 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bc65fe1669be3ce2ab1976e3f51dbb3f9 <http://xmlns.com/foaf/0.1/homepage> <https://www.provincieantwerpen.be/> .
+_:Bc65fe1669be3ce2ab1976e3f51dbb3f9 <http://xmlns.com/foaf/0.1/name> "Provincie Antwerpen" .
+_:B56966232be9cca88129188b7eb259715 <http://schema.org/affiliation> _:Bc65fe1669be3ce2ab1976e3f51dbb3f9 .
+_:B56966232be9cca88129188b7eb259715 <http://xmlns.com/foaf/0.1/firstName> "Jo" .
+_:B56966232be9cca88129188b7eb259715 <http://xmlns.com/foaf/0.1/lastName> "Van de Ven" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B56966232be9cca88129188b7eb259715 .
+_:B12edee07a268a8bbf360387d001c333f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Ba3433eb87a1f9596b0082e673d00a3a4 <http://xmlns.com/foaf/0.1/homepage> <https://sirus.be/> .
+_:Ba3433eb87a1f9596b0082e673d00a3a4 <http://xmlns.com/foaf/0.1/name> "Sirus" .
+_:B12edee07a268a8bbf360387d001c333f <http://schema.org/affiliation> _:Ba3433eb87a1f9596b0082e673d00a3a4 .
+_:B12edee07a268a8bbf360387d001c333f <http://xmlns.com/foaf/0.1/firstName> "Brecht" .
+_:B12edee07a268a8bbf360387d001c333f <http://xmlns.com/foaf/0.1/lastName> "Van de Vyvere" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B12edee07a268a8bbf360387d001c333f .
+_:B6a80341fe45a1cd6b681ea3f38599bb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B74abf7f2b5e2b14a3fb8b69fcfc0f069 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaio.be/nl> .
+_:B74abf7f2b5e2b14a3fb8b69fcfc0f069 <http://xmlns.com/foaf/0.1/name> "Agentschap innoveren en ondernemen" .
+_:B6a80341fe45a1cd6b681ea3f38599bb9 <http://schema.org/affiliation> _:B74abf7f2b5e2b14a3fb8b69fcfc0f069 .
+_:B6a80341fe45a1cd6b681ea3f38599bb9 <http://xmlns.com/foaf/0.1/firstName> "Floris" .
+_:B6a80341fe45a1cd6b681ea3f38599bb9 <http://xmlns.com/foaf/0.1/lastName> "Van den Broeck" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B6a80341fe45a1cd6b681ea3f38599bb9 .
+_:B35c0b7f9499ac8e42e4350e54769676c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B2d3db8ff9bbaf59ee6fc9464fd3ab3c2 <http://xmlns.com/foaf/0.1/homepage> <https://www.zemst.be/> .
+_:B2d3db8ff9bbaf59ee6fc9464fd3ab3c2 <http://xmlns.com/foaf/0.1/name> "Gemeente Zemst" .
+_:B35c0b7f9499ac8e42e4350e54769676c <http://schema.org/affiliation> _:B2d3db8ff9bbaf59ee6fc9464fd3ab3c2 .
+_:B35c0b7f9499ac8e42e4350e54769676c <http://xmlns.com/foaf/0.1/firstName> "Laeti" .
+_:B35c0b7f9499ac8e42e4350e54769676c <http://xmlns.com/foaf/0.1/lastName> "Van den Eede" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B35c0b7f9499ac8e42e4350e54769676c .
+_:Bf951f978dc4a4ea7348814a04e89a710 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B212f508b99855e187bf7324b4a091e91 <http://xmlns.com/foaf/0.1/homepage> <https://www.cevi.be/> .
+_:B212f508b99855e187bf7324b4a091e91 <http://xmlns.com/foaf/0.1/name> "CEVI" .
+_:Bf951f978dc4a4ea7348814a04e89a710 <http://schema.org/affiliation> _:B212f508b99855e187bf7324b4a091e91 .
+_:Bf951f978dc4a4ea7348814a04e89a710 <http://xmlns.com/foaf/0.1/firstName> "Hans" .
+_:Bf951f978dc4a4ea7348814a04e89a710 <http://xmlns.com/foaf/0.1/lastName> "Van den Heede" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bf951f978dc4a4ea7348814a04e89a710 .
+_:B3e04d27c7fd3024ef7282c64260fcd4d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Be6b641632985d3ef52f8ba4e78a485b5 <http://xmlns.com/foaf/0.1/homepage> <https://omgeving.vlaanderen.be/> .
+_:Be6b641632985d3ef52f8ba4e78a485b5 <http://xmlns.com/foaf/0.1/name> "Departement Omgeving" .
+_:B3e04d27c7fd3024ef7282c64260fcd4d <http://schema.org/affiliation> _:Be6b641632985d3ef52f8ba4e78a485b5 .
+_:B3e04d27c7fd3024ef7282c64260fcd4d <http://xmlns.com/foaf/0.1/firstName> "Ruben" .
+_:B3e04d27c7fd3024ef7282c64260fcd4d <http://xmlns.com/foaf/0.1/lastName> "Vandewalle" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B3e04d27c7fd3024ef7282c64260fcd4d .
+_:Bbfedc258db51ce19877f27724cfa6581 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B7224355b331a16def56180300e2e374c <http://xmlns.com/foaf/0.1/homepage> <https://ovam.vlaanderen.be/> .
+_:B7224355b331a16def56180300e2e374c <http://xmlns.com/foaf/0.1/name> "Openbare Vlaamse Afvalstoffenmaatschappij" .
+_:Bbfedc258db51ce19877f27724cfa6581 <http://schema.org/affiliation> _:B7224355b331a16def56180300e2e374c .
+_:Bbfedc258db51ce19877f27724cfa6581 <http://xmlns.com/foaf/0.1/firstName> "Bart" .
+_:Bbfedc258db51ce19877f27724cfa6581 <http://xmlns.com/foaf/0.1/lastName> "Vangilbergen" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bbfedc258db51ce19877f27724cfa6581 .
+_:B385540cab18863fc165fc01abdc7c09e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B385540cab18863fc165fc01abdc7c09e <http://xmlns.com/foaf/0.1/firstName> "Geert" .
+_:B385540cab18863fc165fc01abdc7c09e <http://xmlns.com/foaf/0.1/lastName> "Vanhaute" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B385540cab18863fc165fc01abdc7c09e .
+_:B912fc279f098635b77f5bb1bf8a66218 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B891d14ff66827f666c6c9b0e0cec6593 <http://xmlns.com/foaf/0.1/homepage> <https://vlaamsbrabant.be/nl> .
+_:B891d14ff66827f666c6c9b0e0cec6593 <http://xmlns.com/foaf/0.1/name> "Provincie Vlaams-Brabant" .
+_:B912fc279f098635b77f5bb1bf8a66218 <http://schema.org/affiliation> _:B891d14ff66827f666c6c9b0e0cec6593 .
+_:B912fc279f098635b77f5bb1bf8a66218 <http://xmlns.com/foaf/0.1/firstName> "Petra" .
+_:B912fc279f098635b77f5bb1bf8a66218 <http://xmlns.com/foaf/0.1/lastName> "Vanhercke" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B912fc279f098635b77f5bb1bf8a66218 .
+_:Be50ed4efaab72155da79d947eb919ec7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Be50ed4efaab72155da79d947eb919ec7 <http://xmlns.com/foaf/0.1/firstName> "Tom" .
+_:Be50ed4efaab72155da79d947eb919ec7 <http://xmlns.com/foaf/0.1/lastName> "Vanrensbergen" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Be50ed4efaab72155da79d947eb919ec7 .
+_:Bb56f4af076bf862731550f4eaab6532b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B055a4e9ff48e4b98ea42abe303c65140 <http://xmlns.com/foaf/0.1/homepage> <https://www.agentschapmdk.be/nl> .
+_:B055a4e9ff48e4b98ea42abe303c65140 <http://xmlns.com/foaf/0.1/name> "Agentschap voor Maritieme Dienstverlening en Kust" .
+_:Bb56f4af076bf862731550f4eaab6532b <http://schema.org/affiliation> _:B055a4e9ff48e4b98ea42abe303c65140 .
+_:Bb56f4af076bf862731550f4eaab6532b <http://xmlns.com/foaf/0.1/firstName> "Miran" .
+_:Bb56f4af076bf862731550f4eaab6532b <http://xmlns.com/foaf/0.1/lastName> "Vanwonterghem" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bb56f4af076bf862731550f4eaab6532b .
+_:Bc9f1963e47f01ae0fd36e587ed1db483 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bd836ad8f5c9c491e41e2cf432d41ac63 <http://xmlns.com/foaf/0.1/homepage> <https://www.geoit.be/en> .
+_:Bd836ad8f5c9c491e41e2cf432d41ac63 <http://xmlns.com/foaf/0.1/name> "Geo-IT" .
+_:Bc9f1963e47f01ae0fd36e587ed1db483 <http://schema.org/affiliation> _:Bd836ad8f5c9c491e41e2cf432d41ac63 .
+_:Bc9f1963e47f01ae0fd36e587ed1db483 <http://xmlns.com/foaf/0.1/firstName> "Toon" .
+_:Bc9f1963e47f01ae0fd36e587ed1db483 <http://xmlns.com/foaf/0.1/lastName> "Verbeeck" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:Bc9f1963e47f01ae0fd36e587ed1db483 .
+_:B1083e4ca19a233a57d64e3a5ea604fd9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B66881fb1a522aa5853e6c999a150bec6 <http://xmlns.com/foaf/0.1/homepage> <https://www.vmm.be/> .
+_:B66881fb1a522aa5853e6c999a150bec6 <http://xmlns.com/foaf/0.1/name> "Vlaamse Milieumaatschappij" .
+_:B1083e4ca19a233a57d64e3a5ea604fd9 <http://schema.org/affiliation> _:B66881fb1a522aa5853e6c999a150bec6 .
+_:B1083e4ca19a233a57d64e3a5ea604fd9 <http://xmlns.com/foaf/0.1/firstName> "Bram" .
+_:B1083e4ca19a233a57d64e3a5ea604fd9 <http://xmlns.com/foaf/0.1/lastName> "Vogels" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B1083e4ca19a233a57d64e3a5ea604fd9 .
+_:B6903c8069b6d3472a0801902843546dc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B4a3b219f717ee77737adb5f816d454a3 <http://xmlns.com/foaf/0.1/homepage> <https://remmicom.be/> .
+_:B4a3b219f717ee77737adb5f816d454a3 <http://xmlns.com/foaf/0.1/name> "Remmicom" .
+_:B6903c8069b6d3472a0801902843546dc <http://schema.org/affiliation> _:B4a3b219f717ee77737adb5f816d454a3 .
+_:B6903c8069b6d3472a0801902843546dc <http://xmlns.com/foaf/0.1/firstName> "Bert" .
+_:B6903c8069b6d3472a0801902843546dc <http://xmlns.com/foaf/0.1/lastName> "Welkenhuysen" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/contributor> _:B6903c8069b6d3472a0801902843546dc .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/issued> "TODO" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/license> "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0> .
+_:B7a5162b8c3527f8cfd034f94b0c02d97 <http://xmlns.com/foaf/0.1/homepage> <https://data.vlaanderen.be> .
+_:B7a5162b8c3527f8cfd034f94b0c02d97 <http://xmlns.com/foaf/0.1/mbox> <mailto:oslo@kb.vlaanderen.be> .
+_:B7a5162b8c3527f8cfd034f94b0c02d97 <http://xmlns.com/foaf/0.1/name> "Data Vlaanderen" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://purl.org/dc/terms/mediator> _:B7a5162b8c3527f8cfd034f94b0c02d97 .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://dbpedia.org/ontology/Case> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/isPartOf> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/type> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/adms#identifier> .
+_:B1caf2ca92e96ee82afa852452061fc8c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B7d0103e4b6953390726aba786ddcc06b <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:B7d0103e4b6953390726aba786ddcc06b <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:B1caf2ca92e96ee82afa852452061fc8c <http://schema.org/affiliation> _:B7d0103e4b6953390726aba786ddcc06b .
+_:B1caf2ca92e96ee82afa852452061fc8c <http://xmlns.com/foaf/0.1/firstName> "Veerle" .
+_:B1caf2ca92e96ee82afa852452061fc8c <http://xmlns.com/foaf/0.1/lastName> "Beyaert" .
+_:B1caf2ca92e96ee82afa852452061fc8c <http://xmlns.com/foaf/0.1/mbox> <mailto:veerle.beyaert@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2001/02pd/rec54#editor> _:B1caf2ca92e96ee82afa852452061fc8c .
+_:B602f09d2cc42eebaa0cc70b1a8e3564f <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bacbd367f213803a2253637380cc7b648 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:Bacbd367f213803a2253637380cc7b648 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:B602f09d2cc42eebaa0cc70b1a8e3564f <http://schema.org/affiliation> _:Bacbd367f213803a2253637380cc7b648 .
+_:B602f09d2cc42eebaa0cc70b1a8e3564f <http://xmlns.com/foaf/0.1/firstName> "Raf" .
+_:B602f09d2cc42eebaa0cc70b1a8e3564f <http://xmlns.com/foaf/0.1/lastName> "Buyle" .
+_:B602f09d2cc42eebaa0cc70b1a8e3564f <http://xmlns.com/foaf/0.1/mbox> <mailto:raf.buyle@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2001/02pd/rec54#editor> _:B602f09d2cc42eebaa0cc70b1a8e3564f .
+_:B32a35bb95b27e4ad57ce9c9e73e172d7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B21de0ea8fed33eb6d818f63f43cfbeb8 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:B21de0ea8fed33eb6d818f63f43cfbeb8 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:B32a35bb95b27e4ad57ce9c9e73e172d7 <http://schema.org/affiliation> _:B21de0ea8fed33eb6d818f63f43cfbeb8 .
+_:B32a35bb95b27e4ad57ce9c9e73e172d7 <http://xmlns.com/foaf/0.1/firstName> "Mathieu" .
+_:B32a35bb95b27e4ad57ce9c9e73e172d7 <http://xmlns.com/foaf/0.1/lastName> "Tulpinck" .
+_:B32a35bb95b27e4ad57ce9c9e73e172d7 <http://xmlns.com/foaf/0.1/mbox> <mailto:mathieu.tulpinck@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2001/02pd/rec54#editor> _:B32a35bb95b27e4ad57ce9c9e73e172d7 .
+_:Bdaf8ba279ad2c8b915e7e1fa11fe56ef <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B8707be3b30648d96fc021a4047e3b1e4 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:B8707be3b30648d96fc021a4047e3b1e4 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:Bdaf8ba279ad2c8b915e7e1fa11fe56ef <http://schema.org/affiliation> _:B8707be3b30648d96fc021a4047e3b1e4 .
+_:Bdaf8ba279ad2c8b915e7e1fa11fe56ef <http://xmlns.com/foaf/0.1/firstName> "Liesbeth" .
+_:Bdaf8ba279ad2c8b915e7e1fa11fe56ef <http://xmlns.com/foaf/0.1/lastName> "Van der Haegen" .
+_:Bdaf8ba279ad2c8b915e7e1fa11fe56ef <http://xmlns.com/foaf/0.1/mbox> <mailto:liesbeth.vanderhaegen@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2001/02pd/rec54#editor> _:Bdaf8ba279ad2c8b915e7e1fa11fe56ef .
+_:Bcb29c2ce541b838633ab82afc844a1e6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B5e7018a50074897d860f7d15d1d445ca <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:B5e7018a50074897d860f7d15d1d445ca <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:Bcb29c2ce541b838633ab82afc844a1e6 <http://schema.org/affiliation> _:B5e7018a50074897d860f7d15d1d445ca .
+_:Bcb29c2ce541b838633ab82afc844a1e6 <http://xmlns.com/foaf/0.1/firstName> "Ziggy" .
+_:Bcb29c2ce541b838633ab82afc844a1e6 <http://xmlns.com/foaf/0.1/lastName> "Vanlishout" .
+_:Bcb29c2ce541b838633ab82afc844a1e6 <http://xmlns.com/foaf/0.1/mbox> <mailto:ziggy.vanlishout@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2001/02pd/rec54#editor> _:Bcb29c2ce541b838633ab82afc844a1e6 .
+_:B9a127b85cfc48b20fad93e843267029b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bd468f8bbc6ca1fa4ee3f0fb5acc6717e <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:Bd468f8bbc6ca1fa4ee3f0fb5acc6717e <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:B9a127b85cfc48b20fad93e843267029b <http://schema.org/affiliation> _:Bd468f8bbc6ca1fa4ee3f0fb5acc6717e .
+_:B9a127b85cfc48b20fad93e843267029b <http://xmlns.com/foaf/0.1/firstName> "Laurens" .
+_:B9a127b85cfc48b20fad93e843267029b <http://xmlns.com/foaf/0.1/lastName> "Vercauteren" .
+_:B9a127b85cfc48b20fad93e843267029b <http://xmlns.com/foaf/0.1/mbox> <mailto:laurens.vercauteren@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2001/02pd/rec54#editor> _:B9a127b85cfc48b20fad93e843267029b .
+_:Bb341b50083c47b91fd60cb57deba5975 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B78f4ece587a9088501f46585d08a6c68 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:B78f4ece587a9088501f46585d08a6c68 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:Bb341b50083c47b91fd60cb57deba5975 <http://schema.org/affiliation> _:B78f4ece587a9088501f46585d08a6c68 .
+_:Bb341b50083c47b91fd60cb57deba5975 <http://xmlns.com/foaf/0.1/firstName> "Eveline" .
+_:Bb341b50083c47b91fd60cb57deba5975 <http://xmlns.com/foaf/0.1/lastName> "Vlassenroot" .
+_:Bb341b50083c47b91fd60cb57deba5975 <http://xmlns.com/foaf/0.1/mbox> <mailto:eveline.vlassenroot@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2001/02pd/rec54#editor> _:Bb341b50083c47b91fd60cb57deba5975 .
+_:B6d32cb555b5aa828b43e39e251e6cc65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B0e307164b084f8b5803f2bf24cab45ea <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:B0e307164b084f8b5803f2bf24cab45ea <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:B6d32cb555b5aa828b43e39e251e6cc65 <http://schema.org/affiliation> _:B0e307164b084f8b5803f2bf24cab45ea .
+_:B6d32cb555b5aa828b43e39e251e6cc65 <http://xmlns.com/foaf/0.1/firstName> "Lorenzo " .
+_:B6d32cb555b5aa828b43e39e251e6cc65 <http://xmlns.com/foaf/0.1/lastName> "Vylders" .
+_:B6d32cb555b5aa828b43e39e251e6cc65 <http://xmlns.com/foaf/0.1/mbox> <mailto:lorenzo.vylders@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2001/02pd/rec54#editor> _:B6d32cb555b5aa828b43e39e251e6cc65 .
+_:B41bacb36076169831ade03c8798faf54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B6957ae9935e22b471960b6b4c34173c9 <http://xmlns.com/foaf/0.1/homepage> <https://www.vlaanderen.be/digitaal-vlaanderen> .
+_:B6957ae9935e22b471960b6b4c34173c9 <http://xmlns.com/foaf/0.1/name> "Digitaal Vlaanderen" .
+_:B41bacb36076169831ade03c8798faf54 <http://schema.org/affiliation> _:B6957ae9935e22b471960b6b4c34173c9 .
+_:B41bacb36076169831ade03c8798faf54 <http://xmlns.com/foaf/0.1/firstName> "Louise" .
+_:B41bacb36076169831ade03c8798faf54 <http://xmlns.com/foaf/0.1/lastName> "Ysewijn" .
+_:B41bacb36076169831ade03c8798faf54 <http://xmlns.com/foaf/0.1/mbox> <mailto:louise.ysewijn@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://www.w3.org/2001/02pd/rec54#editor> _:B41bacb36076169831ade03c8798faf54 .
+_:B062c75204c99e72bc5be76907798ea32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B65500a1236685f2fcfd832ee01d9dd7d <http://xmlns.com/foaf/0.1/homepage> <https://omgeving.vlaanderen.be/> .
+_:B65500a1236685f2fcfd832ee01d9dd7d <http://xmlns.com/foaf/0.1/name> "Departement Omgeving" .
+_:B062c75204c99e72bc5be76907798ea32 <http://schema.org/affiliation> _:B65500a1236685f2fcfd832ee01d9dd7d .
+_:B062c75204c99e72bc5be76907798ea32 <http://xmlns.com/foaf/0.1/firstName> "Kris" .
+_:B062c75204c99e72bc5be76907798ea32 <http://xmlns.com/foaf/0.1/lastName> "Peirelinck" .
+_:B062c75204c99e72bc5be76907798ea32 <http://xmlns.com/foaf/0.1/mbox> <mailto:kris.peirelinck@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://xmlns.com/foaf/0.1/maker> _:B062c75204c99e72bc5be76907798ea32 .
+_:Bcc04621284eda9c51ad8b548b4f4cd60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bcfc847b20ed1002a1d2b331f16ae1374 <http://xmlns.com/foaf/0.1/homepage> <https://omgeving.vlaanderen.be/> .
+_:Bcfc847b20ed1002a1d2b331f16ae1374 <http://xmlns.com/foaf/0.1/name> "Departement Omgeving" .
+_:Bcc04621284eda9c51ad8b548b4f4cd60 <http://schema.org/affiliation> _:Bcfc847b20ed1002a1d2b331f16ae1374 .
+_:Bcc04621284eda9c51ad8b548b4f4cd60 <http://xmlns.com/foaf/0.1/firstName> "Philippe" .
+_:Bcc04621284eda9c51ad8b548b4f4cd60 <http://xmlns.com/foaf/0.1/lastName> "Rutten" .
+_:Bcc04621284eda9c51ad8b548b4f4cd60 <http://xmlns.com/foaf/0.1/mbox> <mailto:philippe.rutten@vlaanderen.be> .
+<https://data.vlaanderen.be/ns/omgevingsvergunning> <http://xmlns.com/foaf/0.1/maker> _:Bcc04621284eda9c51ad8b548b4f4cd60 .

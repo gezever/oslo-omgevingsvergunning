@@ -1,0 +1,40 @@
+prefix graph: <https://data.vlaanderen.be/id/graph/>
+
+
+
+
+    SELECT ?uri_shacl
+    WHERE
+    {
+
+            {graph graph:shacl
+            { ?s ?p ?uri_shacl .
+            FILTER regex(str(?uri_shacl), "https://data.vlaanderen.be/ns/omgevingsvergunning#", "i")
+            FILTER NOT EXISTS {
+                {graph graph:voc
+                { ?uri_shacl ?p ?o.}
+                }
+            }}}
+            UNION
+            {graph graph:shacl
+            { ?s ?uri_shacl ?o .
+            FILTER regex(str(?uri_shacl), "https://data.vlaanderen.be/ns/omgevingsvergunning#", "i")
+            FILTER NOT EXISTS {
+                {graph graph:voc
+                { ?uri_shacl ?p ?o.}
+                }
+            }}}
+            UNION
+            {graph graph:shacl
+            { ?uri_shacl ?p ?o.
+            FILTER regex(str(?uri_shacl), "https://data.vlaanderen.be/ns/omgevingsvergunning#", "i")
+            FILTER NOT EXISTS {
+                {graph graph:voc
+                { ?uri_shacl ?p ?o.}
+                }
+            }}
+            }
+
+
+    }
+

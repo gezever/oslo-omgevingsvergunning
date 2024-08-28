@@ -7,6 +7,7 @@ import fs from "fs";
 import rdfDataset from "@rdfjs/dataset";
 import { dbConfig } from './utils/dbconfig.js';
 import validate from './utils/shacl_validation.js';
+//import add_graph from './utils/triples_to_rdf.js';
 
 
 // const dbConfig = {
@@ -17,7 +18,7 @@ import validate from './utils/shacl_validation.js';
 //     database: '****'
 // };
 
-//console.log = function() {}
+console.log = function() {}
 
 const sortLines = str => Array.from(new Set(str.split(/\r?\n/))).sort().join('\n');
 const reasoner = RoxiReasoner.new();
@@ -29,7 +30,7 @@ await client.connect();
 
 const klassen = ['activiteit_locatie','activiteit', 'handeling', 'zaak']//
 for (let klasse of klassen) {
-    const res = await client.query("select * from b_omv_oslo.virtuoso where klasse = " + "'" + klasse + "' limit 3");
+    const res = await client.query("select * from b_omv_oslo.virtuoso where klasse = " + "'" + klasse + "' limit 100");
     for(var i = 0; i < res.rows.length; i++){
         let json_ld = Object.assign({},res.rows[i].body , {"@context": context})
         fs.writeFileSync('/tmp/radar_oslo' + klasse + i + '.jsonld', JSON.stringify(json_ld, null, 4));
@@ -47,6 +48,7 @@ reasoner.add_rules(fs.readFileSync('n3/adms-rules.n3', 'utf8'));
 reasoner.materialize();
 const ttl_writer = new N3.Writer({ format: 'text/turtle' , prefixes: prefixes });
 const rdf = await sortLines(reasoner.get_abox_dump())
+//const rdf = await add_graph(rdf, '<https://github.com/>')
 const dataset = rdfDataset.dataset()
 const parser = new N3.Parser();
 parser.parse(

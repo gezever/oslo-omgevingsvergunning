@@ -1,0 +1,10 @@
+prefix graph: <https://data.vlaanderen.be/id/graph/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+SELECT DISTINCT ?p
+WHERE
+{
+    { ?p a rdfs:Property}
+}
+
+ORDER BY ?p
