@@ -1,0 +1,15 @@
+{ ?x a <http://purl.org/vocab/cpsv#FormalFramework> } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x a <http://purl.org/vocab/cpsv#Rule> } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+
+
+{ ?x <http://purl.org/vocab/cpsv#follows> ?y } => { ?y a <http://purl.org/vocab/cpsv#Rule> } .
+{ ?x <http://purl.org/vocab/cpsv#hasInput> ?y } => { ?y a <http://purl.org/vocab/cpsv#Input> } .
+{ ?x <http://purl.org/vocab/cpsv#hasRole> ?y } => { ?y a <http://purl.org/vocab/cpsv#PublicService> } .
+{ ?x <http://purl.org/vocab/cpsv#implements> ?y } => { ?y a <http://purl.org/vocab/cpsv#FormalFramework> } .
+{ ?x <http://purl.org/vocab/cpsv#physicallyAvailableAt> ?y } => { ?y a <http://purl.org/dc/terms/Location> } .
+{ ?x <http://purl.org/vocab/cpsv#produces> ?y } => { ?y a <http://purl.org/vocab/cpsv#Output> } .
+
+{ ?x <http://purl.org/vocab/cpsv#follows> ?y } => { ?x a <http://purl.org/vocab/cpsv#PublicService> } .
+{ ?x <http://purl.org/vocab/cpsv#hasRole> ?y } => { ?x a <http://purl.org/dc/terms/Agent> } .
+{ ?x <http://purl.org/vocab/cpsv#implements> ?y } => { ?x a <http://purl.org/vocab/cpsv#Rule> } .
+{ ?x <http://purl.org/vocab/cpsv#physicallyAvailableAt> ?y } => { ?x a <http://purl.org/vocab/cpsv#PublicService> } .
