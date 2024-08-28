@@ -31,9 +31,9 @@ PREFIX zaak_handeling:       <https://data.omv.vlaanderen.be/id/zaakhandeling/>
 
 dbo:Case  rdf:type         "rdfs:Resource";
         adms:identifier    adms:Identifier;
-        omv:procedure      omv:Procedure;
+        omv:procedure      omv:Procedure , <http://purl.org/vocab/cpsv#Rule>;
         omv:verwanteZaak   dbo:Case;
-        omv:zaakhandeling  omv:Rechtshandeling , omv:Zaakhandeling .
+        omv:zaakhandeling  omv:JuridischeGebeurtenis , omv:JuridischWerk , omv:Rechtshandeling , <http://data.europa.eu/m8g/Event> , omv:Zaakhandeling .
 
 omv:Inhoud  rdf:type      "rdfs:Resource";
         <http://uit.te.klaren#modaliteit>
@@ -55,22 +55,47 @@ adms:Identifier  rdf:type  "rdfs:Resource";
         dct:type       "rdfs:Resource";
         skos:notation  "https://data.omv.vlaanderen.be/id/concept/identifier/omgevingsloket_record_id" , "https://data.omv.vlaanderen.be/id/concept/identifier/omv_nummer" , "https://data.omv.vlaanderen.be/id/concept/identifier/voorwerp_id" .
 
+omv:JuridischeGebeurtenis
+        rdf:type          "rdfs:Resource";
+        omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
+        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk .
+
 skos:Concept  rdf:type  "rdfs:Resource" .
+
+omv:JuridischWerk  rdf:type  "rdfs:Resource";
+        <http://uit.te.klaren#modaliteit>
+                "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString";
+        omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
+        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk;
+        omv:rechtsobject  omv:Activiteit .
 
 geo:Geometry  rdf:type  "rdfs:Resource";
         geo:asWKT  "http://www.opengis.net/ont/geosparql#wktLiteral" .
 
 omv:Rechtshandeling  rdf:type  "rdfs:Resource";
         omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
-        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling .
+        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk .
+
+perceel:RuimtelijkeEenheidGeometrie
+        rdf:type   "rdfs:Resource";
+        geo:asWKT  "http://www.opengis.net/ont/geosparql#wktLiteral" .
+
+<http://data.europa.eu/m8g/Event>
+        rdf:type          "rdfs:Resource";
+        omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
+        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk .
 
 perceel:RuimtelijkeEenheid
         rdf:type             "rdfs:Resource";
-        geo:hasGeometry      geo:Geometry;
         adms:identifier      adms:Identifier;
+        perceel:RuimtelijkeEenheid.geometrie
+                geo:Geometry , perceel:RuimtelijkeEenheidGeometrie;
         perceel:RuimtelijkeEenheid.oppervlakte
                 "http://www.w3.org/2001/XMLSchema#integer";
         perceel:landgebruik  skos:Concept .
+
+<http://purl.org/vocab/cpsv#Rule>
+        rdf:type  "rdfs:Resource" .
 
 omv:Activiteit  rdf:type            "rdfs:Resource";
         omv:juridischeKwalificatie  "rdfs:Resource";
@@ -78,4 +103,4 @@ omv:Activiteit  rdf:type            "rdfs:Resource";
 
 omv:Zaakhandeling  rdf:type  "rdfs:Resource";
         omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
-        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling .
+        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk .
