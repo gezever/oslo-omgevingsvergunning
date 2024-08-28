@@ -1,0 +1,76 @@
+{ ?x <http://purl.org/vocab/frbr/core#abridgement> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#abridgementOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#alternate> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#alternateOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#arrangement> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#arrangementOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#creator> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Work> } .
+{ ?x <http://purl.org/vocab/frbr/core#creatorOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#embodiment> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#embodimentOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#exemplar> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#exemplarOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Item> } .
+{ ?x <http://purl.org/vocab/frbr/core#owner> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Item> } .
+{ ?x <http://purl.org/vocab/frbr/core#ownerOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#producer> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#producerOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#realization> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Work> } .
+{ ?x <http://purl.org/vocab/frbr/core#realizationOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#realizer> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#realizerOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#reconfiguration> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Item> } .
+{ ?x <http://purl.org/vocab/frbr/core#reconfigurationOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Item> } .
+{ ?x <http://purl.org/vocab/frbr/core#relatedEndeavour> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Endeavour> } .
+{ ?x <http://purl.org/vocab/frbr/core#responsibleEntity> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Endeavour> } .
+{ ?x <http://purl.org/vocab/frbr/core#responsibleEntityOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#revision> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#revisionOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#subject> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Work> } .
+{ ?x <http://purl.org/vocab/frbr/core#translation> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#translationOf> ?y } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#abridgement> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#abridgementOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#alternate> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#alternateOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#arrangement> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#arrangementOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#creator> ?y } => { ?y a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#creatorOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Work> } .
+{ ?x <http://purl.org/vocab/frbr/core#embodiment> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#embodimentOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#exemplar> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Item> } .
+{ ?x <http://purl.org/vocab/frbr/core#exemplarOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#owner> ?y } => { ?y a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#ownerOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Item> } .
+{ ?x <http://purl.org/vocab/frbr/core#producer> ?y } => { ?y a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#producerOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Manifestation> } .
+{ ?x <http://purl.org/vocab/frbr/core#realization> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#realizationOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Work> } .
+{ ?x <http://purl.org/vocab/frbr/core#realizer> ?y } => { ?y a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#realizerOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#reconfiguration> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Item> } .
+{ ?x <http://purl.org/vocab/frbr/core#reconfigurationOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Item> } .
+{ ?x <http://purl.org/vocab/frbr/core#relatedEndeavour> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Endeavour> } .
+{ ?x <http://purl.org/vocab/frbr/core#responsibleEntity> ?y } => { ?y a <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x <http://purl.org/vocab/frbr/core#responsibleEntityOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Endeavour> } .
+{ ?x <http://purl.org/vocab/frbr/core#revision> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#revisionOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#translation> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x <http://purl.org/vocab/frbr/core#translationOf> ?y } => { ?y a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Concept> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#CorporateBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Event> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.isi.edu/~pan/damltime/time-entry.owl#Event> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Expression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Endeavour> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Item> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Endeavour> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Manifestation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Endeavour> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Object> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Subject> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Place> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#Endeavour> } .
+{ ?x  a <http://purl.org/vocab/frbr/core#Work> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://xmlns.com/wordnet/1.6/Work~2> } .
+{ ?x  a <http://xmlns.com/foaf/0.1/Group> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#CorporateBody> } .
+{ ?x  a <http://xmlns.com/foaf/0.1/Organization> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#CorporateBody> } .
+{ ?x  a <http://xmlns.com/foaf/0.1/Person> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/vocab/frbr/core#ResponsibleEntity> } .
