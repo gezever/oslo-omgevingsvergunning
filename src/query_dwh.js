@@ -45,6 +45,8 @@ reasoner.add_rules(fs.readFileSync('n3/cpsv-rules.n3', 'utf8'));
 reasoner.add_rules(fs.readFileSync('n3/frbr-core-20050810-rules.n3', 'utf8'));
 reasoner.add_rules(fs.readFileSync('n3/adms-rules.n3', 'utf8'));
 
+//reasoner.add_rules(fs.readFileSync('n3/all-rules.n3', 'utf8'));
+
 reasoner.materialize();
 const ttl_writer = new N3.Writer({ format: 'text/turtle' , prefixes: prefixes });
 const rdf = await sortLines(reasoner.get_abox_dump())

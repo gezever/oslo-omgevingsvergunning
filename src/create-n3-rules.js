@@ -25,6 +25,10 @@ function subclass_rule(klasse, superklasse){
     return '{ ?x a <' + klasse + '> } => { ?x a <' + superklasse + '> } .'
 }
 
+function subproperty_rule(property, superproperty){
+    return '{ ?x <' + property + '> ?y } => { ?x <' + superproperty + '> ?y  } .'
+}
+
 function paden(url){
     const domain = url.split('/')[2].split('.').reverse().join('/');
     let pad = ''
@@ -44,38 +48,70 @@ function paden(url){
     return {"pad": pad, "turtle": turtle, "notation_3": notation_3}
 }
 
-async function deref(url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad, turtle, notation_3) {
+async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad, turtle, notation_3) {
     var objects = [];
     var rule_array = [];
+    console.log(_url);
     try {
         const ttl_writer = new N3.Writer({ format: 'text/turtle', prefixes: Object.assign({}, prefixen) });
-        const { data } = await rdfDereferencer.dereference(url);
+        const { data , url } = await rdfDereferencer.dereference(_url);
+        console.log(url);
         data.on('data', (quad) => {
             ttl_writer.addQuad(quad);
-            if (regexp_uri.test(quad.subject.id)) {
+           if (regexp_uri.test(quad.subject.id) || regexp_uri.test(quad.subject.value)) {
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#domain") {
                     rule_array.push(domain_rule(quad.subject.id,  quad.object.id ))
                     if (!regexp_uri.test(quad.object.id)) {
                         objects.push(quad.object.id)
                     }
-                }
-                ;
+                } else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#domain") {
+                   rule_array.push(domain_rule(quad.subject.value,  quad.object.value ))
+                   if (!regexp_uri.test(quad.object.value)) {
+                       objects.push(quad.object.value)
+                   }
+               }                ;
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#range") {
                     rule_array.push(range_rule(quad.subject.id, quad.object.id))
                     if (!regexp_uri.test(quad.object.id)) {
                         objects.push(quad.object.id)
                     }
                     ;
-                }
-                ;
+                } else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#range") {
+                   rule_array.push(range_rule(quad.subject.value, quad.object.value))
+                   if (!regexp_uri.test(quad.object.value)) {
+                       objects.push(quad.object.value)
+                   }
+                   ;
+               }
+               ;
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#subClassOf") {
                     rule_array.push(subclass_rule(quad.subject.id, quad.object.id))
                     if (!regexp_uri.test(quad.object.id)) {
                         objects.push(quad.object.id)
                     }
                     ;
-                }
-            }
+                }else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#subClassOf") {
+                   rule_array.push(subclass_rule(quad.subject.value, quad.object.value))
+                   if (!regexp_uri.test(quad.object.value)) {
+                       objects.push(quad.object.value)
+                   }
+                   ;
+               };
+                if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#subPropertyOf") {
+                    rule_array.push(subproperty_rule(quad.subject.id, quad.object.id))
+                    if (!regexp_uri.test(quad.object.id)) {
+                        objects.push(quad.object.id)
+                    }
+                    ;
+                }else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#subPropertyOf") {
+                   rule_array.push(subproperty_rule(quad.subject.value, quad.object.value))
+                   if (!regexp_uri.test(quad.object.value)) {
+                       objects.push(quad.object.value)
+                   }
+                   ;
+               }
+
+          }
         })
         .on('error', (error) => console.error(error))
         .on('end', () => {
@@ -89,6 +125,7 @@ async function deref(url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad, 
         });
     }
     catch(error) {
+        console.log('no such ' + _url);
         const text = [['main/error', domain, 'ns', pad, path.basename(pad)].join('/'), 'txt'].join('.')
         if (!fs.existsSync(path.dirname(text))){
             fs.mkdirSync(path.dirname(text), { recursive: true });
@@ -112,5 +149,6 @@ async function iterate(uris) {
     }
 }
 //const my_url = 'http://purl.org/dc/terms/FileFormat'
+//const my_url = 'http://xmlns.com/foaf/0.1/homepage'
 const my_url = 'https://data.vlaanderen.be/ns/omgevingsvergunning'
 iterate([my_url])
