@@ -1,0 +1,33 @@
+Lijnen die voorkomen in property1 maar niet in property2
+----------------------------------------------------------------------------------------------
+<https://data.vlaanderen.be/ns/perceel#adres>
+**********************************************************************************************
+Lijnen die voorkomen in property2 maar niet in property1
+----------------------------------------------------------------------------------------------
+<https://data.vlaanderen.be/ns/perceel#aandeel>
+<https://data.vlaanderen.be/ns/perceel#agentMetRecht>
+<https://data.vlaanderen.be/ns/perceel#agentMetRestrictie>
+<https://data.vlaanderen.be/ns/perceel#agentMetVerantwoordelijkheid>
+<https://data.vlaanderen.be/ns/perceel#agentMetZakelijkRecht>
+<https://data.vlaanderen.be/ns/perceel#datumbijwerking>
+<https://data.vlaanderen.be/ns/perceel#default>
+<https://data.vlaanderen.be/ns/perceel#dimensie>
+<https://data.vlaanderen.be/ns/perceel#geldigheidsperiode>
+<https://data.vlaanderen.be/ns/perceel#methode>
+<https://data.vlaanderen.be/ns/perceel#officieleOppervlakte>
+<https://data.vlaanderen.be/ns/perceel#oppervlaktetype>
+<https://data.vlaanderen.be/ns/perceel#Recht.agent>
+<https://data.vlaanderen.be/ns/perceel#Recht.ruimtelijkeEenheid>
+<https://data.vlaanderen.be/ns/perceel#Recht.type>
+<https://data.vlaanderen.be/ns/perceel#Restrictie.agent>
+<https://data.vlaanderen.be/ns/perceel#Restrictie.ruimtelijkeEenheid>
+<https://data.vlaanderen.be/ns/perceel#Restrictie.type>
+<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie.geometrie>
+<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte.oppervlakte>
+<https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.agent>
+<https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.ruimtelijkeEenheid>
+<https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.type>
+<https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.agent>
+<https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.kadastraalPatrimoniumperceel>
+<https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.type>
+**********************************************************************************************

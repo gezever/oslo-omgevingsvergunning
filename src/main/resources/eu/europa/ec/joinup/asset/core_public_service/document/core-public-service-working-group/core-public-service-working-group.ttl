@@ -1,0 +1,53 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix activiteit: <https://data.omv.vlaanderen.be/id/activiteit/>.
+@prefix ident: <https://data.omv.vlaanderen.be/id/identificator/>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix geometry: <https://data.omv.vlaanderen.be/id/geometry/>.
+@prefix project_type_code: <https://data.omv.vlaanderen.be/id/concept/procedure/project_type_code/>.
+@prefix juridische_categorie: <https://data.omv.vlaanderen.be/id/concept/juridische_categorie/>.
+@prefix ruimtelijke_eenheid: <https://data.omv.vlaanderen.be/id/ruimtelijke_eenheid/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix concept: <https://data.omv.vlaanderen.be/id/concept/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix eurovoc: <http://eurovoc.europa.eu/>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix omv: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix project: <https://data.omv.vlaanderen.be/id/project/>.
+@prefix voorwerp: <https://data.omv.vlaanderen.be/id/voorwerp/>.
+@prefix zaak_handeling: <https://data.omv.vlaanderen.be/id/zaakhandeling/>.
+@prefix zaak: <https://data.omv.vlaanderen.be/id/zaak/>.
+@prefix omv_id: <https://data.omv.vlaanderen.be/id/concept/identifier/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix inh: <https://data.omv.vlaanderen.be/id/inhoud/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix m8g: <http://data.europa.eu/m8g/>.
+@prefix frbr: <http://purl.org/vocab/frbr/core#>.
+
+<https://joinup.ec.europa.eu/collection/semic-support-centre/document/core-public-service-working-group> <https://ogp.me/ns#site_name> "Joinup"@en;
+    <https://ogp.me/ns#type> "Document"@en;
+    <https://ogp.me/ns#url> "https://joinup.ec.europa.eu/collection/semic-support-centre/document/core-public-service-working-group"@en;
+    <https://ogp.me/ns#title> "Core Public Service Working Group"@en;
+    <https://ogp.me/ns#description> "This page contains a listing of all members of the Core Public Service Working Group. European Commission: Vassilios Peristeras Chair: Thodoris Papadopoulos, Ministry of Administrative Reform and E..."@en;
+    <https://ogp.me/ns#image> "https://joinup.ec.europa.eu/themes/ventuno/assets/images/og-image.png"@en;
+    <https://ogp.me/ns#image:secure_url> "https://joinup.ec.europa.eu/themes/ventuno/assets/images/og-image.png"@en;
+    <https://ogp.me/ns#image:type> "image/svg+xml"@en.
+_:df_1_0 <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#article>.
+_:df_1_1 <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#contentinfo>.
+_:df_3_3 {
+_:df_3_1 a <http://schema.org/MediaObject>;
+    <http://schema.org/datePublished> "2012-10-29T01:00:00+0100"^^<http://schema.org/Date>.
+_:df_3_2 a <http://schema.org/DigitalDocument>;
+    <http://schema.org/name> "Core Public Service Working Group";
+    <http://schema.org/headline> "Core Public Service Working Group";
+    <http://schema.org/about> "e-government", "e-government core vocabularies", "core public service";
+    <http://schema.org/description> "This page contains a listing of all members of the Core Public Service Working Group. European Commission: Vassilios Peristeras Chair: Thodoris Papadopoulos, Ministry of Administrative Reform and E...";
+    <http://schema.org/license> <http://data.europa.eu/w21/29caa5c7-1621-4cb3-b078-7fe0dff978e1>;
+    <http://schema.org/associatedMedia> _:df_3_1;
+    <http://schema.org/datePublished> "2012-10-29T01:00:00+0100"^^<http://schema.org/Date>;
+    <http://schema.org/isAccessibleForFree> "True";
+    <http://schema.org/dateModified> "2012-10-29T15:28:04+0100"^^<http://schema.org/Date>
+}

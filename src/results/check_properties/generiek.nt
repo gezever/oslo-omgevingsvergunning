@@ -1,0 +1,611 @@
+<http://data.europa.eu/m8g/PeriodOfTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://data.europa.eu/m8g/PeriodOfTime> <http://www.w3.org/2000/01/rdf-schema#label> "Periode"@nl .
+<http://data.europa.eu/m8g/PeriodOfTime> <http://www.w3.org/2000/01/rdf-schema#label> "Tijdsinterval"@nl .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.org/dc/terms/Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@nl .
+<http://purl.org/dc/terms/Jurisdiction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.org/dc/terms/Jurisdiction> <http://www.w3.org/2000/01/rdf-schema#label> "Jurisdictie"@nl .
+<http://purl.org/dc/terms/Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.org/dc/terms/Location> <http://www.w3.org/2000/01/rdf-schema#label> "Locatie"@nl .
+<http://purl.org/vocab/cpsv#FormalFramework> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://purl.org/vocab/cpsv#FormalFramework> <http://www.w3.org/2000/01/rdf-schema#label> "Formeel Kader"@nl .
+<http://schema.org/ContactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Contactpunt"@nl .
+<http://www.opengis.net/ont/sf#LineString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.opengis.net/ont/sf#LineString> <http://www.w3.org/2000/01/rdf-schema#label> "Lijnstring"@nl .
+<http://www.opengis.net/ont/sf#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.opengis.net/ont/sf#Point> <http://www.w3.org/2000/01/rdf-schema#label> "Punt"@nl .
+<http://www.opengis.net/ont/sf#Polygon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.opengis.net/ont/sf#Polygon> <http://www.w3.org/2000/01/rdf-schema#label> "Polygoon"@nl .
+<http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/2000/01/rdf-schema#Literal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/adms#Identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/adms#Identifier> <http://www.w3.org/2000/01/rdf-schema#label> "Identificator"@nl .
+<http://www.w3.org/ns/locn#Geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/locn#Geometry> <http://www.w3.org/2000/01/rdf-schema#label> "Geometrie"@nl .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/prov#Activity> <http://www.w3.org/2000/01/rdf-schema#label> "Activiteit"@nl .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/prov#Agent> <http://www.w3.org/2000/01/rdf-schema#label> "Agent"@nl .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/prov#Entity> <http://www.w3.org/2000/01/rdf-schema#label> "Entiteit"@nl .
+<http://www.w3.org/ns/prov#Generation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/prov#Generation> <http://www.w3.org/2000/01/rdf-schema#label> "Creatie"@nl .
+<http://www.w3.org/ns/prov#Invalidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/prov#Invalidation> <http://www.w3.org/2000/01/rdf-schema#label> "Opheffing"@nl .
+<http://www.w3.org/ns/prov#Location> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://www.w3.org/ns/prov#Location> <http://www.w3.org/2000/01/rdf-schema#label> "Locatie"@nl .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/2000/01/rdf-schema#label> "Document"@nl .
+<https://schema.org/Event> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://schema.org/Event> <http://www.w3.org/2000/01/rdf-schema#label> "Gebeurtenis"@nl .
+<https://schema.org/Number> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://schema.org/Number> <http://www.w3.org/2000/01/rdf-schema#label> "Getal"@nl .
+<https://schema.org/QuantitativeValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://schema.org/QuantitativeValue> <http://www.w3.org/2000/01/rdf-schema#label> "Kwantitatieve Waarde"@nl .
+<https://schema.org/Schedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+<https://schema.org/Schedule> <http://www.w3.org/2000/01/rdf-schema#label> "Schema"@nl .
+<https://data.vlaanderen.be/ns/generiek#AdministratieveEenheid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#AdministratieveEenheid> <http://www.w3.org/2000/01/rdf-schema#label> "Administratieve Eenheid"@nl .
+<https://data.vlaanderen.be/ns/generiek#AdministratieveEenheid> <http://www.w3.org/2000/01/rdf-schema#comment> "Bestuurlijke eenheid waar een lidstaat rechtsbevoegdheid heeft en/of uitoefent, in het kader van lokaal, regionaal of nationaal bestuur."@nl .
+<https://data.vlaanderen.be/ns/generiek#AdministratieveEenheid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#AdministratieveEenheid> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/dc/terms/Location> .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.begin> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.begin> <http://www.w3.org/2000/01/rdf-schema#label> "begin"@nl .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.begin> <http://www.w3.org/2000/01/rdf-schema#comment> "Datum en tijd waarop de gebeurtenis startte."@nl .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.begin> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum> .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.begin> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.begin> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.einde> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.einde> <http://www.w3.org/2000/01/rdf-schema#label> "einde"@nl .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.einde> <http://www.w3.org/2000/01/rdf-schema#comment> "Datum en tijd waarop de gebeurtenis eindigde."@nl .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.einde> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum> .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.einde> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum.einde> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://data.vlaanderen.be/ns/generiek#Gemeente> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#Gemeente> <http://www.w3.org/2000/01/rdf-schema#label> "Gemeente"@nl .
+<https://data.vlaanderen.be/ns/generiek#Gemeente> <http://www.w3.org/2000/01/rdf-schema#comment> "Officiële administratieve zone van het Belgisch grondgebied. De gemeente is het kleinste administratieve deel van het Belgisch grondgebied waarvan de grenzen enkel door de wetgever kunnen worden gewijzigd."@nl .
+<https://data.vlaanderen.be/ns/generiek#Gemeente> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#Gemeente> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://data.vlaanderen.be/ns/generiek#StandaardEenheid> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#StandaardEenheid> <http://www.w3.org/2000/01/rdf-schema#label> "Standaard Eenheid"@nl .
+<https://data.vlaanderen.be/ns/generiek#StandaardEenheid> <http://www.w3.org/2000/01/rdf-schema#comment> "Eenheid vastgelegd door een standaardiserende organisatie."@nl .
+<https://data.vlaanderen.be/ns/generiek#StandaardEenheid> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensGeldigeTijd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensGeldigeTijd> <http://www.w3.org/2000/01/rdf-schema#label> "Versie volgens Geldige Tijd"@nl .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensGeldigeTijd> <http://www.w3.org/2000/01/rdf-schema#comment> "De versie stelt de entiteit voor gedurende een bepaalde periode in de gemodelleerde werkelijkheid."@nl .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensGeldigeTijd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensGeldigeTijd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/generiek#Versie> .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensTransactietijd> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensTransactietijd> <http://www.w3.org/2000/01/rdf-schema#label> "Versie volgens Transactietijd"@nl .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensTransactietijd> <http://www.w3.org/2000/01/rdf-schema#comment> "De versie stelt de entiteit voor gedurende een bepaalde periode in een databank."@nl .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensTransactietijd> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#VersieVolgensTransactietijd> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://data.vlaanderen.be/ns/generiek#Versie> .
+<https://data.vlaanderen.be/ns/generiek#bewerking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/generiek#bewerking> <http://www.w3.org/2000/01/rdf-schema#label> "bewerking"@nl .
+<https://data.vlaanderen.be/ns/generiek#bewerking> <http://purl.org/vocab/vann/usageNote> "Bvb \"correctie\" als de entiteit een record is en bvb gegenereerd werd om het voorgaand record ve object te verbeteren."@nl .
+<https://data.vlaanderen.be/ns/generiek#bewerking> <http://www.w3.org/2000/01/rdf-schema#comment> "Aard vd bewerking die ihkv de activiteit op de entiteit is uitgevoerd."@nl .
+<https://data.vlaanderen.be/ns/generiek#bewerking> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<https://data.vlaanderen.be/ns/generiek#bewerking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#bewerking> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://data.vlaanderen.be/ns/generiek#bewerking> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://purl.org/dc/elements/1.1/type> .
+<https://data.vlaanderen.be/ns/generiek#default> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#default> <http://www.w3.org/2000/01/rdf-schema#label> "default"@nl .
+<https://data.vlaanderen.be/ns/generiek#default> <http://purl.org/vocab/vann/usageNote> "Hieronder wordt de positie verstaan die per default moet worden gebruikt als het object meerdere posities heeft."@nl .
+<https://data.vlaanderen.be/ns/generiek#default> <http://www.w3.org/2000/01/rdf-schema#comment> "Geeft aan of de positie een default positie is."@nl .
+<https://data.vlaanderen.be/ns/generiek#default> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#GeografischePositie> .
+<https://data.vlaanderen.be/ns/generiek#default> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#default> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://data.vlaanderen.be/ns/generiek#duur> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#duur> <http://www.w3.org/2000/01/rdf-schema#label> "duur "@nl .
+<https://data.vlaanderen.be/ns/generiek#duur> <http://purl.org/vocab/vann/usageNote> "Uit te drukken als een interval volgens iso 8601, bv P1D 1 dag, P2H twee uur... "@nl .
+<https://data.vlaanderen.be/ns/generiek#duur> <http://www.w3.org/2000/01/rdf-schema#comment> "Duur van hetgeen plaatsvindt."@nl .
+<https://data.vlaanderen.be/ns/generiek#duur> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Schedule> .
+<https://data.vlaanderen.be/ns/generiek#duur> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#duur> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
+<https://data.vlaanderen.be/ns/generiek#geplandeStart> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#geplandeStart> <http://www.w3.org/2000/01/rdf-schema#label> "geplande start"@nl .
+<https://data.vlaanderen.be/ns/generiek#geplandeStart> <http://www.w3.org/2000/01/rdf-schema#comment> "Het tijdstip waarop de activiteit gepland is om te beginnen."@nl .
+<https://data.vlaanderen.be/ns/generiek#geplandeStart> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Activity> .
+<https://data.vlaanderen.be/ns/generiek#geplandeStart> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#geplandeStart> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> <http://www.w3.org/2000/01/rdf-schema#label> "gestructureerde identificator"@nl .
+<https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificator vh object, opgesplitst in zijn onderdelen;"@nl .
+<https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/adms#Identifier> .
+<https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#gestructureerdeIdentificator> <http://www.w3.org/2000/01/rdf-schema#range> <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> .
+<https://data.vlaanderen.be/ns/generiek#handeldeInOpdrachtVan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/generiek#handeldeInOpdrachtVan> <http://www.w3.org/2000/01/rdf-schema#label> "handelde in opdracht van"@nl .
+<https://data.vlaanderen.be/ns/generiek#handeldeInOpdrachtVan> <http://purl.org/vocab/vann/usageNote> "De betrokken organisatie behoudt hierbij een zekere verantwoordelijkheid mbt het resultaat vd activiteit."@nl .
+<https://data.vlaanderen.be/ns/generiek#handeldeInOpdrachtVan> <http://www.w3.org/2000/01/rdf-schema#comment> "Organisatie die de agent vertegenwoordigt bij het uitvoeren ve specifieke activiteit en waarvan hij/zij de vereiste autoriteit/verantwoordelijkheid heeft gekregen om dit te doen."@nl .
+<https://data.vlaanderen.be/ns/generiek#handeldeInOpdrachtVan> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/prov#Agent> .
+<https://data.vlaanderen.be/ns/generiek#handeldeInOpdrachtVan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#handeldeInOpdrachtVan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/org#Organization> .
+<https://data.vlaanderen.be/ns/generiek#handeldeInOpdrachtVan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#actedOnBehalfOf> .
+<https://data.vlaanderen.be/ns/generiek#isTijdspecialisatieVan> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/generiek#isTijdspecialisatieVan> <http://www.w3.org/2000/01/rdf-schema#label> "is tijdspecialisatie van"@nl .
+<https://data.vlaanderen.be/ns/generiek#isTijdspecialisatieVan> <http://www.w3.org/2000/01/rdf-schema#comment> "Duidt de bronentiteit aan waarvan deze entiteit een tijdsgebonden specialisatie is. De specialisatie stelt de bron voor gedurende een bepaalde periode."@nl .
+<https://data.vlaanderen.be/ns/generiek#isTijdspecialisatieVan> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#Versie> .
+<https://data.vlaanderen.be/ns/generiek#isTijdspecialisatieVan> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#isTijdspecialisatieVan> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/prov#Entity> .
+<https://data.vlaanderen.be/ns/generiek#isTijdspecialisatieVan> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://www.w3.org/ns/prov#specializationOf> .
+<https://data.vlaanderen.be/ns/generiek#lokaleIdentificator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#lokaleIdentificator> <http://www.w3.org/2000/01/rdf-schema#label> "lokale identificator"@nl .
+<https://data.vlaanderen.be/ns/generiek#lokaleIdentificator> <http://www.w3.org/2000/01/rdf-schema#comment> "String gebruikt om het object uniek te identificeren binnen de naamruimte."@nl .
+<https://data.vlaanderen.be/ns/generiek#lokaleIdentificator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> .
+<https://data.vlaanderen.be/ns/generiek#lokaleIdentificator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#lokaleIdentificator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.vlaanderen.be/ns/generiek#methode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/generiek#methode> <http://www.w3.org/2000/01/rdf-schema#label> "methode"@nl .
+<https://data.vlaanderen.be/ns/generiek#methode> <http://purl.org/vocab/vann/usageNote> "Bvb positie afgeleid ve bestaand object (bvb door berekening vd centroïde)."@nl .
+<https://data.vlaanderen.be/ns/generiek#methode> <http://www.w3.org/2000/01/rdf-schema#comment> "De manier waarop het punt werd bepaald."@nl .
+<https://data.vlaanderen.be/ns/generiek#methode> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#GeografischePositie> .
+<https://data.vlaanderen.be/ns/generiek#methode> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#methode> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://data.vlaanderen.be/ns/generiek#naamruimte> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#naamruimte> <http://www.w3.org/2000/01/rdf-schema#label> "naamruimte"@nl .
+<https://data.vlaanderen.be/ns/generiek#naamruimte> <http://purl.org/vocab/vann/usageNote> "Laat toe om objecten met dezelfde identificator maar van verschillend type en/of afkomstig uit verschillende domeinen uiteen te houden. In praktijk bv een uri samengesteld uit betekenisvolle elementen zoals een domeinnaam, type en concept (bv https://data.vlaanderen.be/id/adres/). "@nl .
+<https://data.vlaanderen.be/ns/generiek#naamruimte> <http://www.w3.org/2000/01/rdf-schema#comment> "String die toegvoegd wordt aan de lokaleidentificator om deze globaal uniek te maken."@nl .
+<https://data.vlaanderen.be/ns/generiek#naamruimte> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> .
+<https://data.vlaanderen.be/ns/generiek#naamruimte> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#naamruimte> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://data.vlaanderen.be/ns/generiek#nummer> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#nummer> <http://www.w3.org/2000/01/rdf-schema#label> "nummer"@nl .
+<https://data.vlaanderen.be/ns/generiek#nummer> <http://purl.org/vocab/vann/usageNote> "Bv nummer vh artikel, paragraaf, hoofdstuk..."@nl .
+<https://data.vlaanderen.be/ns/generiek#nummer> <http://www.w3.org/2000/01/rdf-schema#comment> "Nummer vh documentonderdeel."@nl .
+<https://data.vlaanderen.be/ns/generiek#nummer> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#DocumentOnderdeel> .
+<https://data.vlaanderen.be/ns/generiek#nummer> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#nummer> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://data.vlaanderen.be/ns/generiek#perSetPositie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#perSetPositie> <http://www.w3.org/2000/01/rdf-schema#label> "per setpositie"@nl .
+<https://data.vlaanderen.be/ns/generiek#perSetPositie> <http://purl.org/vocab/vann/usageNote> "Bv als iets maandelijks plaatsvindt op maandag om te zeggen dat het bv de eerste maandag is vd maand. Frequentie is dan maandelijks, perDag is Maandag en de perSetpositie is dan 1. Ook negatieve cijfers zijn mogelijk, bv -1 zou aangeven dat het op de laatste maandag vd maand plaatsvindt."@nl .
+<https://data.vlaanderen.be/ns/generiek#perSetPositie> <http://www.w3.org/2000/01/rdf-schema#comment> "N-de keer dat iets plaatsvindt uit de verzameling van mogelijke tijdstippen. "@nl .
+<https://data.vlaanderen.be/ns/generiek#perSetPositie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://schema.org/Schedule> .
+<https://data.vlaanderen.be/ns/generiek#perSetPositie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#perSetPositie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://data.vlaanderen.be/ns/generiek#plaats> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/generiek#plaats> <http://www.w3.org/2000/01/rdf-schema#label> "plaats"@nl .
+<https://data.vlaanderen.be/ns/generiek#plaats> <http://purl.org/vocab/vann/usageNote> "Typisch een land."@nl .
+<https://data.vlaanderen.be/ns/generiek#plaats> <http://www.w3.org/2000/01/rdf-schema#comment> "Ruimtelijk gebied of benoemde plaats waarmee de Jurisdictie samenvalt."@nl .
+<https://data.vlaanderen.be/ns/generiek#plaats> <http://www.w3.org/2000/01/rdf-schema#domain> <http://purl.org/dc/terms/Jurisdiction> .
+<https://data.vlaanderen.be/ns/generiek#plaats> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#plaats> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/dc/terms/Location> .
+<https://data.vlaanderen.be/ns/generiek#specificatie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://data.vlaanderen.be/ns/generiek#specificatie> <http://www.w3.org/2000/01/rdf-schema#label> "specificatie"@nl .
+<https://data.vlaanderen.be/ns/generiek#specificatie> <http://purl.org/vocab/vann/usageNote> "Bvb perceel, gebouw..."@nl .
+<https://data.vlaanderen.be/ns/generiek#specificatie> <http://www.w3.org/2000/01/rdf-schema#comment> "Het type object op basis waarvan het punt werd bepaald."@nl .
+<https://data.vlaanderen.be/ns/generiek#specificatie> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#GeografischePositie> .
+<https://data.vlaanderen.be/ns/generiek#specificatie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#specificatie> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://data.vlaanderen.be/ns/generiek#tussentijdstip> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#tussentijdstip> <http://www.w3.org/2000/01/rdf-schema#label> "tussentijdstip"@nl .
+<https://data.vlaanderen.be/ns/generiek#tussentijdstip> <http://www.w3.org/2000/01/rdf-schema#comment> "Datum en tijd van een moment tussen begin en einde."@nl .
+<https://data.vlaanderen.be/ns/generiek#tussentijdstip> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum> .
+<https://data.vlaanderen.be/ns/generiek#tussentijdstip> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#tussentijdstip> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+<https://data.vlaanderen.be/ns/generiek#versieIdentificator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://data.vlaanderen.be/ns/generiek#versieIdentificator> <http://www.w3.org/2000/01/rdf-schema#label> "versie-identificator"@nl .
+<https://data.vlaanderen.be/ns/generiek#versieIdentificator> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificator van de specifieke versie van een object."@nl .
+<https://data.vlaanderen.be/ns/generiek#versieIdentificator> <http://www.w3.org/2000/01/rdf-schema#domain> <https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> .
+<https://data.vlaanderen.be/ns/generiek#versieIdentificator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#versieIdentificator> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://data.europa.eu/eli/ontology#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/eli/ontology#language> <http://www.w3.org/2000/01/rdf-schema#label> "taal"@nl .
+<http://data.europa.eu/m8g/endTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/m8g/endTime> <http://www.w3.org/2000/01/rdf-schema#label> "einde"@nl .
+<http://data.europa.eu/m8g/startTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/m8g/startTime> <http://www.w3.org/2000/01/rdf-schema#label> "begin"@nl .
+<http://data.europa.eu/m8g/subject> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/m8g/subject> <http://www.w3.org/2000/01/rdf-schema#label> "onderwerp"@nl .
+<http://data.europa.eu/m8g/territorialApplication> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://data.europa.eu/m8g/territorialApplication> <http://www.w3.org/2000/01/rdf-schema#label> "territoriale toepassing"@nl .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/creator> <http://www.w3.org/2000/01/rdf-schema#label> "maker"@nl .
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/description> <http://www.w3.org/2000/01/rdf-schema#label> "beschrijving"@nl .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is deel van"@nl .
+<http://purl.org/dc/terms/isPartOf> <http://www.w3.org/2000/01/rdf-schema#label> "is onderdeel van"@nl .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/issued> <http://www.w3.org/2000/01/rdf-schema#label> "uitgegeven"@nl .
+<http://purl.org/dc/terms/relation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/relation> <http://www.w3.org/2000/01/rdf-schema#label> "relatie"@nl .
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/title> <http://www.w3.org/2000/01/rdf-schema#label> "titel"@nl .
+<http://purl.org/dc/terms/type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://purl.org/dc/terms/type> <http://www.w3.org/2000/01/rdf-schema#label> "type"@nl .
+<http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#label> "email"@nl .
+<http://schema.org/faxNumber> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.org/faxNumber> <http://www.w3.org/2000/01/rdf-schema#label> "faxnummer"@nl .
+<http://schema.org/hoursAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "uren beschikbaarheid"@nl .
+<http://schema.org/openingHours> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.org/openingHours> <http://www.w3.org/2000/01/rdf-schema#label> "openingsuren"@nl .
+<http://schema.org/telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "telefoon"@nl .
+<http://www.opengis.net/ont/geosparql#asGML> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.opengis.net/ont/geosparql#asGML> <http://www.w3.org/2000/01/rdf-schema#label> "als GML"@nl .
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.opengis.net/ont/geosparql#asWKT> <http://www.w3.org/2000/01/rdf-schema#label> "als WKT"@nl .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/2000/01/rdf-schema#label> <http://www.w3.org/2000/01/rdf-schema#label> "label"@nl .
+<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/2004/02/skos/core#notation> <http://www.w3.org/2000/01/rdf-schema#label> "notatie"@nl .
+<http://www.w3.org/2006/vcard/ns#honorific-prefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/2006/vcard/ns#honorific-prefix> <http://www.w3.org/2000/01/rdf-schema#label> "aanschrijfprefix"@nl .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/adms#identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identificator"@nl .
+<http://www.w3.org/ns/adms#schemaAgency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/adms#schemaAgency> <http://www.w3.org/2000/01/rdf-schema#label> "schema agentschap"@nl .
+<http://www.w3.org/ns/adms#status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/adms#status> <http://www.w3.org/2000/01/rdf-schema#label> "status"@nl .
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/locn#address> <http://www.w3.org/2000/01/rdf-schema#label> "adres"@nl .
+<http://www.w3.org/ns/locn#geometry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/locn#geometry> <http://www.w3.org/2000/01/rdf-schema#label> "geometrie"@nl .
+<http://www.w3.org/ns/prov#activity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/prov#activity> <http://www.w3.org/2000/01/rdf-schema#label> "activiteit"@nl .
+<http://www.w3.org/ns/prov#atTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/prov#atTime> <http://www.w3.org/2000/01/rdf-schema#label> "op tijdstip"@nl .
+<http://www.w3.org/ns/prov#qualifiedGeneration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/prov#qualifiedGeneration> <http://www.w3.org/2000/01/rdf-schema#label> "gekwalificeerde creatie"@nl .
+<http://www.w3.org/ns/prov#qualifiedInvalidation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/prov#qualifiedInvalidation> <http://www.w3.org/2000/01/rdf-schema#label> "gekwalificeerde opheffing"@nl .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/prov#used> <http://www.w3.org/2000/01/rdf-schema#label> "gebruikt"@nl .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://www.w3.org/ns/prov#wasAssociatedWith> <http://www.w3.org/2000/01/rdf-schema#label> "was geassocieerd met"@nl .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/2000/01/rdf-schema#label> "naam"@nl .
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://xmlns.com/foaf/0.1/page> <http://www.w3.org/2000/01/rdf-schema#label> "pagina"@nl .
+<https://data.vlaanderen.be/ns/generiek#DocumentOnderdeel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#DocumentOnderdeel> <http://www.w3.org/2000/01/rdf-schema#label> "Documentonderdeel"@nl .
+<https://data.vlaanderen.be/ns/generiek#DocumentOnderdeel> <http://purl.org/vocab/vann/usageNote> "Bv artikel, hoofdstuk, paragraaf..."@nl .
+<https://data.vlaanderen.be/ns/generiek#DocumentOnderdeel> <http://www.w3.org/2000/01/rdf-schema#comment> "Een apart onderdeel van een groter document of verzameld document."@nl .
+<https://data.vlaanderen.be/ns/generiek#DocumentOnderdeel> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://schema.org/byDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/byDay> <http://www.w3.org/2000/01/rdf-schema#label> "per dag"@nl .
+<https://schema.org/byMonth> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/byMonth> <http://www.w3.org/2000/01/rdf-schema#label> "per maand"@nl .
+<https://schema.org/byMonthDay> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/byMonthDay> <http://www.w3.org/2000/01/rdf-schema#label> "per dag van de maand"@nl .
+<https://schema.org/duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/duration> <http://www.w3.org/2000/01/rdf-schema#label> "duur"@nl .
+<https://schema.org/endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/endDate> <http://www.w3.org/2000/01/rdf-schema#label> "einddatum"@nl .
+<https://schema.org/endTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/endTime> <http://www.w3.org/2000/01/rdf-schema#label> "eindtijd"@nl .
+<https://schema.org/eventSchedule> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/eventSchedule> <http://www.w3.org/2000/01/rdf-schema#label> "schema van de gebeurtenis"@nl .
+<https://schema.org/exceptDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/exceptDate> <http://www.w3.org/2000/01/rdf-schema#label> "uitzonderingsdatum"@nl .
+<https://schema.org/repeatCount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/repeatCount> <http://www.w3.org/2000/01/rdf-schema#label> "aantal herhalingen"@nl .
+<https://schema.org/repeatFrequency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/repeatFrequency> <http://www.w3.org/2000/01/rdf-schema#label> "frequentie van de herhalingen"@nl .
+<https://schema.org/startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "startdatum"@nl .
+<https://schema.org/startDate> <http://www.w3.org/2000/01/rdf-schema#label> "begindatum"@nl .
+<https://schema.org/startTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/startTime> <http://www.w3.org/2000/01/rdf-schema#label> "starttijd"@nl .
+<https://schema.org/startTime> <http://www.w3.org/2000/01/rdf-schema#label> "begintijd"@nl .
+<https://schema.org/unitCode> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/unitCode> <http://www.w3.org/2000/01/rdf-schema#label> "eenheidcode"@nl .
+<https://schema.org/unitText> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/unitText> <http://www.w3.org/2000/01/rdf-schema#label> "eenheidtekst"@nl .
+<https://schema.org/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<https://schema.org/value> <http://www.w3.org/2000/01/rdf-schema#label> "waarde"@nl .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum> <http://www.w3.org/2000/01/rdf-schema#label> "Gebeurtenisdatum"@nl .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum> <http://www.w3.org/2000/01/rdf-schema#comment> "Datum waarop een gebeurtenis plaatsvond evt op een alternatieve manier beschreven. "@nl .
+<https://data.vlaanderen.be/ns/generiek#Gebeurtenisdatum> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#GeografischePositie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#GeografischePositie> <http://www.w3.org/2000/01/rdf-schema#label> "Geografische Positie"@nl .
+<https://data.vlaanderen.be/ns/generiek#GeografischePositie> <http://www.w3.org/2000/01/rdf-schema#comment> "Geografische positie aangegeven dmv een punt."@nl .
+<https://data.vlaanderen.be/ns/generiek#GeografischePositie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#Versie> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#Versie> <http://www.w3.org/2000/01/rdf-schema#label> "Versie"@nl .
+<https://data.vlaanderen.be/ns/generiek#Versie> <http://www.w3.org/2000/01/rdf-schema#comment> "Stelt een entiteit voor in één specifieke periode."@nl .
+<https://data.vlaanderen.be/ns/generiek#Versie> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek#Versie> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/ns/prov#Entity> .
+<https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> <http://www.w3.org/2000/01/rdf-schema#label> "Gestructureerde Identificator"@nl .
+<https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> <http://www.w3.org/2000/01/rdf-schema#comment> "Identificator van een object opgesplitst in zijn onderdelen."@nl .
+<https://data.vlaanderen.be/ns/generiek#GestructureerdeIdentificator> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://data.vlaanderen.be/ns/generiek> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#label> "generiek"@en .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#label> "generiek"@nl .
+_:B306ad210fa3fa3b425393c1be11a8bb6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bacbd98edec363567b1fd488b3d575026 <http://xmlns.com/foaf/0.1/homepage> <https://www.lne.be/> .
+_:Bacbd98edec363567b1fd488b3d575026 <http://xmlns.com/foaf/0.1/name> "LNE" .
+_:B306ad210fa3fa3b425393c1be11a8bb6 <http://schema.org/affiliation> _:Bacbd98edec363567b1fd488b3d575026 .
+_:B306ad210fa3fa3b425393c1be11a8bb6 <http://xmlns.com/foaf/0.1/firstName> "Karen" .
+_:B306ad210fa3fa3b425393c1be11a8bb6 <http://xmlns.com/foaf/0.1/lastName> "Bosmans" .
+_:B306ad210fa3fa3b425393c1be11a8bb6 <http://xmlns.com/foaf/0.1/mbox> <mailto:karen.bosmans@lne.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/contributor> _:B306ad210fa3fa3b425393c1be11a8bb6 .
+_:Be7f19d0b0aaef707aea2255dad434fb9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bf9135305507be9215d77122f1c07bd6f <http://xmlns.com/foaf/0.1/homepage> <http://binnenland.vlaanderen.be/> .
+_:Bf9135305507be9215d77122f1c07bd6f <http://xmlns.com/foaf/0.1/name> "ABB" .
+_:Be7f19d0b0aaef707aea2255dad434fb9 <http://schema.org/affiliation> _:Bf9135305507be9215d77122f1c07bd6f .
+_:Be7f19d0b0aaef707aea2255dad434fb9 <http://xmlns.com/foaf/0.1/firstName> "Wim" .
+_:Be7f19d0b0aaef707aea2255dad434fb9 <http://xmlns.com/foaf/0.1/lastName> "Devroey" .
+_:Be7f19d0b0aaef707aea2255dad434fb9 <http://xmlns.com/foaf/0.1/mbox> <mailto:wim.devroey@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/contributor> _:Be7f19d0b0aaef707aea2255dad434fb9 .
+_:Bc0f426daff62eda2f168c342b1bb01c5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B9ea021e177aca4d3452a093dcff789b6 <http://xmlns.com/foaf/0.1/homepage> <http://stad.gent> .
+_:B9ea021e177aca4d3452a093dcff789b6 <http://xmlns.com/foaf/0.1/name> "Digipolis Gent" .
+_:Bc0f426daff62eda2f168c342b1bb01c5 <http://schema.org/affiliation> _:B9ea021e177aca4d3452a093dcff789b6 .
+_:Bc0f426daff62eda2f168c342b1bb01c5 <http://xmlns.com/foaf/0.1/firstName> "Katrien" .
+_:Bc0f426daff62eda2f168c342b1bb01c5 <http://xmlns.com/foaf/0.1/lastName> "Leire" .
+_:Bc0f426daff62eda2f168c342b1bb01c5 <http://xmlns.com/foaf/0.1/mbox> <mailto:katrien.leire@digipolis.gent> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/contributor> _:Bc0f426daff62eda2f168c342b1bb01c5 .
+_:B1a5aad458be982793745e356370a2939 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B386afbf6022769d59f012390d108951b <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:B386afbf6022769d59f012390d108951b <http://xmlns.com/foaf/0.1/name> "ABB" .
+_:B1a5aad458be982793745e356370a2939 <http://schema.org/affiliation> _:B386afbf6022769d59f012390d108951b .
+_:B1a5aad458be982793745e356370a2939 <http://xmlns.com/foaf/0.1/firstName> "Hannes" .
+_:B1a5aad458be982793745e356370a2939 <http://xmlns.com/foaf/0.1/lastName> "Lombaert" .
+_:B1a5aad458be982793745e356370a2939 <http://xmlns.com/foaf/0.1/mbox> <mailto:hannes.lombaert@bz.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/contributor> _:B1a5aad458be982793745e356370a2939 .
+_:Bfc9de12dd26dc16c2d0d2531ddc7927a <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B517a5e747ec8b50323be4310049d02fe <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:B517a5e747ec8b50323be4310049d02fe <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:Bfc9de12dd26dc16c2d0d2531ddc7927a <http://schema.org/affiliation> _:B517a5e747ec8b50323be4310049d02fe .
+_:Bfc9de12dd26dc16c2d0d2531ddc7927a <http://xmlns.com/foaf/0.1/firstName> "Bart" .
+_:Bfc9de12dd26dc16c2d0d2531ddc7927a <http://xmlns.com/foaf/0.1/lastName> "Misseeuw" .
+_:Bfc9de12dd26dc16c2d0d2531ddc7927a <http://xmlns.com/foaf/0.1/mbox> <mailto:bart.misseeuw@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/contributor> _:Bfc9de12dd26dc16c2d0d2531ddc7927a .
+_:Bc62848a1dbec701388b13b297f18e473 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bc821617339222f739bd797bf8396f5e2 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:Bc821617339222f739bd797bf8396f5e2 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:Bc62848a1dbec701388b13b297f18e473 <http://schema.org/affiliation> _:Bc821617339222f739bd797bf8396f5e2 .
+_:Bc62848a1dbec701388b13b297f18e473 <http://xmlns.com/foaf/0.1/firstName> "Geraldine" .
+_:Bc62848a1dbec701388b13b297f18e473 <http://xmlns.com/foaf/0.1/lastName> "Nolf" .
+_:Bc62848a1dbec701388b13b297f18e473 <http://xmlns.com/foaf/0.1/mbox> <mailto:geraldine.nolf@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/contributor> _:Bc62848a1dbec701388b13b297f18e473 .
+_:B5c625713ba092b61db5ba77efbdbb5aa <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B4462c656655c105cdc80e87095d2ffc1 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:B4462c656655c105cdc80e87095d2ffc1 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:B5c625713ba092b61db5ba77efbdbb5aa <http://schema.org/affiliation> _:B4462c656655c105cdc80e87095d2ffc1 .
+_:B5c625713ba092b61db5ba77efbdbb5aa <http://xmlns.com/foaf/0.1/firstName> "Sarah" .
+_:B5c625713ba092b61db5ba77efbdbb5aa <http://xmlns.com/foaf/0.1/lastName> "Spiessens" .
+_:B5c625713ba092b61db5ba77efbdbb5aa <http://xmlns.com/foaf/0.1/mbox> <mailto:sarah.spiessens@bz.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/contributor> _:B5c625713ba092b61db5ba77efbdbb5aa .
+_:Bde77abeab9d2bfd8c5e7100d4c3c3810 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B134af74385d05760af0ebd1a5f265f40 <http://xmlns.com/foaf/0.1/homepage> <http://vlm.be> .
+_:B134af74385d05760af0ebd1a5f265f40 <http://xmlns.com/foaf/0.1/name> "VLM" .
+_:Bde77abeab9d2bfd8c5e7100d4c3c3810 <http://schema.org/affiliation> _:B134af74385d05760af0ebd1a5f265f40 .
+_:Bde77abeab9d2bfd8c5e7100d4c3c3810 <http://xmlns.com/foaf/0.1/firstName> "Annita" .
+_:Bde77abeab9d2bfd8c5e7100d4c3c3810 <http://xmlns.com/foaf/0.1/lastName> "Stevens" .
+_:Bde77abeab9d2bfd8c5e7100d4c3c3810 <http://xmlns.com/foaf/0.1/mbox> <mailto:Annita.Stevens@vlm.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/contributor> _:Bde77abeab9d2bfd8c5e7100d4c3c3810 .
+_:B28be4700241f25743cb782c44d476682 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B0d83749900141158e555461125ade4c7 <http://xmlns.com/foaf/0.1/homepage> <https://www.lne.be/> .
+_:B0d83749900141158e555461125ade4c7 <http://xmlns.com/foaf/0.1/name> "ANB" .
+_:B28be4700241f25743cb782c44d476682 <http://schema.org/affiliation> _:B0d83749900141158e555461125ade4c7 .
+_:B28be4700241f25743cb782c44d476682 <http://xmlns.com/foaf/0.1/firstName> "Geert" .
+_:B28be4700241f25743cb782c44d476682 <http://xmlns.com/foaf/0.1/lastName> "Vermeiren" .
+_:B28be4700241f25743cb782c44d476682 <http://xmlns.com/foaf/0.1/mbox> <mailto:geert.vermeiren@lne.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/contributor> _:B28be4700241f25743cb782c44d476682 .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/issued> "2018-10-04" .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/license> <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0> .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/license> "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0" .
+_:B77ae998bf5c0b913480f6e575570b177 <http://xmlns.com/foaf/0.1/homepage> <https://data.vlaanderen.be> .
+_:B77ae998bf5c0b913480f6e575570b177 <http://xmlns.com/foaf/0.1/mbox> <mailto:oslo@kb.vlaanderen.be> .
+_:B77ae998bf5c0b913480f6e575570b177 <http://xmlns.com/foaf/0.1/name> "Data Vlaanderen" .
+<https://data.vlaanderen.be/ns/generiek> <http://purl.org/dc/terms/mediator> _:B77ae998bf5c0b913480f6e575570b177 .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/PeriodOfTime> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/Agent> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/Jurisdiction> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/Location> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/vocab/cpsv#FormalFramework> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/ContactPoint> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/ont/sf#LineString> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/ont/sf#Point> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/ont/sf#Polygon> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/1999/02/22-rdf-syntax-ns#langString> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#Literal> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2004/02/skos/core#Concept> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/adms#Identifier> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/locn#Geometry> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#Activity> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#Agent> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#Entity> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#Generation> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#Invalidation> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#Location> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://xmlns.com/foaf/0.1/Document> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/Event> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/Number> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/QuantitativeValue> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/Schedule> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/eli/ontology#language> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/endTime> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/startTime> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/subject> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://data.europa.eu/m8g/territorialApplication> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/creator> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/description> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/isPartOf> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/issued> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/relation> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/title> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://purl.org/dc/terms/type> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/email> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/faxNumber> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/hoursAvailable> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/openingHours> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.org/telephone> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/ont/geosparql#asGML> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.opengis.net/ont/geosparql#asWKT> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2000/01/rdf-schema#label> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2004/02/skos/core#notation> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/2006/vcard/ns#honorific-prefix> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/adms#identifier> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/adms#schemaAgency> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/adms#status> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/locn#address> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/locn#geometry> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#activity> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#atTime> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#qualifiedGeneration> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#qualifiedInvalidation> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#used> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://www.w3.org/ns/prov#wasAssociatedWith> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://xmlns.com/foaf/0.1/name> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://xmlns.com/foaf/0.1/page> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/byDay> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/byMonth> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/byMonthDay> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/duration> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/endDate> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/endTime> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/eventSchedule> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/exceptDate> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/repeatCount> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/repeatFrequency> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/startDate> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/startTime> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/unitCode> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/unitText> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/value> .
+_:B777a5a47fb896e7fdd7b569c4996d76d <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B616afb31a7616950668e5c02808dc2ee <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
+_:B616afb31a7616950668e5c02808dc2ee <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
+_:B777a5a47fb896e7fdd7b569c4996d76d <http://schema.org/affiliation> _:B616afb31a7616950668e5c02808dc2ee .
+_:B777a5a47fb896e7fdd7b569c4996d76d <http://xmlns.com/foaf/0.1/firstName> "Laurens" .
+_:B777a5a47fb896e7fdd7b569c4996d76d <http://xmlns.com/foaf/0.1/lastName> "De Vocht" .
+_:B777a5a47fb896e7fdd7b569c4996d76d <http://xmlns.com/foaf/0.1/mbox> <mailto:laurens.devocht@ugent.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2001/02pd/rec54#editor> _:B777a5a47fb896e7fdd7b569c4996d76d .
+_:Bdd5fe818f9089d29fb34087146eef70e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B5cd187eeffdb074621518c156b8470c9 <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
+_:B5cd187eeffdb074621518c156b8470c9 <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
+_:Bdd5fe818f9089d29fb34087146eef70e <http://schema.org/affiliation> _:B5cd187eeffdb074621518c156b8470c9 .
+_:Bdd5fe818f9089d29fb34087146eef70e <http://xmlns.com/foaf/0.1/firstName> "Erik" .
+_:Bdd5fe818f9089d29fb34087146eef70e <http://xmlns.com/foaf/0.1/lastName> "Mannens" .
+_:Bdd5fe818f9089d29fb34087146eef70e <http://xmlns.com/foaf/0.1/mbox> <mailto:erik.mannens@ugent.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://www.w3.org/2001/02pd/rec54#editor> _:Bdd5fe818f9089d29fb34087146eef70e .
+_:Ba65273a737f0eaa14f2b1ef9b1908d81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B8b5d6ffe8ca07f569de14afae9a24d88 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:B8b5d6ffe8ca07f569de14afae9a24d88 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:Ba65273a737f0eaa14f2b1ef9b1908d81 <http://schema.org/affiliation> _:B8b5d6ffe8ca07f569de14afae9a24d88 .
+_:Ba65273a737f0eaa14f2b1ef9b1908d81 <http://xmlns.com/foaf/0.1/firstName> "Dorien" .
+_:Ba65273a737f0eaa14f2b1ef9b1908d81 <http://xmlns.com/foaf/0.1/lastName> "Bauwens" .
+_:Ba65273a737f0eaa14f2b1ef9b1908d81 <http://xmlns.com/foaf/0.1/mbox> <mailto:dorien.bauwens@bz.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:Ba65273a737f0eaa14f2b1ef9b1908d81 .
+_:B2c2abb692c128f0e8e6a9197d43281a6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bdc1700432039dfdf0b69fc67639da237 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:Bdc1700432039dfdf0b69fc67639da237 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:B2c2abb692c128f0e8e6a9197d43281a6 <http://schema.org/affiliation> _:Bdc1700432039dfdf0b69fc67639da237 .
+_:B2c2abb692c128f0e8e6a9197d43281a6 <http://xmlns.com/foaf/0.1/firstName> "Dries" .
+_:B2c2abb692c128f0e8e6a9197d43281a6 <http://xmlns.com/foaf/0.1/lastName> "Beheydt" .
+_:B2c2abb692c128f0e8e6a9197d43281a6 <http://xmlns.com/foaf/0.1/mbox> <mailto:dries.beheydt@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:B2c2abb692c128f0e8e6a9197d43281a6 .
+_:B4d4e8566a5352729c639b23255dbcb28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B64bbb37a714f9a109c2e2a3a748d06cd <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:B64bbb37a714f9a109c2e2a3a748d06cd <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:B4d4e8566a5352729c639b23255dbcb28 <http://schema.org/affiliation> _:B64bbb37a714f9a109c2e2a3a748d06cd .
+_:B4d4e8566a5352729c639b23255dbcb28 <http://xmlns.com/foaf/0.1/firstName> "Raf" .
+_:B4d4e8566a5352729c639b23255dbcb28 <http://xmlns.com/foaf/0.1/lastName> "Buyle" .
+_:B4d4e8566a5352729c639b23255dbcb28 <http://xmlns.com/foaf/0.1/mbox> <mailto:raf.buyle@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:B4d4e8566a5352729c639b23255dbcb28 .
+_:B45c736d18db0358fd5466aef3b368178 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Ba7427f18aeed8b288adf5e2b6ef8701d <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:Ba7427f18aeed8b288adf5e2b6ef8701d <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:B45c736d18db0358fd5466aef3b368178 <http://schema.org/affiliation> _:Ba7427f18aeed8b288adf5e2b6ef8701d .
+_:B45c736d18db0358fd5466aef3b368178 <http://xmlns.com/foaf/0.1/firstName> "Thomas" .
+_:B45c736d18db0358fd5466aef3b368178 <http://xmlns.com/foaf/0.1/lastName> "D'haenens" .
+_:B45c736d18db0358fd5466aef3b368178 <http://xmlns.com/foaf/0.1/mbox> <mailto:thomas.dhaenens@bz.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:B45c736d18db0358fd5466aef3b368178 .
+_:B6d54336f287d0650035fa99fee0018fe <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B2866ca5bb937bde522c2d7f72d893dcc <http://xmlns.com/foaf/0.1/homepage> <http://idlab.ugent.be> .
+_:B2866ca5bb937bde522c2d7f72d893dcc <http://xmlns.com/foaf/0.1/name> "imec - UGent" .
+_:B6d54336f287d0650035fa99fee0018fe <http://schema.org/affiliation> _:B2866ca5bb937bde522c2d7f72d893dcc .
+_:B6d54336f287d0650035fa99fee0018fe <http://xmlns.com/foaf/0.1/firstName> "Dieter" .
+_:B6d54336f287d0650035fa99fee0018fe <http://xmlns.com/foaf/0.1/lastName> "De Paepe" .
+_:B6d54336f287d0650035fa99fee0018fe <http://xmlns.com/foaf/0.1/mbox> <mailto:dieter.depaepe@ugent.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:B6d54336f287d0650035fa99fee0018fe .
+_:B66b6a77c968be81c8f345a44c115c06e <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B0a708c21dc5b1db7c3fd04a97505f635 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:B0a708c21dc5b1db7c3fd04a97505f635 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:B66b6a77c968be81c8f345a44c115c06e <http://schema.org/affiliation> _:B0a708c21dc5b1db7c3fd04a97505f635 .
+_:B66b6a77c968be81c8f345a44c115c06e <http://xmlns.com/foaf/0.1/firstName> "Katrien" .
+_:B66b6a77c968be81c8f345a44c115c06e <http://xmlns.com/foaf/0.1/lastName> "De Smet" .
+_:B66b6a77c968be81c8f345a44c115c06e <http://xmlns.com/foaf/0.1/mbox> <mailto:katrien.desmet@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:B66b6a77c968be81c8f345a44c115c06e .
+_:Bd9dc0f3b2860f41b3d850ad52f504855 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bc1a5f77fae1163549ed269b038a2df04 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:Bc1a5f77fae1163549ed269b038a2df04 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:Bd9dc0f3b2860f41b3d850ad52f504855 <http://schema.org/affiliation> _:Bc1a5f77fae1163549ed269b038a2df04 .
+_:Bd9dc0f3b2860f41b3d850ad52f504855 <http://xmlns.com/foaf/0.1/firstName> "Björn" .
+_:Bd9dc0f3b2860f41b3d850ad52f504855 <http://xmlns.com/foaf/0.1/lastName> "De Vidts" .
+_:Bd9dc0f3b2860f41b3d850ad52f504855 <http://xmlns.com/foaf/0.1/mbox> <mailto:bjorn.devidts@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:Bd9dc0f3b2860f41b3d850ad52f504855 .
+_:Bfdc53961fb9c42984b62efacbaf319c6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bf23acf06d5b7c264f66c489b84ba8e66 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:Bf23acf06d5b7c264f66c489b84ba8e66 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:Bfdc53961fb9c42984b62efacbaf319c6 <http://schema.org/affiliation> _:Bf23acf06d5b7c264f66c489b84ba8e66 .
+_:Bfdc53961fb9c42984b62efacbaf319c6 <http://xmlns.com/foaf/0.1/firstName> "Quincy" .
+_:Bfdc53961fb9c42984b62efacbaf319c6 <http://xmlns.com/foaf/0.1/lastName> "Oeyen" .
+_:Bfdc53961fb9c42984b62efacbaf319c6 <http://xmlns.com/foaf/0.1/mbox> <mailto:quincy.oeyen@bz.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:Bfdc53961fb9c42984b62efacbaf319c6 .
+_:B507f98fdbc4b894191227d1c768f4e96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bc33f272f93573c95c8488546ed2d52a3 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:Bc33f272f93573c95c8488546ed2d52a3 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:B507f98fdbc4b894191227d1c768f4e96 <http://schema.org/affiliation> _:Bc33f272f93573c95c8488546ed2d52a3 .
+_:B507f98fdbc4b894191227d1c768f4e96 <http://xmlns.com/foaf/0.1/firstName> "An" .
+_:B507f98fdbc4b894191227d1c768f4e96 <http://xmlns.com/foaf/0.1/lastName> "Taelemans" .
+_:B507f98fdbc4b894191227d1c768f4e96 <http://xmlns.com/foaf/0.1/mbox> <mailto:an.taelemans@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:B507f98fdbc4b894191227d1c768f4e96 .
+_:Bb8f431af1c3d4f0fd4874bbbcf3c577b <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B91f5c9116e8a30613396e247e05d1530 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:B91f5c9116e8a30613396e247e05d1530 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:Bb8f431af1c3d4f0fd4874bbbcf3c577b <http://schema.org/affiliation> _:B91f5c9116e8a30613396e247e05d1530 .
+_:Bb8f431af1c3d4f0fd4874bbbcf3c577b <http://xmlns.com/foaf/0.1/firstName> "Geert" .
+_:Bb8f431af1c3d4f0fd4874bbbcf3c577b <http://xmlns.com/foaf/0.1/lastName> "Thijs" .
+_:Bb8f431af1c3d4f0fd4874bbbcf3c577b <http://xmlns.com/foaf/0.1/mbox> <mailto:geert.thijs@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:Bb8f431af1c3d4f0fd4874bbbcf3c577b .
+_:B3245c2444669f8eec2cf5a2ed16b0fe0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B605429beb35c179b3235923373694a48 <http://xmlns.com/foaf/0.1/homepage> <http://stad.gent> .
+_:B605429beb35c179b3235923373694a48 <http://xmlns.com/foaf/0.1/name> "Stad Gent" .
+_:B3245c2444669f8eec2cf5a2ed16b0fe0 <http://schema.org/affiliation> _:B605429beb35c179b3235923373694a48 .
+_:B3245c2444669f8eec2cf5a2ed16b0fe0 <http://xmlns.com/foaf/0.1/firstName> "Thimo" .
+_:B3245c2444669f8eec2cf5a2ed16b0fe0 <http://xmlns.com/foaf/0.1/lastName> "Thoeye" .
+_:B3245c2444669f8eec2cf5a2ed16b0fe0 <http://xmlns.com/foaf/0.1/mbox> <mailto:Thimo.Thoeye@stad.gent> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:B3245c2444669f8eec2cf5a2ed16b0fe0 .
+_:Bcffa041d4b8a08c98b9f4f7051b709c0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B4783d7cab3a735098a57bc957e6bc680 <http://xmlns.com/foaf/0.1/homepage> <https://www.lne.be/> .
+_:B4783d7cab3a735098a57bc957e6bc680 <http://xmlns.com/foaf/0.1/name> "Departement Omgeving" .
+_:Bcffa041d4b8a08c98b9f4f7051b709c0 <http://schema.org/affiliation> _:B4783d7cab3a735098a57bc957e6bc680 .
+_:Bcffa041d4b8a08c98b9f4f7051b709c0 <http://xmlns.com/foaf/0.1/firstName> "Geert" .
+_:Bcffa041d4b8a08c98b9f4f7051b709c0 <http://xmlns.com/foaf/0.1/lastName> "Van Haute" .
+_:Bcffa041d4b8a08c98b9f4f7051b709c0 <http://xmlns.com/foaf/0.1/mbox> <mailto:geert.vanhaute@lne.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:Bcffa041d4b8a08c98b9f4f7051b709c0 .
+_:B65cc4add911a9f41d144105ae1a5020c <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:B45595ebad01a78972c29d7242fe0a611 <http://xmlns.com/foaf/0.1/homepage> <http://cipalschaubroeck.be> .
+_:B45595ebad01a78972c29d7242fe0a611 <http://xmlns.com/foaf/0.1/name> "Cipal Schaubroeck" .
+_:B65cc4add911a9f41d144105ae1a5020c <http://schema.org/affiliation> _:B45595ebad01a78972c29d7242fe0a611 .
+_:B65cc4add911a9f41d144105ae1a5020c <http://xmlns.com/foaf/0.1/firstName> "Willem" .
+_:B65cc4add911a9f41d144105ae1a5020c <http://xmlns.com/foaf/0.1/lastName> "Van Hoecke" .
+_:B65cc4add911a9f41d144105ae1a5020c <http://xmlns.com/foaf/0.1/mbox> <mailto:willem.vanhoecke@cipalschaubroeck.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:B65cc4add911a9f41d144105ae1a5020c .
+_:B64fc564c26593bf6ab776c7e471ed901 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Bf7190f6a5a993d6c1240ad0d3b4a7ea3 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/> .
+_:Bf7190f6a5a993d6c1240ad0d3b4a7ea3 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:B64fc564c26593bf6ab776c7e471ed901 <http://schema.org/affiliation> _:Bf7190f6a5a993d6c1240ad0d3b4a7ea3 .
+_:B64fc564c26593bf6ab776c7e471ed901 <http://xmlns.com/foaf/0.1/firstName> "Henk" .
+_:B64fc564c26593bf6ab776c7e471ed901 <http://xmlns.com/foaf/0.1/lastName> "Vanderstraeten" .
+_:B64fc564c26593bf6ab776c7e471ed901 <http://xmlns.com/foaf/0.1/mbox> <mailto:henk.vanderstraeten@bz.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:B64fc564c26593bf6ab776c7e471ed901 .
+_:Bb0dafb1494633496badf05534d610456 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+_:Be6d39b1f4a949e29e29db7f03ee62790 <http://xmlns.com/foaf/0.1/homepage> <https://overheid.vlaanderen.be/informatie-vlaanderen> .
+_:Be6d39b1f4a949e29e29db7f03ee62790 <http://xmlns.com/foaf/0.1/name> "Informatie Vlaanderen" .
+_:Bb0dafb1494633496badf05534d610456 <http://schema.org/affiliation> _:Be6d39b1f4a949e29e29db7f03ee62790 .
+_:Bb0dafb1494633496badf05534d610456 <http://xmlns.com/foaf/0.1/firstName> "Ziggy" .
+_:Bb0dafb1494633496badf05534d610456 <http://xmlns.com/foaf/0.1/lastName> "Vanlishout" .
+_:Bb0dafb1494633496badf05534d610456 <http://xmlns.com/foaf/0.1/mbox> <mailto:siegfried.vanlishout@kb.vlaanderen.be> .
+<https://data.vlaanderen.be/ns/generiek> <http://xmlns.com/foaf/0.1/maker> _:Bb0dafb1494633496badf05534d610456 .

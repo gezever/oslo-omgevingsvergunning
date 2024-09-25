@@ -1,0 +1,383 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix activiteit: <https://data.omv.vlaanderen.be/id/activiteit/>.
+@prefix ident: <https://data.omv.vlaanderen.be/id/identificator/>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix geometry: <https://data.omv.vlaanderen.be/id/geometry/>.
+@prefix project_type_code: <https://data.omv.vlaanderen.be/id/concept/procedure/project_type_code/>.
+@prefix juridische_categorie: <https://data.omv.vlaanderen.be/id/concept/juridische_categorie/>.
+@prefix ruimtelijke_eenheid: <https://data.omv.vlaanderen.be/id/ruimtelijke_eenheid/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix concept: <https://data.omv.vlaanderen.be/id/concept/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix eurovoc: <http://eurovoc.europa.eu/>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix omv: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix project: <https://data.omv.vlaanderen.be/id/project/>.
+@prefix voorwerp: <https://data.omv.vlaanderen.be/id/voorwerp/>.
+@prefix zaak_handeling: <https://data.omv.vlaanderen.be/id/zaakhandeling/>.
+@prefix zaak: <https://data.omv.vlaanderen.be/id/zaak/>.
+@prefix omv_id: <https://data.omv.vlaanderen.be/id/concept/identifier/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix inh: <https://data.omv.vlaanderen.be/id/inhoud/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix m8g: <http://data.europa.eu/m8g/>.
+@prefix frbr: <http://purl.org/vocab/frbr/core#>.
+
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A free text description of the Event.\n                                ";
+    skos:scopeNote "\n                                    The description is likely to be the text that a business or citizen sees for that specific Event when looking for relevant Public Services. Public administrations are therefore encouraged to include a reasonable level of detail in the description.\n                                ".
+m8g:hasRelatedService a rdfs:Property;
+    rdfs:comment "\n                                    The Public Service related to the Event.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    An Identifier for the Event.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:title a rdfs:Property;
+    rdfs:comment "\n                                    The Name (or title) of the Event.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A textual explanation of the Participation.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:hasParticipant a rdfs:Property;
+    rdfs:comment "\n                                    The Agent involved in the Participation.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    The unambiguous structured reference for the Participation.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:role a rdfs:Property;
+    rdfs:comment "\n                                    The function of an Agent within a Participation.\n                                ";
+    skos:scopeNote "\n                                    This should be provided using a controlled vocabulary.\nSince this is an extension mechanism for the CSPV-AP, the controlled vocabulary should be decided to suit local implementations.\n                                ".
+skos:prefLabel a rdfs:Property;
+    rdfs:comment "\n                                    A preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology.\n                                ";
+    skos:scopeNote "\n                                    Refers to the official or legal name of a Public Organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property. This allowed in SKOS for skos:prefLabel, see integrity conditions and subsequent example.\n                                ".
+dct:spatial a rdfs:Property;
+    rdfs:comment "\n                                    It links an Organization to the Administrative Region(s) that it covers.\n                                ";
+    skos:scopeNote "\n                                    The value of the properly should be the URI of the region as defined in an authoritative\nlist of regions. In Europe, this is likely to be the Administrative Territorial Units\nNamed Authority List maintained by the Publications Office's Metadata Registry.\n\nThe ATU list  does not include a geometry. That is, the territory is only identified by\nits name not its spatial coordinates. This is likely to be the case for similar lists. If\ngeometries are available for the Public Organization's territory, they can be linked\nfrom the territorial unit using the Core Location Vocabulary's locn:geometry\nproperty.\n                                ".
+dct:audience a rdfs:Property;
+    rdfs:comment "\n                                    The target recipient of the Public Service.\n                                ";
+    skos:scopeNote "\n                                    Examples are citizens, business, etc.\n                                ".
+m8g:contactPoint a rdfs:Property;
+    rdfs:comment "\n                                    The main contact information of the resource.\n                                ";
+    skos:scopeNote "\n                                    Note that the contact information should be relevant to the Public Service which may not be the same as contact information for the Competent Authority or any Participant.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A free text Description of the Public Service.\n                                ";
+    skos:scopeNote "\n                                    The description is likely to be the text that potential users of the Public Service see in any public service catalogue. Public administrations are encouraged to include a reasonable level of detail in the description, for instance including basic eligibility requirements for the particular Public Service and contact information.\n                                ".
+cpsv:follows a rdfs:Property;
+    rdfs:comment "\n                                    It links a Public Service to the Rule(s) under which it operates.\n                                ";
+    skos:scopeNote "\n                                    The definition of the Rule class is very broad. In a typical case, the competent authority that provides the public service will also define the rules that will implement its own policies. The CPSV-AP is flexible to allow for significant variation in such a scenario.\n                                ".
+dct:type a rdfs:Property;
+    rdfs:comment "\n                                    The purpose of a government activity, which the public service is intended for.\n                                ";
+    skos:scopeNote "\n                                    The possible values for this property are described in the controlled vocabulary COFOG main activity Authority Table of the Publications Office. \n                                ".
+m8g:hasChannel a rdfs:Property;
+    rdfs:comment "\n                                    It links the Public Service to any Channel through which an Agent provides, uses or otherwise interacts with the Public Service, such as an online service, phone number or office.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:hasCompetentAuthority a rdfs:Property;
+    rdfs:comment "\n                                    It links a Public Service to a Public Organization, which is the responsible Agent for the delivery of the Public Service.\n                                ";
+    skos:scopeNote "\n                                    Whether the particular Public Organization provides the public service directly or outsources it is not relevant. The Public Organization that is the Competent Authority of the service is the one that is ultimately responsible for managing and providing the public service. The term Competent Authority is defined in the Services Directive (2006/123/EC) in the following way: \"Any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof\".\n                                ".
+m8g:hasCost a rdfs:Property;
+    rdfs:comment "\n                                    It indicates the costs related to the execution of a Public Service for the citizen or business related to the execution of the particular Public Service.\n                                ";
+    skos:scopeNote "\n                                    Where the cost varies depending on the channel through which the service is accessed, it can be linked to the channel using the If Accessed Through relationship.\n                                ".
+cpsv:hasInput a rdfs:Property;
+    rdfs:comment "\n                                    It links a Public Service to one or more instances of the Evidence class.\n                                ";
+    skos:scopeNote "\n                                    A specific Public Service may require the presence of certain pieces of Evidence in order to be delivered. If the evidence required to make use of a service varies according to the channel through which it is accessed, then Has Input should be at the level of the Channel.\n                                ".
+m8g:hasInputType a rdfs:Property;
+    rdfs:comment "\n                                    It links a Public Service to one or more instances of the EvidenceType class. \n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:hasLegalResource a rdfs:Property;
+    rdfs:comment "\n                                    It indicates the Legal Resource (e.g. legislation) to which the Public Service relates, operates or has its legal basis.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:hasParticipation a rdfs:Property;
+    rdfs:comment "\n                                    The way how a resource is organized.\n                                ";
+    skos:scopeNote "\n                                    The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information.\n                                ".
+m8g:holdsRequirement a rdfs:Property;
+    rdfs:comment "\n                                    It links a Public Service to a class that describes the Requirement.\n                                ";
+    skos:scopeNote "\n                                    Usage: It describes the needing or using the service, such as residency in a given location, being over a certain age etc. The Requirement class is defined in the Core Criterion and Core Evidence Vocabulary.\n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    A formally-issued Identifier for the Public Service.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:isClassifiedBy a rdfs:Property;
+    rdfs:comment "\n                                    It allows to classify the Public Service with any Concept other than those already foreseen and defined explicitly in  the CPSV-AP (Thematic Area, Sector, etc.).\n                                ";
+    skos:scopeNote "\n                                    It is a generic property which can be further specialised to make the classification explicit, for instance for classifying public services according level of digitisation,\ntype of audience, etc. The Concept is at its turn related to a Collection, which groups the different concepts into a controlled vocabulary.\n                                ".
+m8g:isGroupedBy a rdfs:Property;
+    rdfs:comment "\n                                    It links the Public Service to the Event class.\n                                ";
+    skos:scopeNote "\n                                    Several Public Services may be associated with a particular Event and, likewise, the same Public Service may be associated with several different Events.\n                                ".
+dct:isPartOf a rdfs:Property;
+    rdfs:comment "\n                                    A related resource in which the described resource is physically or logically included.\n                                ";
+    skos:scopeNote "\n                                    It links a Public Service to the Dataset(s) in which it is being described.\n                                ".
+<http://www.w3.org/ns/dcat#keyword> a rdfs:Property;
+    rdfs:comment "\n                                    A keyword, term or phrase to describe the Public Service.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:language a rdfs:Property;
+    rdfs:comment "\n                                    The language(s) in which the Public Service is available.\n                                ";
+    skos:scopeNote "\n                                    This could be one language or multiple languages, for instance in countries with more than one official language.\n\nThe recommended controlled vocabularies for this property is the Language Authority Table of the Publications Office.\n                                ".
+dct:title a rdfs:Property;
+    rdfs:comment "\n                                    The official Name of the Public Service.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:processingTime a rdfs:Property;
+    rdfs:comment "\n                                    The (estimated) time needed for executing a Public Service. The actual information is provided using the ISO8601 syntax for durations. \n                                ";
+    skos:scopeNote "\n                                    The actual information is provided using the ISO8601 syntax for durations. \n\nSome examples are provided below:\nDuration Syntax - Syntax\n5 years - P5Y\n1 month - P1M\n3 days - P3D\n2 days 4 hours - P2DT4H\n\nDurations begin with an uppercase P followed by the number and the relevant designator, formally: P[n]Y[n]M[n]DT[n]H[n]M[n]S, where Y is for years, M for months etc. \n\nNote that days and times are separated by an uppercase T which also\ndisambiguates M as meaning month (P2M means 2 months) or minute (PT2M means 2 minutes). Durations may also be defined as a number of weeks so P4W means 4 weeks. A full explanation is provided in the Wikipedia page that references the official ISO standard.\n\nThis approach is consistent with both schema.org and the W3C OWL Time Ontology.\n\n                                ".
+cpsv:produces a rdfs:Property;
+    rdfs:comment "\n                                    It links a Public Service to one or more instances of the Output class, describing the actual result of executing a given Public Service.\n                                ";
+    skos:scopeNote "\n                                    Outputs can be any resource, for instance a document, artefact or anything else being produced as a result of executing the Public Service.\n                                ".
+m8g:relatedService a rdfs:Property;
+    rdfs:comment "\n                                    A Public Service related to the particular instance of the Public Service class.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:requires a rdfs:Property;
+    rdfs:comment "\n                                    The way a Public Service makes use of other Public Services.\n                                ";
+    skos:scopeNote "\n                                    One Public Service may require, or in some way make use of, the output of one or several other Public Services. In this case, for a Public Service to be executed, another Public Service must be executed beforehand. The nature of the requirement will be described in the associated Rule or Evidence.\n                                ".
+m8g:sector a rdfs:Property;
+    rdfs:comment "\n                                    The industry or sector a Public Service relates to, or is intended for.\n                                ";
+    skos:scopeNote "\n                                    For example: environment, safety, housing. Note that a single Public Service may relate to multiple sectors. The possible values for this property are provided as a controlled vocabulary. The possible values for this property are described in the controlled vocabulary Data theme Authority Table of the Publications Office. \n                                ".
+dct:spatial a rdfs:Property;
+    rdfs:comment "\n                                    A Public Service is likely to be available only within a given area, typically the area covered by a particular public authority.\n                                ";
+    skos:scopeNote "\n                                    A common usage of the spatial property will be to define the Administrative Territorial Unit(s) - typically a country or region - in which a Public Service is available. The Publications Office of the European Union offers a URI set that is suitable for this purpose. In case the ATU code list is not suitable, NUTS or LAU, NAL Place or Geonames are recommended to use, in that order. If those are still not sufficient, we recommend to define your own code list.\n\nN.B. The spatial restriction is not meant to be used to describe eligibility or the speed of operation of the service. These aspects will be covered by the Criterion class.\n                                ".
+adms:status a rdfs:Property;
+    rdfs:comment "\n                                    It indicates whether a Public Service is active, inactive, under development etc. according to a controlled vocabulary.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:thematicArea a rdfs:Property;
+    rdfs:comment "\n                                    The Thematic Area of a Public Service.\n                                ";
+    skos:scopeNote "\n                                    For example: social protection, health, recreation, culture and religion, family, traveling economic affairs, tax, staff, environment, etc.\n                                ".
+<http://www.w3.org/ns/locn#addressArea> a rdfs:Property;
+    rdfs:comment "\n                                    The name of a geographic area that groups Addresses.\n                                ";
+    skos:scopeNote "\n                                    This would typically be part of a city, a neighbourhood or village, e.g. Montmartre. Address area is not an administrative unit.\n                                ".
+<http://www.w3.org/ns/locn#addressId> a rdfs:Property;
+    rdfs:comment "\n                                    A globally unique identifier for each instance of an Address.\n                                ";
+    skos:scopeNote "\n                                    The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. A number of EU countries have already implemented an ID (a UUID) in their Address Register/gazetteer, among them Denmark. OASIS xAL also includes an address identifier. It is the address Identifier that allows an address to be represented in a format other than INSPIRE whilst remaining conformant to the Core Vocabulary.\n\nThe INSPIRE method of representing addresses is very detailed, designed primarily for use in databases of addresses. Whilst data that is published in full conformance with the INSPIRE data structure can be made available using the Core  Location Vocabulary the reverse is not true since the Core Vocabulary allows much greater flexibility.\n\nMany datasets that include address data as one piece of information about something else are likely to have that data in simpler formats. These might be tailored to the specific need of the dataset, follow a national norm, or make use of a standard like vCard.\n\nTo provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with INSPIRE Address Guidelines (which EU Member States are obliged to use), the Core Location  Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID.\n                                ".
+<http://www.w3.org/ns/locn#adminUnitL1> a rdfs:Property;
+    rdfs:comment "\n                                    The name of the uppermost level of the address, almost always a country.\n                                ";
+    skos:scopeNote "\n                                    Best practice is to use the ISO 3166-1 code but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'France' or 'FRA' consistently throughout the dataset and avoid mixing the two. The Country controlled vocabulary from the Publications Office can be reused for this.\n                                ".
+<http://www.w3.org/ns/locn#adminUnitL2> a rdfs:Property;
+    rdfs:comment "\n                                    The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities.\n                                ";
+    skos:scopeNote "\n                                    Values could be a region or province, more granular than level 1.\n                                ".
+<http://www.w3.org/ns/locn#fullAddress> a rdfs:Property;
+    rdfs:comment "\n                                    The complete address written as a string.\n                                ";
+    skos:scopeNote "\n                                    Use of this property is not recommended as it will suffer any misunderstandings that might arise through the breaking up of an address into its component parts. This property is analogous to vCard's label property but with two important differences: (1) formatting is not assumed so that, unlike vCard label, it may not be suitable to print this on an address label, (2) vCard's label has a domain of vCard Address; the fullAddress property has no such restriction. An example of a full address is \"Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France\".\n                                ".
+<http://www.w3.org/ns/locn#locatorDesignator> a rdfs:Property;
+    rdfs:comment "\n                                    A number or sequence of characters that uniquely identifies the locator within the relevant scope.\n                                ";
+    skos:scopeNote "\n                                    In simpler terms, this is the building number, apartment number, etc. For an address such as \"Flat 3, 17 Bridge Street\", the locator is \"flat 3, 17\".\n                                ".
+<http://www.w3.org/ns/locn#locatorName> a rdfs:Property;
+    rdfs:comment "\n                                    Proper noun(s) applied to the real world entity identified by the locator.\n                                ";
+    skos:scopeNote "\n                                    The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.\n\nThe key difference between a locator and a locator name is that the latter is a proper name and is unlikely to include digits. For example, \"Shumann, Berlaymont\" is a meeting room within the European Commission headquarters for which locator name is more appropriate than locator.\n                                ".
+<http://www.w3.org/ns/locn#postCode> a rdfs:Property;
+    rdfs:comment "\n                                    The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\n                                ";
+    skos:scopeNote "\n                                    Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\".\n                                ".
+<http://www.w3.org/ns/locn#postName> a rdfs:Property;
+    rdfs:comment "\n                                    A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\n                                ";
+    skos:scopeNote "\n                                    Usually a city, for example \"Paris\".\n                                ".
+<http://www.w3.org/ns/locn#poBox> a rdfs:Property;
+    rdfs:comment "\n                                    A location designator for a postal delivery point at a post office, usually a number.\n                                ";
+    skos:scopeNote "\n                                    INSPIRE's name for this is \"postalDeliveryIdentifier\" for which it uses the locator designator property with a type attribute of that name. This vocabulary separates out the Post Office Box for greater independence of technology. An example post office box number is \"9383\".\n                                ".
+<http://www.w3.org/ns/locn#thoroughfare> a rdfs:Property;
+    rdfs:comment "\n                                    The name of a passage or way through from one location to another.\n                                ";
+    skos:scopeNote "\n                                    A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\".\n                                ".
+<http://www.w3.org/ns/locn#address> a rdfs:Property;
+    rdfs:comment "\n                                    An Address related to an Agent. Asserting the address relationship implies that the Agent has an Address.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    An Identifier for the Agent.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:title a rdfs:Property;
+    rdfs:comment "\n                                    The noun given to the Agent.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:participates a rdfs:Property;
+    rdfs:comment "\n                                    The participation in which an Agent is involved.\n                                ";
+    skos:scopeNote "\n                                    The Participation class facilitates the detailed description of how an Agent participates in or interacts with a Public Service and may include temporal and spatial information.\n                                ".
+dct:type a rdfs:Property;
+    rdfs:comment "\n                                    It links an Event to a controlled vocabulary of event types.\n                                ";
+    skos:scopeNote "\n                                    The recommended Controlled vocabulary to be used is the Business event Vocabulary maintained by the Publications Office of the EU.\n                                ".
+m8g:specialOpeningHoursSpecification a rdfs:Property;
+    rdfs:comment "\n                                    A time during which the resource is not available.\n                                ";
+    skos:scopeNote "\n                                    Like the Contact Point, a Channel may not be available at a certain time.\n\nFor a simple description of the time use the description property of TemporalEntity.\n\nFor more structured data use the model in Time Ontology, see an example.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A free text description of the Channel, for example to describe conditions when to use it.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+cpsv:hasInput a rdfs:Property;
+    rdfs:comment "\n                                    The property links a Public Service directly to one or more pieces of Evidence.\n                                ";
+    skos:scopeNote "\n                                    In the majority of cases, the evidence required to use a Public Service will be independent of the channel through which the service is accessed. The Has Input property should normally be used to link a Public Service directly to one or more pieces of Evidence. However, where the type of Evidence required varies according to the channel used to access the Public Service, then the Has Input property may be used at the Channel level. For example, a digital signature may be required for an online channel, whereas a physical signature may be required for a face to face service provision.\n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    An Identifier for the Channel.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:openingHours a rdfs:Property;
+    rdfs:comment "\n                                    A time at which the resource is normally available.\n                                ";
+    skos:scopeNote "\n                                    Like the Contact Point, a Channel may be available at a certain time.\n\nFor a simple description of the time use the description property of TemporalEntity.\n\nFor more structured data use the model in Time Ontology, see an example.\n                                ".
+m8g:ownedBy a rdfs:Property;
+    rdfs:comment "\n                                    The owner of a specific Channel through which a Public Service is being delivered.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:processingTime a rdfs:Property;
+    rdfs:comment "\n                                    The (estimated) time needed for executing a Public Service which may depend on the Channel chosen.\n                                ";
+    skos:scopeNote "\n                                    The actual information is provided using the ISO8601 syntax for durations. \n                                ".
+dct:type a rdfs:Property;
+    rdfs:comment "\n                                    The type of Channel as defined in a controlled vocabulary.\n                                ";
+    skos:scopeNote "\n                                    The recommended controlled vocabularies for this property is the Europass Channel Type Authority Table of the Publications Office.\n\nMember States could create subclasses of Channel by adding a e-mail address or an homepage depending on the channel type, in this case vCard could be eventually used. \n                                ".
+skos:member a rdfs:Property;
+    rdfs:comment "\n                                    It indicates the Concepts that are part of the Collection.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:specialOpeningHoursSpecification a rdfs:Property;
+    rdfs:comment "\n                                    A time during which the resource is not available.\n                                ";
+    skos:scopeNote "\n                                    For a simple description of the time use the description property of TemporalEntity.\n\nFor more structured data use the model in Time Ontology, see an example.\n\nThis relation can be used to indicate exceptional closures such as being closed on public holidays.\n                                ".
+m8g:contactPage a rdfs:Property;
+    rdfs:comment "\n                                    A web page that could be used to reach out the Contact Point.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:email a rdfs:Property;
+    rdfs:comment "\n                                    An electronic address through which the Contact Point can be contacted.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:telephone a rdfs:Property;
+    rdfs:comment "\n                                    A telephone number through which the Contact Point can be contacted.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:openingHours a rdfs:Property;
+    rdfs:comment "\n                                    A time at which the the resource is normally available.\n                                ";
+    skos:scopeNote "\n                                    For a simple description of the time use the description property of TemporalEntity.\n\nFor more structured data use the model in Time Ontology, see an example.\n                                ".
+m8g:currency a rdfs:Property;
+    rdfs:comment "\n                                    The currency in which the Cost needs to be paid and the value of the Cost is expressed.\n                                ";
+    skos:scopeNote "\n                                    The possible values for this property are described in the controlled vocabulary \nCurrency Authority Table of Publications Office.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A free text description of the Cost.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:hasValue a rdfs:Property;
+    rdfs:comment "\n                                    A numeric value indicating the amount of the Cost.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    An Identifier for the Cost.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:ifAccessedThrough a rdfs:Property;
+    rdfs:comment "\n                                    The costs created by the use of different Channels.\n                                ";
+    skos:scopeNote "\n                                    For example, if accessed through an online service cf. accessed at a physical location, the cost can be linked to the channel using the If Accessed Through property.\n                                ".
+m8g:isDefinedBy a rdfs:Property;
+    rdfs:comment "\n                                    It links the Cost class to one or more instances of the Organization class.\n                                ";
+    skos:scopeNote "\n                                    This property indicates which Public Organization is the Competent Authority for defining the costs associated with the delivery of a particular Public Service.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A free-text account of the Dataset. This property can be repeated for parallel language versions of the description.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:hasPart a rdfs:Property;
+    rdfs:comment "\n                                    A related resource that is included either physically or logically in the described resource.\n                                ";
+    skos:scopeNote "\n                                    It links a Dataset to the Public Service.\n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    The main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://www.w3.org/ns/dcat#landingPage> a rdfs:Property;
+    rdfs:comment "\n                                    A web page that provides access to the Dataset, its Distributions and/or additional information.\n                                ";
+    skos:scopeNote "\n                                    It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator.\n                                ".
+dct:publisher a rdfs:Property;
+    rdfs:comment "\n                                    The Publisher of the Dataset, i.e. an entity  (organisation) responsible for making the Dataset available.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:title a rdfs:Property;
+    rdfs:comment "\n                                    A name given to the Dataset.\n                                ";
+    skos:scopeNote "\n                                    This property can be repeated for parallel language versions of the name.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A free text Description of the piece of Evidence.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    An Identifier for the piece of Evidence.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:conformsTo a rdfs:Property;
+    rdfs:comment "\n                                    Evidence Type that specifies characteristics of the Evidence.\n                                ";
+    skos:scopeNote "\n                                    Examples of characteristics could be the layout or the configuration of the Evidence.\n                                ".
+dct:isPartOf a rdfs:Property;
+    rdfs:comment "\n                                    A related resource in which the described resource is physically or logically included.\n                                ";
+    skos:scopeNote "\n                                    It links an Evidence to the Dataset using it.\n                                ".
+dct:language a rdfs:Property;
+    rdfs:comment "\n                                    The language(s) of the piece of Evidence.\n                                ";
+    skos:scopeNote "\n                                    The recommended controlled vocabularies for this property is the Language Authority Table of the Publications Office.\n                                ".
+dct:title a rdfs:Property;
+    rdfs:comment "\n                                    The official Name of the piece of Evidence.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://xmlns.com/foaf/0.1/page> a rdfs:Property;
+    rdfs:comment "\n                                    The documentation that contains information.\n                                ";
+    skos:scopeNote "\n                                    For instance, a particular template for an administrative document, an application or a guide on formatting the Evidence.\n\nA concrete example is an energy audit report which provides more context to the evidence of a home energy efficiency score. The audit report is the related documentation while the energy score is the evidence.\n                                ".
+m8g:supportsRequirement a rdfs:Property;
+    rdfs:comment "\n                                    Requirement for which the Evidence provides proof.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:type a rdfs:Property;
+    rdfs:comment "\n                                    The type of Evidence as described in a controlled vocabulary.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:evidenceTypeClassification a rdfs:Property;
+    rdfs:comment "\n                                    Category to which the Evidence Type belongs.\n                                ";
+    skos:scopeNote "\n                                    The categories agreed are left open but could for example specify the layout and content expected for an Evidence. An example could be id cards.\n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    Unambiguous reference to the Evidence Type.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:relation a rdfs:Property;
+    rdfs:comment "\n                                    Another instance of the Legal Resource class that is related to the particular Legal Resource being described.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:type a rdfs:Property;
+    rdfs:comment "\n                                    It links an Event to a controlled vocabulary of event types.\n                                ";
+    skos:scopeNote "\n                                    The recommended Controlled vocabulary to be used is the Life Events Vocabulary maintained by the Publications Office of the EU.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A free text Description of the Output.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    An Identifier for the Output.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:isPartOf a rdfs:Property;
+    rdfs:comment "\n                                    A related resource in which the described resource is physically or logically included.\n                                ";
+    skos:scopeNote "\n                                    It links an Output to the Dataset using it.\n                                ".
+dct:language a rdfs:Property;
+    rdfs:comment "\n                                    The language(s) in which the Output is available. \n                                ";
+    skos:scopeNote "\n                                    This could be one or multiple languages, for instance in countries with more than one official language. The recommended controlled vocabularies for this property is the Language Authority Table of the Publications Office.\n                                ".
+dct:title a rdfs:Property;
+    rdfs:comment "\n                                    The official Name of the Output.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:type a rdfs:Property;
+    rdfs:comment "\n                                    The type of Output as defined in a controlled vocabulary.\n                                ";
+    skos:scopeNote "\n                                    Possible values of Output types are: Declaration, Physical object, Code, Financial obligation, Financial benefit, Recognition, Permit.\n                                ".
+m8g:fulfils a rdfs:Property;
+    rdfs:comment "\n                                    The Rules that the requirements fulfils.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:hasSupportingEvidence a rdfs:Property;
+    rdfs:comment "\n                                    Evidence that supplies information, proof or support for the Requirement.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    Unambiguous reference to a Requirement.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:title a rdfs:Property;
+    rdfs:comment "\n                                    Name of the Requirement.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:type a rdfs:Property;
+    rdfs:comment "\n                                    Category to which the Requirement belongs.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A free text Description of the Rule.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    An Identifier for the Rule.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+cpsv:implements a rdfs:Property;
+    rdfs:comment "\n                                    It links a Rule to relevant legislation or policy documents i.e.\nthe Legal Resource under which the Rules are being defined.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:language a rdfs:Property;
+    rdfs:comment "\n                                    The language(s) in which the Rule is available.\n                                ";
+    skos:scopeNote "\n                                    This could be one or multiple languages, for instance in countries with more than one official language. The recommended controlled vocabularies for this property is the Language Authority Table of the Publications Office.\n                                ".
+dct:title a rdfs:Property;
+    rdfs:comment "\n                                    The Name of the Rule.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:type a rdfs:Property;
+    rdfs:comment "\n                                    Type of Rule.\n                                ";
+    skos:scopeNote "\n                                    For example: a rule for non-disclosure of a dataset, a rule for disclosure of a dataset, etc.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A free text description of the Service Concession Contract.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:establishedUnder a rdfs:Property;
+    rdfs:comment "\n                                    It links a Service Concession Contract to relevant legislation or policy documents i.e.\nthe Legal Resource under which the Service Concession Contracts are being defined.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:hasContractingAuthority a rdfs:Property;
+    rdfs:comment "\n                                    It links a Service Concession Contract with the Contracting Authority which is ultimately responsible for a public service.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:hasEconomicOperator a rdfs:Property;
+    rdfs:comment "\n                                    It links a Service Concession Contract with the Economic Operator in charge for the provision and the management of public services.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    An Identifier for the Service Concession Contract.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:title a rdfs:Property;
+    rdfs:comment "\n                                    The Name of the Service Concession Contract.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A  textual representation of the Temporal Entity.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:frequency a rdfs:Property;
+    rdfs:comment "\n                                    The recurrence of an instant or period.\n                                ";
+    skos:scopeNote "\n                                    It is recommended to use the frequency from an existing vocabulary like the Frequency from the Publications Office.\n                                ".

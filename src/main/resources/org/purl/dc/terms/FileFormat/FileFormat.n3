@@ -1,0 +1,1 @@
+{ ?x a <http://purl.org/dc/terms/FileFormat> } => { ?x a <http://purl.org/dc/terms/MediaType> } .

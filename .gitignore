@@ -18,3 +18,4 @@ buildNumber.properties
 node_modules
 src/.env
 src/utils/dbconfig.js
+.idea

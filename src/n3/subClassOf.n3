@@ -1,0 +1,2 @@
+{ ?x a <http://purl.org/vocab/cpsv#FormalFramework> } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .
+{ ?x a <http://purl.org/vocab/cpsv#Rule> } => { ?x a <http://purl.org/vocab/frbr/core#Expression> } .

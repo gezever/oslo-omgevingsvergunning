@@ -1,0 +1,112 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix activiteit: <https://data.omv.vlaanderen.be/id/activiteit/>.
+@prefix ident: <https://data.omv.vlaanderen.be/id/identificator/>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix geometry: <https://data.omv.vlaanderen.be/id/geometry/>.
+@prefix project_type_code: <https://data.omv.vlaanderen.be/id/concept/procedure/project_type_code/>.
+@prefix juridische_categorie: <https://data.omv.vlaanderen.be/id/concept/juridische_categorie/>.
+@prefix ruimtelijke_eenheid: <https://data.omv.vlaanderen.be/id/ruimtelijke_eenheid/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix concept: <https://data.omv.vlaanderen.be/id/concept/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix eurovoc: <http://eurovoc.europa.eu/>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix omv: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix project: <https://data.omv.vlaanderen.be/id/project/>.
+@prefix voorwerp: <https://data.omv.vlaanderen.be/id/voorwerp/>.
+@prefix zaak_handeling: <https://data.omv.vlaanderen.be/id/zaakhandeling/>.
+@prefix zaak: <https://data.omv.vlaanderen.be/id/zaak/>.
+@prefix omv_id: <https://data.omv.vlaanderen.be/id/concept/identifier/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix inh: <https://data.omv.vlaanderen.be/id/inhoud/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix m8g: <http://data.europa.eu/m8g/>.
+@prefix frbr: <http://purl.org/vocab/frbr/core#>.
+
+<https://schema.org/StructuredValue#infobox> <http://www.w3.org/1999/xhtml/vocab#role> <http://www.w3.org/1999/xhtml/vocab#checkbox>.
+_:df_13_0 {
+<https://schema.org/name> <http://www.w3.org/2002/07/owl#equivalentProperty> dct:title;
+    rdfs:comment "The name of the item.";
+    rdfs:label "name";
+    rdfs:subPropertyOf rdfs:label;
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/Text>;
+    a rdf:Property.
+<https://schema.org/Intangible> rdfs:comment "A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc.";
+    rdfs:label "Intangible";
+    rdfs:subClassOf <https://schema.org/Thing>;
+    a rdfs:Class.
+<https://schema.org/identifier> <http://www.w3.org/2002/07/owl#equivalentProperty> dct:identifier;
+    rdfs:comment "The identifier property represents any kind of identifier for any kind of [[Thing]], such as ISBNs, GTIN codes, UUIDs etc. Schema.org provides dedicated properties for representing many of these, either as textual strings or as URL (URI) links. See [background notes](/docs/datamodel.html#identifierBg) for more details.\n        ";
+    rdfs:label "identifier";
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/Text>, <https://schema.org/PropertyValue>, <https://schema.org/URL>;
+    a rdf:Property.
+<https://schema.org/Thing> rdfs:comment "The most generic type of item.";
+    rdfs:label "Thing";
+    a rdfs:Class.
+<https://schema.org/description> <http://www.w3.org/2002/07/owl#equivalentProperty> dct:description;
+    rdfs:comment "A description of the item.";
+    rdfs:label "description";
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/Text>, <https://schema.org/TextObject>;
+    a rdf:Property.
+<https://schema.org/StructuredValue> rdfs:comment "Structured values are used when the value of a property has a more complex structure than simply being a textual value or a reference to another thing.";
+    rdfs:label "StructuredValue";
+    rdfs:subClassOf <https://schema.org/Intangible>;
+    a rdfs:Class.
+<https://schema.org/subjectOf> rdfs:comment "A CreativeWork or Event about this Thing.";
+    rdfs:label "subjectOf";
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/inverseOf> <https://schema.org/about>;
+    <https://schema.org/rangeIncludes> <https://schema.org/Event>, <https://schema.org/CreativeWork>;
+    <https://schema.org/source> <https://github.com/schemaorg/schemaorg/issues/1670>;
+    a rdf:Property.
+<https://schema.org/disambiguatingDescription> rdfs:comment "A sub property of description. A short description of the item used to disambiguate from other, similar items. Information from other properties (in particular, name) may be necessary for the description to be useful for disambiguation.";
+    rdfs:label "disambiguatingDescription";
+    rdfs:subPropertyOf <https://schema.org/description>;
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/Text>;
+    a rdf:Property.
+<https://schema.org/additionalType> rdfs:comment "An additional type for the item, typically used for adding more specific types from external vocabularies in microdata syntax. This is a relationship between something and a class that the thing is in. Typically the value is a URI-identified RDF class, and in this case corresponds to the\n    use of rdf:type in RDF. Text values can be used sparingly, for cases where useful information can be added without their being an appropriate schema to reference. In the case of text values, the class label should follow the schema.org <a href=\"https://schema.org/docs/styleguide.html\">style guide</a>.";
+    rdfs:label "additionalType";
+    rdfs:subPropertyOf rdf:type;
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/Text>, <https://schema.org/URL>;
+    a rdf:Property.
+<https://schema.org/url> rdfs:comment "URL of the item.";
+    rdfs:label "url";
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/URL>;
+    a rdf:Property.
+<https://schema.org/mainEntityOfPage> rdfs:comment "Indicates a page (or other CreativeWork) for which this thing is the main entity being described. See [background notes](/docs/datamodel.html#mainEntityBackground) for details.";
+    rdfs:label "mainEntityOfPage";
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/inverseOf> <https://schema.org/mainEntity>;
+    <https://schema.org/rangeIncludes> <https://schema.org/CreativeWork>, <https://schema.org/URL>;
+    a rdf:Property.
+<https://schema.org/sameAs> rdfs:comment "URL of a reference Web page that unambiguously indicates the item's identity. E.g. the URL of the item's Wikipedia page, Wikidata entry, or official website.";
+    rdfs:label "sameAs";
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/URL>;
+    a rdf:Property.
+<https://schema.org/image> rdfs:comment "An image of the item. This can be a [[URL]] or a fully described [[ImageObject]].";
+    rdfs:label "image";
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/ImageObject>, <https://schema.org/URL>;
+    a rdf:Property.
+<https://schema.org/alternateName> rdfs:comment "An alias for the item.";
+    rdfs:label "alternateName";
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/Text>;
+    a rdf:Property.
+<https://schema.org/potentialAction> rdfs:comment "Indicates a potential Action, which describes an idealized action in which this thing would play an 'object' role.";
+    rdfs:label "potentialAction";
+    <https://schema.org/domainIncludes> <https://schema.org/Thing>;
+    <https://schema.org/rangeIncludes> <https://schema.org/Action>;
+    a rdf:Property
+}

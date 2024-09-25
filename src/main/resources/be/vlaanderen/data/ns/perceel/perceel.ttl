@@ -1,0 +1,507 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix activiteit: <https://data.omv.vlaanderen.be/id/activiteit/>.
+@prefix ident: <https://data.omv.vlaanderen.be/id/identificator/>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix geometry: <https://data.omv.vlaanderen.be/id/geometry/>.
+@prefix project_type_code: <https://data.omv.vlaanderen.be/id/concept/procedure/project_type_code/>.
+@prefix juridische_categorie: <https://data.omv.vlaanderen.be/id/concept/juridische_categorie/>.
+@prefix ruimtelijke_eenheid: <https://data.omv.vlaanderen.be/id/ruimtelijke_eenheid/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix concept: <https://data.omv.vlaanderen.be/id/concept/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix eurovoc: <http://eurovoc.europa.eu/>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix omv: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix project: <https://data.omv.vlaanderen.be/id/project/>.
+@prefix voorwerp: <https://data.omv.vlaanderen.be/id/voorwerp/>.
+@prefix zaak_handeling: <https://data.omv.vlaanderen.be/id/zaakhandeling/>.
+@prefix zaak: <https://data.omv.vlaanderen.be/id/zaak/>.
+@prefix omv_id: <https://data.omv.vlaanderen.be/id/concept/identifier/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix inh: <https://data.omv.vlaanderen.be/id/inhoud/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix m8g: <http://data.europa.eu/m8g/>.
+@prefix frbr: <http://purl.org/vocab/frbr/core#>.
+
+skos:Concept a rdfs:Class.
+perceel:KadastraalPlanperceel a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "Kadastraal Planperceel"@nl;
+    <http://purl.org/vocab/vann/usageNote> "Kadastraal Planperceel komt overeen met de entiteit CadastralParcel uit INSPIRE Cadastral Parcel."@nl;
+    rdfs:comment "Een gedeelte van het Belgische grondgebied, geografische afgebakend en geïdentificeerd door de AAPD op het kadastraal percelenplan, dat overeenstemt met het grondoppervlak van één of meerdere kadastrale patrimoniale percelen."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:subClassOf perceel:RuimtelijkeEenheid.
+<https://data.vlaanderen.be/ns/perceel#Recht.agent> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "agent"@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    rdfs:domain perceel:Recht;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range dct:Agent.
+<https://data.vlaanderen.be/ns/perceel#Recht.ruimtelijkeEenheid> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "ruimtelijke Eenheid"@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    rdfs:domain perceel:Recht;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range perceel:RuimtelijkeEenheid.
+<https://data.vlaanderen.be/ns/perceel#Recht.type> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "type (Recht)"@nl;
+    rdfs:comment "De aard van het recht dat een agent heeft ten opzichte van een ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:Recht;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/perceel#Restrictie.agent> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "agent"@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    rdfs:domain perceel:Restrictie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range dct:Agent.
+<https://data.vlaanderen.be/ns/perceel#Restrictie.ruimtelijkeEenheid> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "ruimtelijke Eenheid"@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    rdfs:domain perceel:Restrictie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range perceel:RuimtelijkeEenheid.
+<https://data.vlaanderen.be/ns/perceel#Restrictie.type> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "type (Restrictie)"@nl;
+    rdfs:comment "De aard van de restrictie die een agent heeft ten opzichte van een ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:Restrictie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.geometrie> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "geometrie"@nl;
+    rdfs:comment "Vorm- en positiekenmerken van een object."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range perceel:RuimtelijkeEenheidGeometrie.
+<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.oppervlakte> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "oppervlakte"@nl;
+    rdfs:comment "Oppervlakte van de ruimtelijke eenheid en metadata over de manier waarop deze bepaald werd."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range perceel:RuimtelijkeEenheidOppervlakte.
+<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.type> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "type (Ruimtelijke Eenheid)"@nl;
+    <http://purl.org/vocab/vann/usageNote> "Via deze eigenschap kan men aangeven over welk soort ruimtelijke eenheid men het heeft. Mogelijke voorbeelden zijn onder meer Gebruiksperceel, akteperceel, vervuilingsperceel, openbaar domein, kadastraal planperceel\r\n"@nl;
+    rdfs:comment "De aard van een ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie.geometrie> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "geometrie"@nl;
+    rdfs:comment "Geometrische voorstelling van een ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheidGeometrie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range <http://www.w3.org/ns/locn#Geometry>.
+<https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte.oppervlakte> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "oppervlakte"@nl;
+    rdfs:comment "Afmeting van een twee-dimensionaal gebied."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheidOppervlakte;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range <https://schema.org/QuantitativeValue>.
+<https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.agent> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "agent"@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    rdfs:domain perceel:Verantwoordelijkheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range dct:Agent.
+<https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.ruimtelijkeEenheid> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "ruimtelijke Eenheid"@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    rdfs:domain perceel:Verantwoordelijkheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range perceel:RuimtelijkeEenheid.
+<https://data.vlaanderen.be/ns/perceel#Verantwoordelijkheid.type> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "type (Verantwoordelijkheid)"@nl;
+    rdfs:comment "De aard van de verantwoordelijkheid die een agent heeft ten opzichte van een ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:Verantwoordelijkheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range skos:Concept.
+<https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.agent> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "agent"@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    rdfs:domain perceel:ZakelijkRecht;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range dct:Agent.
+<https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.kadastraalPatrimoniumperceel> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "kadastraal Patrimoniumperceel"@nl;
+    rdfs:comment "Referentie naar verbonden klasse."@nl;
+    rdfs:domain perceel:ZakelijkRecht;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range perceel:KadastraalPatrimoniumperceel.
+<https://data.vlaanderen.be/ns/perceel#ZakelijkRecht.type> a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "type (Zakelijk Recht)"@nl;
+    rdfs:comment "De aard van het zakelijk recht."@nl;
+    rdfs:domain perceel:ZakelijkRecht;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range skos:Concept.
+perceel:aandeel a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "aandeel"@nl;
+    rdfs:comment "Procentuele aanduiding van een resource."@nl;
+    rdfs:domain rdfs:Resource;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range xsd:double.
+perceel:agentMetRecht a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "agent met recht"@nl;
+    rdfs:comment "Agent die een recht heeft op een ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range dct:Agent.
+perceel:agentMetRestrictie a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "agent met restrictie"@nl;
+    rdfs:comment "Agent die een restrictie heeft met betrekking tot een ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range dct:Agent.
+perceel:agentMetVerantwoordelijkheid a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "agent met verantwoordelijkheid"@nl;
+    rdfs:comment "Agent die een verantwoordelijkheid heeft ten opzichte van een ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range dct:Agent.
+perceel:agentMetZakelijkRecht a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "agent met zakelijk recht"@nl;
+    rdfs:comment "Agent die een zakelijk recht heeft op een kadastraal patrimoniumperceel."@nl;
+    rdfs:domain perceel:KadastraalPatrimoniumperceel;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range dct:Agent.
+perceel:datumbijwerking a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "datum bijwerking"@nl;
+    rdfs:comment "Datum van de laatste bijwerking."@nl;
+    rdfs:domain rdfs:Resource;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range xsd:dateTime.
+perceel:default a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "default"@nl;
+    rdfs:comment "Geometrie die moet worden gebruikt bv bij voorstelling op kaart."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheidGeometrie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range xsd:boolean.
+perceel:dimensie a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "dimensie"@nl;
+    rdfs:comment "De dimensie van de ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range skos:Concept.
+perceel:geldigheidsperiode a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "geldigheidsperiode"@nl;
+    rdfs:comment "Tijdsinterval waarbinnen iets geldig is."@nl;
+    rdfs:domain rdfs:Resource;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range m8g:PeriodOfTime.
+perceel:landgebruik a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "landgebruik"@nl;
+    rdfs:comment "Geeft het gebruik aan van de ruimtelijke eenheid."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range skos:Concept.
+perceel:methode a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "methode"@nl;
+    rdfs:comment "De methode geeft aan op welke manier de geometrie tot stand is gekomen."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheidGeometrie;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range skos:Concept.
+perceel:niveau a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "niveau"@nl;
+    <http://purl.org/vocab/vann/usageNote> "Negatieve waarden worden geassocieerd met ondergronds en positieve waarden met bovengronds. Nul wordt beschouwd als een absolute waarde om het maaiveld aan te duiden."@nl;
+    rdfs:comment "Het niveau waarop het object zich bevindt, relatief ten opzichte van andere objecten."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheid;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range xsd:integer.
+perceel:officieleOppervlakte a <http://www.w3.org/2002/07/owl#DatatypeProperty>;
+    rdfs:label "officiële oppervlakte"@nl;
+    rdfs:comment "Geeft aan of de oppervlakte al dan niet officieel is."@nl;
+    rdfs:domain perceel:RuimtelijkeEenheidOppervlakte;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range xsd:boolean.
+perceel:oppervlaktetype a <http://www.w3.org/2002/07/owl#ObjectProperty>;
+    rdfs:label "oppervlaktetype"@nl;
+    rdfs:comment "De methode waarop de oppervlakte bepaald werd;"@nl;
+    rdfs:domain perceel:RuimtelijkeEenheidOppervlakte;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:range skos:Concept.
+dct:description a rdf:Property;
+    rdfs:label "omschrijving"@nl.
+dct:relation a rdf:Property;
+    rdfs:label "is gerelateerd aan"@nl.
+adms:identifier a rdf:Property;
+    rdfs:label "identificator"@nl.
+perceel:KadastraalPatrimoniumperceel a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "Kadastraal Patrimoniumperceel"@nl;
+    <http://purl.org/vocab/vann/usageNote> "Deze definitie is gealigneerd met de definitie van de Algemene Administratie van de PatrimoniumDocumentatie (AAPD). Kadastraal Patrimoniumperceel komt overeen met de entiteit BasicPropertyUnit uit INSPIRE Cadastral Parcel."@nl;
+    rdfs:comment "Een onroerend goed of onroerend recht dat in hoofde van één of meerdere titularissen van een zakelijk recht onderworpen is aan een bepaald eigendomsstatuut."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>;
+    rdfs:subClassOf <http://www.w3.org/ns/prov#Entity>.
+perceel:Recht a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "Recht"@nl;
+    <http://purl.org/vocab/vann/usageNote> "Definitie conform ISO 19152 - Land Administration Domain Model."@nl;
+    rdfs:comment "Actie, activiteit of verzameling van acties dat een systeemparticipant mag uitvoeren of mag gebruik maken van een geassocieerde resource."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>.
+perceel:Restrictie a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "Restrictie"@nl;
+    <http://purl.org/vocab/vann/usageNote> "Definitie conform ISO 19152 - Land Administration Domain Model."@nl;
+    rdfs:comment "Formele of informele verplichting om zich te weerhouden van iets te doen"@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>.
+perceel:Verantwoordelijkheid a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "Verantwoordelijkheid"@nl;
+    <http://purl.org/vocab/vann/usageNote> "Definitie conform ISO 19152 - Land Administration Domain Model."@nl;
+    rdfs:comment "Formele of informele verplichting om iets te doen."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>.
+perceel:ZakelijkRecht a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "Zakelijk Recht"@nl;
+    rdfs:comment "Verleent aan de agent een recht van genot op het kadastraal patrimoniumperceel, inclusief een recht op de vruchten, eventueel het recht om over het kadastraal patrimoniumperceel te beschikken en heeft betrekking op het kadastraal patrimoniumperceel zelf."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>.
+perceel:RuimtelijkeEenheidGeometrie a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "Ruimtelijke Eenheid Geometrie"@nl;
+    rdfs:comment "Geometrie van de ruimtelijke eenheid en metadata over hoe deze werd bepaald."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>.
+perceel:RuimtelijkeEenheidOppervlakte a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "Ruimtelijke Eenheid Oppervlakte"@nl;
+    rdfs:comment "Oppervlakte van de ruimtelijke eenheid en metadata over de manier waarop deze bepaald werd."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>.
+perceel:RuimtelijkeEenheid a <http://www.w3.org/2002/07/owl#Class>;
+    rdfs:label "Ruimtelijke Eenheid"@nl;
+    <http://purl.org/vocab/vann/usageNote> "Definitie conform ISO 19152 - Land Administration Domain Model."@nl;
+    rdfs:comment "Eén gebied (of meerdere gebieden) van land en/of water, of één enkel volume (of meerdere volumes) ruimte, afgebakend voor een bepaald doel."@nl;
+    rdfs:isDefinedBy <https://data.vlaanderen.be/ns/perceel>.
+<https://data.vlaanderen.be/ns/perceel> a <http://www.w3.org/2002/07/owl#Ontology>;
+    rdfs:label "perceel"@en, "perceel"@nl.
+_:n3-149 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-150 <http://xmlns.com/foaf/0.1/name> "VLINTER (Interleuven)".
+_:n3-149 <http://schema.org/affiliation> _:n3-150;
+    <http://xmlns.com/foaf/0.1/firstName> "Bram";
+    <http://xmlns.com/foaf/0.1/lastName> "Adams";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:bram.adams@interleuven.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-149.
+_:n3-151 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-152 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-151 <http://schema.org/affiliation> _:n3-152;
+    <http://xmlns.com/foaf/0.1/firstName> "Veerle";
+    <http://xmlns.com/foaf/0.1/lastName> "Beyaert";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:veerle.beyaert@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-151.
+_:n3-153 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-154 <http://xmlns.com/foaf/0.1/name> "Federale Overheidsdiesnt Financiën".
+_:n3-153 <http://schema.org/affiliation> _:n3-154;
+    <http://xmlns.com/foaf/0.1/firstName> "Hilde";
+    <http://xmlns.com/foaf/0.1/lastName> "Blondeel";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:reinhilde.blondeel@minfin.fed.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-153.
+_:n3-155 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-156 <http://xmlns.com/foaf/0.1/name> "Departement Landbouw en Visserij".
+_:n3-155 <http://schema.org/affiliation> _:n3-156;
+    <http://xmlns.com/foaf/0.1/firstName> "Bart";
+    <http://xmlns.com/foaf/0.1/lastName> "Bollen";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:Bart.Bollen@lv.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-155.
+_:n3-157 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-158 <http://xmlns.com/foaf/0.1/name> "WVI".
+_:n3-157 <http://schema.org/affiliation> _:n3-158;
+    <http://xmlns.com/foaf/0.1/firstName> "Bart";
+    <http://xmlns.com/foaf/0.1/lastName> "Boute";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:b.boute@wvi.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-157.
+_:n3-159 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-160 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-159 <http://schema.org/affiliation> _:n3-160;
+    <http://xmlns.com/foaf/0.1/firstName> "Raf";
+    <http://xmlns.com/foaf/0.1/lastName> "Buyle".
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-159.
+_:n3-161 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-162 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-161 <http://schema.org/affiliation> _:n3-162;
+    <http://xmlns.com/foaf/0.1/firstName> "Dirk";
+    <http://xmlns.com/foaf/0.1/lastName> "De Baere";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:dirk.debaere@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-161.
+_:n3-163 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-164 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-163 <http://schema.org/affiliation> _:n3-164;
+    <http://xmlns.com/foaf/0.1/firstName> "Koen";
+    <http://xmlns.com/foaf/0.1/lastName> "De Baets";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:Koen.DeBaets@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-163.
+_:n3-165 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-166 <http://xmlns.com/foaf/0.1/name> "Vlaamse Landmaatschappij".
+_:n3-165 <http://schema.org/affiliation> _:n3-166;
+    <http://xmlns.com/foaf/0.1/firstName> "Bart";
+    <http://xmlns.com/foaf/0.1/lastName> "De Bruyn";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:bart.debruyn@vlm.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-165.
+_:n3-167 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-168 <http://xmlns.com/foaf/0.1/name> "Agentschap Innoveren en Ondernemen".
+_:n3-167 <http://schema.org/affiliation> _:n3-168;
+    <http://xmlns.com/foaf/0.1/firstName> "Pascal";
+    <http://xmlns.com/foaf/0.1/lastName> "De Greve";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:pascal.degreve@vlaio.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-167.
+_:n3-169 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-170 <http://xmlns.com/foaf/0.1/name> "Federale Overheidsdiesnt Financiën".
+_:n3-169 <http://schema.org/affiliation> _:n3-170;
+    <http://xmlns.com/foaf/0.1/firstName> "Joke";
+    <http://xmlns.com/foaf/0.1/lastName> "De Wit";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:joke.dewit@minfin.fed.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-169.
+_:n3-171 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-172 <http://xmlns.com/foaf/0.1/name> "Provinciale Ontwikkelingsmaatschappij Vlaams-Brabant".
+_:n3-171 <http://schema.org/affiliation> _:n3-172;
+    <http://xmlns.com/foaf/0.1/firstName> "Iris";
+    <http://xmlns.com/foaf/0.1/lastName> "Deliever";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:iris.deliever@pomvlaamsbrabant.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-171.
+_:n3-173 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-174 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-173 <http://schema.org/affiliation> _:n3-174;
+    <http://xmlns.com/foaf/0.1/firstName> "Luc";
+    <http://xmlns.com/foaf/0.1/lastName> "Depredomme";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:Luc.Depredomme@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-173.
+_:n3-175 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-176 <http://xmlns.com/foaf/0.1/name> "CIB".
+_:n3-175 <http://schema.org/affiliation> _:n3-176;
+    <http://xmlns.com/foaf/0.1/firstName> "Rebecca";
+    <http://xmlns.com/foaf/0.1/lastName> "Dhaeseleer";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:rebecca.dhaeseleer@cib.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-175.
+_:n3-177 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-178 <http://xmlns.com/foaf/0.1/name> "Stad Gent".
+_:n3-177 <http://schema.org/affiliation> _:n3-178;
+    <http://xmlns.com/foaf/0.1/firstName> "Diedrik";
+    <http://xmlns.com/foaf/0.1/lastName> "Gaus";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:Diedrik.Gaus@stad.gent>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-177.
+_:n3-179 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-180 <http://xmlns.com/foaf/0.1/name> "SCIP-CSPI".
+_:n3-179 <http://schema.org/affiliation> _:n3-180;
+    <http://xmlns.com/foaf/0.1/firstName> "Maxime";
+    <http://xmlns.com/foaf/0.1/lastName> "Heyndrickx";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:maxime.heyndrickx@scip-cspi.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-179.
+_:n3-181 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-182 <http://xmlns.com/foaf/0.1/name> "Departement Omgeving".
+_:n3-181 <http://schema.org/affiliation> _:n3-182;
+    <http://xmlns.com/foaf/0.1/firstName> "Joris";
+    <http://xmlns.com/foaf/0.1/lastName> "Niessen";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:joris.niessen@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-181.
+_:n3-183 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-184 <http://xmlns.com/foaf/0.1/name> "Departement Landbouw en Visserij".
+_:n3-183 <http://schema.org/affiliation> _:n3-184;
+    <http://xmlns.com/foaf/0.1/firstName> "Pieter";
+    <http://xmlns.com/foaf/0.1/lastName> "Roggemans";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:pieter.roggemans@lv.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-183.
+_:n3-185 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-186 <http://xmlns.com/foaf/0.1/name> "Openbare Vlaamse Afvalstoffenmaatschappij".
+_:n3-185 <http://schema.org/affiliation> _:n3-186;
+    <http://xmlns.com/foaf/0.1/firstName> "Erwin";
+    <http://xmlns.com/foaf/0.1/lastName> "Sevens";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:esevens@ovam.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-185.
+_:n3-187 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-188 <http://xmlns.com/foaf/0.1/name> "Departement Omgeving".
+_:n3-187 <http://schema.org/affiliation> _:n3-188;
+    <http://xmlns.com/foaf/0.1/firstName> "Geert";
+    <http://xmlns.com/foaf/0.1/lastName> "Van Haute";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:geert.vanhaute@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-187.
+_:n3-189 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-190 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-189 <http://schema.org/affiliation> _:n3-190;
+    <http://xmlns.com/foaf/0.1/firstName> "Hendrik";
+    <http://xmlns.com/foaf/0.1/lastName> "Van Hemelryck";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:hendrik.vanhemelryck@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-189.
+_:n3-191 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-192 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-191 <http://schema.org/affiliation> _:n3-192;
+    <http://xmlns.com/foaf/0.1/firstName> "Stefan";
+    <http://xmlns.com/foaf/0.1/lastName> "Van Malderen";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:Stefan.VanMalderen@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-191.
+_:n3-193 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-194 <http://xmlns.com/foaf/0.1/name> "Provinciale Ontwikkelingsmaatschappij Vlaams-Brabant".
+_:n3-193 <http://schema.org/affiliation> _:n3-194;
+    <http://xmlns.com/foaf/0.1/firstName> "Jana";
+    <http://xmlns.com/foaf/0.1/lastName> "Van Rompaey";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:jana.vanrompaey@pomvlaamsbrabant.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-193.
+_:n3-195 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-196 <http://xmlns.com/foaf/0.1/name> "Agentschap Innoveren en Ondernemen".
+_:n3-195 <http://schema.org/affiliation> _:n3-196;
+    <http://xmlns.com/foaf/0.1/firstName> "Floris";
+    <http://xmlns.com/foaf/0.1/lastName> "Van den Broeck";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:floris.vandenbroeck@vlaio.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-195.
+_:n3-197 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-198 <http://xmlns.com/foaf/0.1/name> "VLINTER (Interleuven)".
+_:n3-197 <http://schema.org/affiliation> _:n3-198;
+    <http://xmlns.com/foaf/0.1/firstName> "Caroline";
+    <http://xmlns.com/foaf/0.1/lastName> "Vandendriessche";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:caroline.vandendriessche@interleuven.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-197.
+_:n3-199 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-200 <http://xmlns.com/foaf/0.1/name> "Hogeschool Gent".
+_:n3-199 <http://schema.org/affiliation> _:n3-200;
+    <http://xmlns.com/foaf/0.1/firstName> "Nele";
+    <http://xmlns.com/foaf/0.1/lastName> "Vanhoutte";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:nele.vanhoutte@hogent.be>.
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-199.
+_:n3-201 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-202 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-201 <http://schema.org/affiliation> _:n3-202;
+    <http://xmlns.com/foaf/0.1/firstName> "Ziggy";
+    <http://xmlns.com/foaf/0.1/lastName> "Vanlishout".
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-201.
+_:n3-203 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-204 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-203 <http://schema.org/affiliation> _:n3-204;
+    <http://xmlns.com/foaf/0.1/firstName> "Laurens";
+    <http://xmlns.com/foaf/0.1/lastName> "Vercauteren".
+<https://data.vlaanderen.be/ns/perceel> dct:contributor _:n3-203;
+    dct:issued "2019-06-19";
+    dct:license <https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0>, "https://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/v1.0".
+_:n3-205 <http://xmlns.com/foaf/0.1/homepage> <https://data.vlaanderen.be>;
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:oslo@kb.vlaanderen.be>;
+    <http://xmlns.com/foaf/0.1/name> "Data Vlaanderen".
+<https://data.vlaanderen.be/ns/perceel> dct:mediator _:n3-205;
+    rdfs:seeAlso skos:Concept, dct:description, dct:relation, adms:identifier.
+_:n3-206 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-207 <http://xmlns.com/foaf/0.1/homepage> <http://www.pwc.be>;
+    <http://xmlns.com/foaf/0.1/name> "PwC".
+_:n3-206 <http://schema.org/affiliation> _:n3-207;
+    <http://xmlns.com/foaf/0.1/firstName> "Michiel";
+    <http://xmlns.com/foaf/0.1/lastName> "De Keyzer";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:michiel.de.keyzer@pwc.com>.
+<https://data.vlaanderen.be/ns/perceel> <http://www.w3.org/2001/02pd/rec54#editor> _:n3-206.
+_:n3-208 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-209 <http://xmlns.com/foaf/0.1/homepage> <http://www.pwc.be>;
+    <http://xmlns.com/foaf/0.1/name> "PwC".
+_:n3-208 <http://schema.org/affiliation> _:n3-209;
+    <http://xmlns.com/foaf/0.1/firstName> "Kevin";
+    <http://xmlns.com/foaf/0.1/lastName> "Haleydt";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:kevin.haleydt@pwc.com>.
+<https://data.vlaanderen.be/ns/perceel> <http://www.w3.org/2001/02pd/rec54#editor> _:n3-208.
+_:n3-210 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-211 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-210 <http://schema.org/affiliation> _:n3-211;
+    <http://xmlns.com/foaf/0.1/firstName> "Bert";
+    <http://xmlns.com/foaf/0.1/lastName> "Van Nuffelen";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:bert.vannuffelen@kb.vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> <http://www.w3.org/2001/02pd/rec54#editor> _:n3-210.
+_:n3-212 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-213 <http://xmlns.com/foaf/0.1/name> "Agentschap Informatie Vlaanderen".
+_:n3-212 <http://schema.org/affiliation> _:n3-213;
+    <http://xmlns.com/foaf/0.1/firstName> "Martin";
+    <http://xmlns.com/foaf/0.1/lastName> "Vanbrabant";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:martin.vanbrabant@vlaanderen.be>.
+<https://data.vlaanderen.be/ns/perceel> <http://www.w3.org/2001/02pd/rec54#editor> _:n3-212.
+_:n3-214 a <http://xmlns.com/foaf/0.1/Person>.
+_:n3-215 <http://xmlns.com/foaf/0.1/name> "Agentschap Innoveren en Ondernemen".
+_:n3-214 <http://schema.org/affiliation> _:n3-215;
+    <http://xmlns.com/foaf/0.1/firstName> "Idris";
+    <http://xmlns.com/foaf/0.1/lastName> "Peiren";
+    <http://xmlns.com/foaf/0.1/mbox> <mailto:idris.peiren@vlaio.be>.
+<https://data.vlaanderen.be/ns/perceel> <http://xmlns.com/foaf/0.1/maker> _:n3-214.

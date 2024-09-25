@@ -148,7 +148,7 @@ async function iterate(uris) {
         deref(url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad, turtle, notation_3)
     }
 }
-//const my_url = 'http://purl.org/dc/terms/FileFormat'
+const my_url = 'http://purl.org/dc/terms/FileFormat'
 //const my_url = 'http://xmlns.com/foaf/0.1/homepage'
-const my_url = 'https://data.vlaanderen.be/ns/omgevingsvergunning'
+//const my_url = 'https://data.vlaanderen.be/ns/omgevingsvergunning'
 iterate([my_url])

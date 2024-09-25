@@ -1,0 +1,185 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix activiteit: <https://data.omv.vlaanderen.be/id/activiteit/>.
+@prefix ident: <https://data.omv.vlaanderen.be/id/identificator/>.
+@prefix geo: <http://www.opengis.net/ont/geosparql#>.
+@prefix geometry: <https://data.omv.vlaanderen.be/id/geometry/>.
+@prefix project_type_code: <https://data.omv.vlaanderen.be/id/concept/procedure/project_type_code/>.
+@prefix juridische_categorie: <https://data.omv.vlaanderen.be/id/concept/juridische_categorie/>.
+@prefix ruimtelijke_eenheid: <https://data.omv.vlaanderen.be/id/ruimtelijke_eenheid/>.
+@prefix adms: <http://www.w3.org/ns/adms#>.
+@prefix concept: <https://data.omv.vlaanderen.be/id/concept/>.
+@prefix dbo: <http://dbpedia.org/ontology/>.
+@prefix eurovoc: <http://eurovoc.europa.eu/>.
+@prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix omv: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
+@prefix project: <https://data.omv.vlaanderen.be/id/project/>.
+@prefix voorwerp: <https://data.omv.vlaanderen.be/id/voorwerp/>.
+@prefix zaak_handeling: <https://data.omv.vlaanderen.be/id/zaakhandeling/>.
+@prefix zaak: <https://data.omv.vlaanderen.be/id/zaak/>.
+@prefix omv_id: <https://data.omv.vlaanderen.be/id/concept/identifier/>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix inh: <https://data.omv.vlaanderen.be/id/inhoud/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dc: <http://purl.org/dc/elements/1.1/>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix cpsv: <http://purl.org/vocab/cpsv#>.
+@prefix m8g: <http://data.europa.eu/m8g/>.
+@prefix frbr: <http://purl.org/vocab/frbr/core#>.
+
+<http://www.w3.org/ns/locn#addressArea> a rdfs:Property;
+    rdfs:comment "\n                                    The name of a geographic area that groups Addresses.\n                                ";
+    skos:scopeNote "\n                                    This would typically be part of a city, a neighbourhood or village, e.g. Montmartre. Address area is not an administrative unit.\n                                ".
+<http://www.w3.org/ns/locn#addressId> a rdfs:Property;
+    rdfs:comment "\n                                    A globally unique identifier for each instance of an Address.\n                                ";
+    skos:scopeNote "\n                                    The concept of adding a globally unique identifier for each instance of an address is a crucial part of the INSPIRE data spec. A number of EU countries have already implemented an ID (a UUID) in their Address Register/gazetteer, among them Denmark. OASIS xAL also includes an address identifier. It is the address Identifier that allows an address to be represented in a format other than INSPIRE whilst remaining conformant to the Core Vocabulary.\n\nThe INSPIRE method of representing addresses is very detailed, designed primarily for use in databases of addresses. Whilst data that is published in full conformance with the INSPIRE data structure can be made available using theCore Location Vocabulary the reverse is not true since the Core Vocabulary allows much greater flexibility.\n\nMany datasets that include address data as one piece of information about something else are likely to have that data in simpler formats. These might be tailored to the specific need of the dataset, follow a national norm, or make use of a standard like vCard.\n\nTo provide maximum flexibility in the Core Vocabulary, whilst remaining interoperable with INSPIRE Address Guidelines (which EU Member States are obliged to use), the  Core Location Vocabulary provides the extra property of full address and makes use of INSPIRE's addressID.\n\n\n                                ".
+<http://www.w3.org/ns/locn#adminUnitL1> a rdfs:Property;
+    rdfs:comment "\n                                    The name of the uppermost level of the address, almost always a country.\n                                ";
+    skos:scopeNote "\n                                    Best practice is to use the ISO 3166-1 code but if this is inappropriate for the context, country names should be provided in a consistent manner to reduce ambiguity. For example, either write 'France' or 'FRA' consistently throughout the dataset and avoid mixing the two. The Country controlled vocabulary from the Publications Office can be reused for this.\n                                ".
+<http://www.w3.org/ns/locn#adminUnitL2> a rdfs:Property;
+    rdfs:comment "\n                                    The name of a secondary level/region of the address, usually a county, state or other such area that typically encompasses several localities.\n                                ";
+    skos:scopeNote "\n                                    Values could be a region or province, more granular than level 1.\n                                ".
+<http://www.w3.org/ns/locn#fullAddress> a rdfs:Property;
+    rdfs:comment "\n                                    The complete address written as a string.\n                                ";
+    skos:scopeNote "\n                                    Use of this property is recommended as it will not suffer any misunderstandings that might arise through the breaking up of an address into its component parts. This property is analogous to vCard's label property but with two important differences: (1) formatting is not assumed so that, unlike vCard label, it may not be suitable to print this on an address label, (2) vCard's label property has a domain of vCard Address; the fullAddress property has no such restriction. An example of a full address is \"Champ de Mars, 5 Avenue Anatole France, 75007 Paris, France\".\n                                ".
+<http://www.w3.org/ns/locn#locatorDesignator> a rdfs:Property;
+    rdfs:comment "\n                                    A number or sequence of characters that uniquely identifies the locator within the relevant scope.\n                                ";
+    skos:scopeNote "\n                                    In simpler terms, this is the building number, apartment number, etc. For an address such as \"Flat 3, 17 Bridge Street\", the locator is \"flat 3, 17\".\n                                ".
+<http://www.w3.org/ns/locn#locatorName> a rdfs:Property;
+    rdfs:comment "\n                                    Proper noun(s) applied to the real world entity identified by the locator. The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.\n                                ";
+    skos:scopeNote "\n                                    The locator name could be the name of the property or complex, of the building or part of the building, or it could be the name of a room inside a building.\n\nThe key difference between a locator designator and a locator name is that the latter is a proper name and is unlikely to include digits. For example, \"Shumann, Berlaymont\" is a meeting room within the European Commission headquarters for which locator name is more appropriate than locator.\n                                ".
+<http://www.w3.org/ns/locn#postCode> a rdfs:Property;
+    rdfs:comment "\n                                    The code created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\n                                ";
+    skos:scopeNote "\n                                    Post codes are common elements in many countries' postal address systems. One of the many post codes of Paris is for example \"75000\".\n                                ".
+<http://www.w3.org/ns/locn#postName> a rdfs:Property;
+    rdfs:comment "\n                                    A name created and maintained for postal purposes to identify a subdivision of addresses and postal delivery points.\n                                ";
+    skos:scopeNote "\n                                    Usually a city, for example \"Paris\".\n                                ".
+<http://www.w3.org/ns/locn#poBox> a rdfs:Property;
+    rdfs:comment "\n                                    A location designator for a postal delivery point at a post office, usually a number.\n                                ";
+    skos:scopeNote "\n                                    INSPIRE's name for this is \"postalDeliveryIdentifier\" for which it uses the locator designator property with a type attribute of that name. This vocabulary separates out the Post Office Box for greater independence of technology. An example post office box number is \"9383\".\n                                ".
+<http://www.w3.org/ns/locn#thoroughfare> a rdfs:Property;
+    rdfs:comment "\n                                    The name of a passage or way through from one location to another.\n                                ";
+    skos:scopeNote "\n                                    A thoroughfare is usually a street, but it might be a waterway or some other feature. For example, \"Avenue des Champs-Élysées\".\n                                ".
+m8g:specialOpeningHoursSpecification a rdfs:Property;
+    rdfs:comment "\n                                    The time during which the Contact Point is not available.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:contactPage a rdfs:Property;
+    rdfs:comment "\n                                    A web page that could be used to reach out the Contact Point.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:email a rdfs:Property;
+    rdfs:comment "\n                                    An electronic address through which the Contact Point can be contacted.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:telephone a rdfs:Property;
+    rdfs:comment "\n                                    A telephone number through which the Contact Point can be contacted.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:openingHours a rdfs:Property;
+    rdfs:comment "\n                                    The time at which the Contact Point is normally available.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:issued a rdfs:Property;
+    rdfs:comment "\n                                    The date on which the Identifier was assigned.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+skos:notation a rdfs:Property;
+    rdfs:comment "\n                                    A string of characters to uniquely identify a concept.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+adms:schemaAgency a rdfs:Property;
+    rdfs:comment "\n                                    The name of the agency that issued the identifier.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+rdfs:label a rdfs:Property;
+    rdfs:comment "\n                                    Name of the scheme used to construct the identifier.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+dct:conformsTo a rdfs:Property;
+    rdfs:comment "\n                                    URI of the scheme used to construct the identifier.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://www.w3.org/ns/locn#address> a rdfs:Property;
+    rdfs:comment "\n                                    The Address of a Public Organization.\n                                ";
+    skos:scopeNote "\n                                    For consistency with INSPIRE, the Location Core Vocabulary's Address class should be used.\n                                ".
+skos:altLabel a rdfs:Property;
+    rdfs:comment "\n                                    An alternative or informal name(s) of a Public Organization, irrespective of language.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://www.w3.org/ns/org#changedBy> a rdfs:Property;
+    rdfs:comment "\n                                    The Change Event that changed the Organization.\n                                ";
+    skos:scopeNote "\n                                    Usually a change in the legal framework that is linked with the existence and operation of the organisation.\n                                ".
+<http://www.w3.org/ns/org#classification> a rdfs:Property;
+    rdfs:comment "\n                                    The categorisation of the Public Organization.\n                                ";
+    skos:scopeNote "\n                                    As an example, the Publications Office of the European Union provides a Named Authority list of Organization Types which is appropriate for European institutions. Other classification schemes should be used at other levels of Public Organization.\n                                ".
+m8g:contactPoint a rdfs:Property;
+    rdfs:comment "\n                                    The main contact information of the resource.\n                                ";
+    skos:scopeNote "\n                                    Usually a phone number and e-mail address. Other contact methods may be included, including online contact information, but this is conceptually distinct from the organization's homepage that may or may not provide contact information.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    The textual description of the Public Organization.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://www.w3.org/ns/org#hasMember> a rdfs:Property;
+    rdfs:comment "\n                                    An Organization which is a member of another without being a sub organization, they are independent entities.\n                                ";
+    skos:scopeNote "\n                                    The memberOf and hasMember properties are very simple and don't support statements describing the nature of the membership. The W3C Organization Ontology provides both this simple method and a more sophisticated model that does make it possible to, for example, provide information about the period of time in which one Organization was a member of another, the level of membership etc. That more sophisticated model should be used where necessary and may be used in addition to the simple memberOf/hasMember properties.\n\nAn example of memberships are the EU member states and other partners which could be represented via different legal entities as members of EFSA, the European Food Safety Agency.\n                                ".
+<http://www.w3.org/ns/org#hasUnit> a rdfs:Property;
+    rdfs:comment "\n                                    An operational department within the Public Organization.\n                                ";
+    skos:scopeNote "\n                                    Organizations typically comprise many departments, units, teams etc. Each of these is modelled in the CPOV as a unit that is linked from the parent Organization with hasUnit and to the parent with unitOf.\n                                ".
+<http://xmlns.com/foaf/0.1/homepage> a rdfs:Property;
+    rdfs:comment "\n                                    The official home page of the Public Organization.\n                                ";
+    skos:scopeNote "\n                                    The value of this property is a URL irrespective of the serialisation of the data.\n                                ".
+adms:identifier a rdfs:Property;
+    rdfs:comment "\n                                    The unambiguous structured reference for the Public Organization.\n                                ";
+    skos:scopeNote "\n                                    Public organizations identifiers are often using (but not limited to) acronyms. For example, among the EU institutions, the ECB is the identifier for the European Central Bank, OLAF for the European Anti-Fraud Office, and so on. These are formally recognised by the European Commission which provides a  list of such acronyms.\n                                ".
+m8g:logo a rdfs:Property;
+    rdfs:comment "\n                                    A graphic symbol to represent the Public Organization.\n                                ";
+    skos:scopeNote "\n                                    The value of this property can simply be the URL of the logo but it is better for developers if it links to an object that provides the URL of the image and essential metadata about it, notably its dimensions.\n                                ".
+<http://www.w3.org/ns/org#memberOf> a rdfs:Property;
+    rdfs:comment "\n                                    An Organization of which the Public Organisation is a member without being a sub organization, they are independent entities.\n                                ";
+    skos:scopeNote "\n                                    The memberOf and hasMember properties are very simple and don't support statements describing the nature of the membership. The W3C Organization Ontology provides both this simple method and a more sophisticated model that does make it possible to, for example, provide information about the period of time in which one Organization was a member of another, the level of membership etc. That more sophisticated model should be used where necessary and may be used in addition to the simple memberOf/hasMember properties.\n\nAn example of memberships are the EU member states and other partners which could be represented via different legal entities as members of EFSA, the  European Food Safety Agency.\n                                ".
+<http://www.w3.org/1999/xhtml/vocab#next> a rdfs:Property;
+    rdfs:comment "\n                                    In some cases, it is necessary to be able to create an ordered sequence of organizations that precede and succeed each other. To support this, the CPOV includes the well-known relationships of previous and next to allow such sequences to be captured and computed.\n                                ";
+    skos:scopeNote "\n                                    Examples of events leading to sequences could be renaming, splitting or merging of public organizations.\n                                ".
+skos:prefLabel a rdfs:Property;
+    rdfs:comment "\n                                    A preferred label is used to provide the primary, legally recognised name of the Public Organization, as defined in the ORG Ontology.\n                                ";
+    skos:scopeNote "\n                                    Refers to the official or legal name of a Public Organization. An organization may only have one such name in any given language. Primary names may be provided in multiple languages with multiple instances of the preferred label property.\n                                ".
+<http://www.w3.org/1999/xhtml/vocab#prev> a rdfs:Property;
+    rdfs:comment "\n                                    In some cases, it is necessary to be able to create an ordered sequence of an organization that precede and succeed each other. To support this, the CPOV includes the well-known relationships of previous and next to allow such sequences to be captured and computed.\n                                ";
+    skos:scopeNote "\n                                    Examples of events leading to sequences could be renaming, splitting or merging of public organizations.\n                                ".
+<http://www.w3.org/ns/org#purpose> a rdfs:Property;
+    rdfs:comment "\n                                    This property describes the reasons of existence of an Organization.\n                                ";
+    skos:scopeNote "\n                                    The ORG ontology suggests that this property can also be thought of as meaning 'remit' or 'responsibility.' Ideally this will link to a COFOG code but where this isn't possible or appropriate, other controlled vocabularies may be used.\n                                ".
+<http://www.w3.org/ns/org#resultedFrom> a rdfs:Property;
+    rdfs:comment "\n                                    A Change Event from which the Public Organisation resulted.\n                                ";
+    skos:scopeNote "\n                                    Usually a change in the legal framework that is linked with the existence and operation of the organisation.\n                                ".
+dct:spatial a rdfs:Property;
+    rdfs:comment "\n                                    This property links an Organization to the Administrative Region(s) that it covers.\n                                ";
+    skos:scopeNote "\n                                    The value of the properly should be the URI of the region as defined in an authoritative\nlist of regions. In Europe, this is likely to be the Administrative Territorial Units\nNamed Authority List maintained by the Publications Office's Metadata Registry.\n\nThe ATU list does not include a geometry. That is, the territory is only identified by\nits name not its spatial coordinates. This is likely to be the case for similar lists. If\ngeometries are available for the Public Organization's territory, they can be linked\nfrom the territorial unit using the Core Location Vocabulary's locn:geometry\nproperty.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A textual explanation of the event.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://www.w3.org/ns/prov#endedAtTime> a rdfs:Property;
+    rdfs:comment "\n                                    The time instant when the state of the organisation update was terminated.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:hasFormalFramework a rdfs:Property;
+    rdfs:comment "\n                                    A piece of legislation or a policy document that prompted the change.\n                                ";
+    skos:scopeNote "\n                                    The property hasFormalFramework links a Change Event or Foundation Event to a piece of legislation or a policy document that prompted the change.\n                                ".
+<http://www.w3.org/ns/org#originalOrganization> a rdfs:Property;
+    rdfs:comment "\n                                    The Organization that existed before the change.\n                                ";
+    skos:scopeNote "\n                                    Although the Foundation Event class is defined as a subclass of Change Event, it is inappropriate to use the original organization property with the Foundation Event class.\n                                ".
+<http://www.w3.org/ns/org#resultingOrganization> a rdfs:Property;
+    rdfs:comment "\n                                    This property links a Change Event or a Foundation Event to the Organization that resulted from it.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://www.w3.org/ns/prov#startedAtTime> a rdfs:Property;
+    rdfs:comment "\n                                    The time instant when the state of the organisation update was initiated.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://www.w3.org/ns/org#hasSubOrganization> a rdfs:Property;
+    rdfs:comment "\n                                    Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an organization which is a sub-part or child of this organization.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://www.w3.org/ns/org#subOrganizationOf> a rdfs:Property;
+    rdfs:comment "\n                                    Represents hierarchical containment of Organizations or OrganizationalUnits; indicates an Organization which contains this Organization.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+<http://www.w3.org/ns/org#unitOf> a rdfs:Property;
+    rdfs:comment "\n                                    The Public Organisation of which the Organizational Unit is an operational department.\n                                ";
+    skos:scopeNote "\n                                    Organizations typically comprise many departments, units, teams etc. Each of these is modelled in the CPOV as a unit that is linked from the parent Organization with hasUnit and to the parent with unitOf.\n                                ".
+dct:identifier a rdfs:Property;
+    rdfs:comment "\n                                    An unambiguous reference to a Reference Framework.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+cpsv:implements a rdfs:Property;
+    rdfs:comment "\n                                    A Change Event linked to relevant legislation or policy documents.\n                                ";
+    skos:scopeNote "\n                                    An example is the reference framework under which the Change Event is defined.\n                                ".
+dct:description a rdfs:Property;
+    rdfs:comment "\n                                    A  textual representation of the Temporal Entity.\n                                ";
+    skos:scopeNote "\n                                    \n                                ".
+m8g:frequency a rdfs:Property;
+    rdfs:comment "\n                                    The recurrence of an instant or period.\n                                ";
+    skos:scopeNote "\n                                    It is recommended to use the frequency from an existing vocabulary like the Frequency from the Publications Office.\n                                ".

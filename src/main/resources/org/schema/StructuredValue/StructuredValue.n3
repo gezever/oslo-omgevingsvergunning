@@ -1,0 +1,1 @@
+{ ?x a <https://schema.org/StructuredValue> } => { ?x a <https://schema.org/Intangible> } .

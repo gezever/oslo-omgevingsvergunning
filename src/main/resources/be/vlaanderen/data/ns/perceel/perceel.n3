@@ -1,0 +1,10 @@
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.geometrie> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.geometrie> ?y } => { ?y a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.oppervlakte> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.oppervlakte> ?y } => { ?y a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.type> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.type> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie.geometrie> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie.geometrie> ?y } => { ?y a <http://www.w3.org/ns/locn#Geometry> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte.oppervlakte> ?y } => { ?x a <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte> } .
+{ ?x <https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidOppervlakte.oppervlakte> ?y } => { ?y a <https://schema.org/QuantitativeValue> } .

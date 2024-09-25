@@ -1,0 +1,1 @@
+{ ?x a <https://schema.org/QuantitativeValue> } => { ?x a <https://schema.org/StructuredValue> } .
