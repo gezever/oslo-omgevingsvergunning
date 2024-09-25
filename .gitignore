@@ -18,4 +18,11 @@ buildNumber.properties
 node_modules
 src/.env
 src/utils/dbconfig.js
-.idea
+.idea/
+.idea/.gitignore
+.idea/misc.xml
+.idea/modules.xml
+.idea/oslo-omgevingsvergunning.iml
+.idea/rGraphicsSettings.xml
+.idea/rSettings.xml
+.idea/vcs.xml
