@@ -7,6 +7,13 @@ const prefixen = JSON.parse(fs.readFileSync('source/prefixes.json', "utf8"));
 
 var regexp_ns = new RegExp('/ns/')
 
+const regexp_langString = new RegExp('.*langString.*')
+const regexp_XMLSchema = new RegExp('.*XMLSchema.*')
+const regexp_Class = new RegExp('.*#Class.*')
+const regexp_blank_node = new RegExp('_:.*')
+const regexp_Literal = new RegExp('.*Literal.*')
+
+
 const all_rules = 'n3/all-rules.n3'
 
 function sleep(ms) {
@@ -48,6 +55,7 @@ function paden(url){
     return {"pad": pad, "turtle": turtle, "notation_3": notation_3}
 }
 
+
 async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad, turtle, notation_3) {
     var objects = [];
     var rule_array = [];
@@ -71,30 +79,38 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
                    }
                }                ;
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#range") {
-                    rule_array.push(range_rule(quad.subject.id, quad.object.id))
-                    if (!regexp_uri.test(quad.object.id)) {
-                        objects.push(quad.object.id)
+                    if (!regexp_langString.test(quad.object.id) && !regexp_XMLSchema.test(quad.object.id) && !regexp_Literal.test(quad.object.id)) {
+                        rule_array.push(range_rule(quad.subject.id, quad.object.id))
+                        if (!regexp_uri.test(quad.object.id)) {
+                            objects.push(quad.object.id)
+                        }
                     }
                     ;
                 } else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#range") {
-                   rule_array.push(range_rule(quad.subject.value, quad.object.value))
-                   if (!regexp_uri.test(quad.object.value)) {
-                       objects.push(quad.object.value)
-                   }
+                    if (!regexp_langString.test(quad.object.value) && !regexp_XMLSchema.test(quad.object.value ) && !regexp_Literal.test(quad.object.value)) {
+                        rule_array.push(range_rule(quad.subject.value, quad.object.value))
+                        if (!regexp_uri.test(quad.object.value)) {
+                            objects.push(quad.object.value)
+                        }
+                    }
                    ;
                }
                ;
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#subClassOf") {
-                    rule_array.push(subclass_rule(quad.subject.id, quad.object.id))
-                    if (!regexp_uri.test(quad.object.id)) {
-                        objects.push(quad.object.id)
+                    if (!regexp_Class.test(quad.object.id) && !regexp_blank_node.test(quad.object.id)) {
+                        rule_array.push(subclass_rule(quad.subject.id, quad.object.id))
+                        if (!regexp_uri.test(quad.object.id)) {
+                            objects.push(quad.object.id)
+                        }
                     }
                     ;
                 }else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#subClassOf") {
-                   rule_array.push(subclass_rule(quad.subject.value, quad.object.value))
-                   if (!regexp_uri.test(quad.object.value)) {
-                       objects.push(quad.object.value)
-                   }
+                    if (!regexp_Class.test(quad.object.value) && !regexp_blank_node.test(quad.object.value)) {
+                        rule_array.push(subclass_rule(quad.subject.value, quad.object.value))
+                        if (!regexp_uri.test(quad.object.value)) {
+                            objects.push(quad.object.value)
+                        }
+                    }
                    ;
                };
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#subPropertyOf") {
@@ -148,7 +164,7 @@ async function iterate(uris) {
         deref(url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad, turtle, notation_3)
     }
 }
-const my_url = 'http://purl.org/dc/terms/FileFormat'
+//const my_url = 'http://purl.org/dc/terms/FileFormat'
 //const my_url = 'http://xmlns.com/foaf/0.1/homepage'
-//const my_url = 'https://data.vlaanderen.be/ns/omgevingsvergunning'
+const my_url = 'https://data.vlaanderen.be/ns/omgevingsvergunning'
 iterate([my_url])
