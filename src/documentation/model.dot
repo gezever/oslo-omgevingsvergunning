@@ -1,73 +1,146 @@
 digraph { 
  node [ fontname="DejaVu Sans" ] ; 
-	node1 -> node2 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:zaakhandeling</font> > ] ;
-	node5 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node1 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:zaakhandeling</font> > ] ;
-	node5 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node5 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:rechtsobject</font> > ] ;
-	node7 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node1 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:procedure</font> > ] ;
-	node4 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>adms:identifier</font> > ] ;
-	node7 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node1 -> node11 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:zaakhandeling</font> > ] ;
-	node1 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:verwanteZaak</font> > ] ;
-	node2 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node2 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node4 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>perceel:RuimtelijkeEenheid.geometrie</font> > ] ;
-	node11 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node11 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node15 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node11 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node15 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node1 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:zaakhandeling</font> > ] ;
-	node1 -> node16 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:procedure</font> > ] ;
-	node3 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:rechtsobject</font> > ] ;
-	node5 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node14 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:rechtsobject</font> > ] ;
-	node9 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:locatie</font> > ] ;
-	node1 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:zaakhandeling</font> > ] ;
-	node1 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:procedure</font> > ] ;
-	node4 -> node6 [ color=BLACK, label=< <font point-size='10' color='#336633'>perceel:RuimtelijkeEenheid.geometrie</font> > ] ;
-	node7 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node4 -> node8 [ color=BLACK, label=< <font point-size='10' color='#336633'>perceel:landgebruik</font> > ] ;
-	node2 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node15 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:inhoud</font> > ] ;
-	node1 -> node17 [ color=BLACK, label=< <font point-size='10' color='#336633'>omv:procedure</font> > ] ;
-	node1 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>adms:identifier</font> > ] ;
-# http://www.w3.org/ns/adms#Identifier node0
-node0 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>http://www.w3.org/2001/XMLSchema#integer</B></td></tr><tr><td href='http://www.w3.org/ns/adms#Identifier' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/ns/adms#Identifier</font></td></tr><tr><td align='left'>dc:source</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr><tr><td align='left'>dct:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:value</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#integer&quot;</td></tr><tr><td align='left'>skos:notation</td><td align='left'>&quot;https://data.omv.vlaanderen.be/id/concept/identifier/omgevingsloket_record_id&quot;</td></tr><tr><td align='left'>skos:notation</td><td align='left'>&quot;https://data.omv.vlaanderen.be/id/concept/identifier/omv_nummer&quot;</td></tr><tr><td align='left'>skos:notation</td><td align='left'>&quot;https://data.omv.vlaanderen.be/id/concept/identifier/voorwerp_id&quot;</td></tr></table> > ] 
-# http://dbpedia.org/ontology/Case node1
-node1 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Case</B></td></tr><tr><td href='http://dbpedia.org/ontology/Case' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://dbpedia.org/ontology/Case</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis node2
-node2 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>JuridischeGebeurtenis</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis</font></td></tr><tr><td align='left'>omv:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud node3
-node3 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Inhoud</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Inhoud</font></td></tr><tr><td align='left'>ns1:modaliteit</td><td align='left'>&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid node4
-node4 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>RuimtelijkeEenheid</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid</font></td></tr><tr><td align='left'>perceel:RuimtelijkeEenheid.oppervlakte</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#integer&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk node5
-node5 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>JuridischWerk</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk</font></td></tr><tr><td align='left'>ns1:modaliteit</td><td align='left'>&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&quot;</td></tr><tr><td align='left'>omv:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# http://www.opengis.net/ont/geosparql#Geometry node6
-node6 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Geometry</B></td></tr><tr><td href='http://www.opengis.net/ont/geosparql#Geometry' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.opengis.net/ont/geosparql#Geometry</font></td></tr><tr><td align='left'>geo:asWKT</td><td align='left'>&quot;http://www.opengis.net/ont/geosparql#wktLiteral&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# http://data.europa.eu/m8g/Event node7
-node7 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Event</B></td></tr><tr><td href='http://data.europa.eu/m8g/Event' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://data.europa.eu/m8g/Event</font></td></tr><tr><td align='left'>omv:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# http://www.w3.org/2004/02/skos/core#Concept node8
-node8 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Concept</B></td></tr><tr><td href='http://www.w3.org/2004/02/skos/core#Concept' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2004/02/skos/core#Concept</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit node9
-node9 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Activiteit</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit</font></td></tr><tr><td align='left'>omv:juridischeKwalificatie</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# http://purl.org/vocab/frbr/core#Expression node10
-node10 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Expression</B></td></tr><tr><td href='http://purl.org/vocab/frbr/core#Expression' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://purl.org/vocab/frbr/core#Expression</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling node11
-node11 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Zaakhandeling</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling</font></td></tr><tr><td align='left'>omv:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie node12
-node12 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>RuimtelijkeEenheidGeometrie</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheidGeometrie</font></td></tr><tr><td align='left'>geo:asWKT</td><td align='left'>&quot;http://www.opengis.net/ont/geosparql#wktLiteral&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# http://purl.org/vocab/frbr/core#Endeavour node13
-node13 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Endeavour</B></td></tr><tr><td href='http://purl.org/vocab/frbr/core#Endeavour' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://purl.org/vocab/frbr/core#Endeavour</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling node14
-node14 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>NormatieveBepaling</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#NormatieveBepaling</font></td></tr><tr><td align='left'>ns1:modaliteit</td><td align='left'>&quot;http://www.w3.org/1999/02/22-rdf-syntax-ns#langString&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling node15
-node15 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Rechtshandeling</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling</font></td></tr><tr><td align='left'>omv:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure node16
-node16 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Procedure</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
-# http://purl.org/vocab/cpsv#Rule node17
-node17 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Rule</B></td></tr><tr><td href='http://purl.org/vocab/cpsv#Rule' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://purl.org/vocab/cpsv#Rule</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+	node1 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node2 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node4 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verantwoordelijke</font> > ] ;
+	node6 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node9 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node2 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node2 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node7 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node2 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node11 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node6 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node13 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:topConceptOf</font> > ] ;
+	node1 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node6 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node14 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns2:identifier</font> > ] ;
+	node6 -> node6 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verwanteZaak</font> > ] ;
+	node2 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node2 -> node17 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node6 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node11 -> node18 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node6 -> node17 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node8 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns4:landgebruik</font> > ] ;
+	node11 -> node16 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node13 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node9 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verantwoordelijke</font> > ] ;
+	node6 -> node11 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verwanteZaak</font> > ] ;
+	node2 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node1 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verantwoordelijke</font> > ] ;
+	node2 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns2:identifier</font> > ] ;
+	node2 -> node6 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verwanteZaak</font> > ] ;
+	node11 -> node2 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verwanteZaak</font> > ] ;
+	node6 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node15 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node10 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:hasTopConcept</font> > ] ;
+	node18 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:topConceptOf</font> > ] ;
+	node6 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns2:identifier</font> > ] ;
+	node1 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:topConceptOf</font> > ] ;
+	node0 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:topConceptOf</font> > ] ;
+	node15 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node12 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:topConceptOf</font> > ] ;
+	node2 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node6 -> node18 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node6 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node10 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:hasTopConcept</font> > ] ;
+	node2 -> node11 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verwanteZaak</font> > ] ;
+	node10 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:hasTopConcept</font> > ] ;
+	node18 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node0 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node10 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:hasTopConcept</font> > ] ;
+	node12 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node11 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node11 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node20 -> node14 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns6:location</font> > ] ;
+	node1 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node20 -> node13 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:juridischeKwalificatie</font> > ] ;
+	node14 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns4:landgebruik</font> > ] ;
+	node20 -> node8 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns6:location</font> > ] ;
+	node10 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:hasTopConcept</font> > ] ;
+	node12 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node17 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:topConceptOf</font> > ] ;
+	node10 -> node17 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:hasTopConcept</font> > ] ;
+	node6 -> node2 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verwanteZaak</font> > ] ;
+	node11 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node16 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verantwoordelijke</font> > ] ;
+	node8 -> node19 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns3:hasGeometry</font> > ] ;
+	node11 -> node17 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node7 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:topConceptOf</font> > ] ;
+	node2 -> node18 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node11 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node8 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns2:identifier</font> > ] ;
+	node2 -> node16 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node6 -> node16 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node4 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node20 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:juridischeKwalificatie</font> > ] ;
+	node10 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:hasTopConcept</font> > ] ;
+	node17 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node15 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:topConceptOf</font> > ] ;
+	node11 -> node1 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node16 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node4 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node6 -> node4 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node2 -> node2 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verwanteZaak</font> > ] ;
+	node3 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns5:type</font> > ] ;
+	node11 -> node3 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns2:identifier</font> > ] ;
+	node11 -> node6 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verwanteZaak</font> > ] ;
+	node11 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node12 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node12 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verantwoordelijke</font> > ] ;
+	node16 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node2 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node20 -> node12 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:juridischeKwalificatie</font> > ] ;
+	node10 -> node18 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:hasTopConcept</font> > ] ;
+	node6 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node2 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node11 -> node7 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedure</font> > ] ;
+	node15 -> node10 [ color=BLACK, label=< <font point-size='10' color='#336633'>skos:inScheme</font> > ] ;
+	node6 -> node15 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node15 -> node5 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verantwoordelijke</font> > ] ;
+	node11 -> node9 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:zaakhandeling</font> > ] ;
+	node9 -> node0 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:procedurestap</font> > ] ;
+	node11 -> node11 [ color=BLACK, label=< <font point-size='10' color='#336633'>ns1:verwanteZaak</font> > ] ;
+# https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap node0
+node0 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Procedurestap</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr></table> > ] 
+# https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure node1
+node1 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Procedure</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure</font></td></tr><tr><td align='left'>ns1:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr></table> > ] 
+# http://dbpedia.org/ontology/UnitOfWork node2
+node2 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>UnitOfWork</B></td></tr><tr><td href='http://dbpedia.org/ontology/UnitOfWork' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://dbpedia.org/ontology/UnitOfWork</font></td></tr><tr><td align='left'>ns1:verwanteZaak</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>ns1:zaakhandeling</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>ns2:identifier</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# http://www.w3.org/ns/adms#Identifier node3
+node3 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>http://www.w3.org/2001/XMLSchema#integer</B></td></tr><tr><td href='http://www.w3.org/ns/adms#Identifier' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/ns/adms#Identifier</font></td></tr><tr><td align='left'>ns7:source</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:value</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#integer&quot;</td></tr><tr><td align='left'>skos:notation</td><td align='left'>&quot;https://data.omgeving.vlaanderen.be/id/concept/identifier/omgevingsloket_record_id&quot;</td></tr><tr><td align='left'>skos:notation</td><td align='left'>&quot;https://data.omgeving.vlaanderen.be/id/concept/identifier/omv_nummer&quot;</td></tr><tr><td align='left'>skos:notation</td><td align='left'>&quot;https://data.omgeving.vlaanderen.be/id/concept/identifier/voorwerp_id&quot;</td></tr></table> > ] 
+# https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis node4
+node4 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>JuridischeGebeurtenis</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis</font></td></tr><tr><td align='left'>ns1:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject node5
+node5 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Rechtssubject</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# http://dbpedia.org/ontology/Case node6
+node6 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Case</B></td></tr><tr><td href='http://dbpedia.org/ontology/Case' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://dbpedia.org/ontology/Case</font></td></tr><tr><td align='left'>ns1:verwanteZaak</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>ns1:zaakhandeling</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>ns2:identifier</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# http://www.w3.org/2004/02/skos/core#Concept node7
+node7 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Concept</B></td></tr><tr><td href='http://www.w3.org/2004/02/skos/core#Concept' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2004/02/skos/core#Concept</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr></table> > ] 
+# http://purl.org/dc/terms/Location node8
+node8 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Location</B></td></tr><tr><td href='http://purl.org/dc/terms/Location' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://purl.org/dc/terms/Location</font></td></tr><tr><td align='left'>ns2:identifier</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>ns3:hasArea</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#integer&quot;</td></tr><tr><td align='left'>ns3:hasGeometry</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling node9
+node9 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Zaakhandeling</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling</font></td></tr><tr><td align='left'>ns1:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# http://www.w3.org/2004/02/skos/core#ConceptScheme node10
+node10 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>ConceptScheme</B></td></tr><tr><td href='http://www.w3.org/2004/02/skos/core#ConceptScheme' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2004/02/skos/core#ConceptScheme</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr></table> > ] 
+# http://www.w3.org/2002/07/owl#Thing node11
+node11 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Thing</B></td></tr><tr><td href='http://www.w3.org/2002/07/owl#Thing' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.w3.org/2002/07/owl#Thing</font></td></tr><tr><td align='left'>ns1:verwanteZaak</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>ns1:zaakhandeling</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>ns2:identifier</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk node12
+node12 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>JuridischWerk</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk</font></td></tr><tr><td align='left'>ns1:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr></table> > ] 
+# https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie node13
+node13 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>JuridischeCategorie</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr></table> > ] 
+# http://www.opengis.net/ont/geosparql#Feature node14
+node14 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Feature</B></td></tr><tr><td href='http://www.opengis.net/ont/geosparql#Feature' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.opengis.net/ont/geosparql#Feature</font></td></tr><tr><td align='left'>ns2:identifier</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>ns3:hasArea</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#integer&quot;</td></tr><tr><td align='left'>ns3:hasGeometry</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# http://purl.org/vocab/cpsv#Rule node15
+node15 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Rule</B></td></tr><tr><td href='http://purl.org/vocab/cpsv#Rule' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://purl.org/vocab/cpsv#Rule</font></td></tr><tr><td align='left'>ns1:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr></table> > ] 
+# https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling node16
+node16 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Rechtshandeling</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling</font></td></tr><tr><td align='left'>ns1:ingangsdatum</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#date&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# http://purl.org/vocab/frbr/core#Endeavour node17
+node17 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Endeavour</B></td></tr><tr><td href='http://purl.org/vocab/frbr/core#Endeavour' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://purl.org/vocab/frbr/core#Endeavour</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr></table> > ] 
+# http://purl.org/vocab/frbr/core#Expression node18
+node18 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Expression</B></td></tr><tr><td href='http://purl.org/vocab/frbr/core#Expression' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://purl.org/vocab/frbr/core#Expression</font></td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>skos:prefLabel</td><td align='left'>&quot;http://www.w3.org/2001/XMLSchema#string&quot;</td></tr></table> > ] 
+# http://www.opengis.net/ont/geosparql#Geometry node19
+node19 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Geometry</B></td></tr><tr><td href='http://www.opengis.net/ont/geosparql#Geometry' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>http://www.opengis.net/ont/geosparql#Geometry</font></td></tr><tr><td align='left'>ns3:asWKT</td><td align='left'>&quot;http://www.opengis.net/ont/geosparql#wktLiteral&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
+# https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit node20
+node20 [ shape=none, color=black label=< <table color='#666666' cellborder='0' cellspacing='0' border='1'><tr><td colspan='2' bgcolor='grey'><B>Activiteit</B></td></tr><tr><td href='https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit' bgcolor='#eeeeee' colspan='2'><font point-size='10' color='#6666ff'>https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit</font></td></tr><tr><td align='left'>ns5:hasPart</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>ns6:location</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr><tr><td align='left'>rdf:type</td><td align='left'>&quot;rdfs:Resource&quot;</td></tr></table> > ] 
 }

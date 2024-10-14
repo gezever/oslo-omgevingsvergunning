@@ -1,112 +1,210 @@
-PREFIX activiteit:           <https://data.omv.vlaanderen.be/id/activiteit/>
-PREFIX adms:                 <http://www.w3.org/ns/adms#>
-PREFIX concept:              <https://data.omv.vlaanderen.be/id/concept/>
-PREFIX cpsv:                 <http://purl.org/vocab/cpsv#>
-PREFIX cs:                   <https://data.vlaanderen.be/ns/chemische_stof#>
-PREFIX csc:                  <https://data.omgeving.vlaanderen.be/id/concept/chemische_stof/>
-PREFIX dbo:                  <http://dbpedia.org/ontology/>
-PREFIX dbp:                  <http://dbpedia.org/property/>
-PREFIX dc:                   <http://purl.org/dc/elements/1.1/>
-PREFIX dct:                  <http://purl.org/dc/terms/>
-PREFIX eurovoc:              <http://eurovoc.europa.eu/>
-PREFIX geo:                  <http://www.opengis.net/ont/geosparql#>
-PREFIX geometry:             <https://data.omv.vlaanderen.be/id/geometry/>
-PREFIX ident:                <https://data.omv.vlaanderen.be/id/identificator/>
-PREFIX inh:                  <https://data.omv.vlaanderen.be/id/inhoud/>
-PREFIX juridische_categorie: <https://data.omv.vlaanderen.be/id/concept/juridische_categorie/>
-PREFIX m8g:                  <http://data.europa.eu/m8g/>
-PREFIX omv:                  <https://data.vlaanderen.be/ns/omgevingsvergunning#>
-PREFIX omv_id:               <https://data.omv.vlaanderen.be/id/concept/identifier/>
-PREFIX owl:                  <http://www.w3.org/2002/07/owl#>
-PREFIX perceel:              <https://data.vlaanderen.be/ns/perceel#>
-PREFIX project:              <https://data.omv.vlaanderen.be/id/project/>
-PREFIX project_type_code:    <https://data.omv.vlaanderen.be/id/concept/procedure/project_type_code/>
-PREFIX rdf:                  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-PREFIX rdfs:                 <http://www.w3.org/2000/01/rdf-schema#>
-PREFIX ruimtelijke_eenheid:  <https://data.omv.vlaanderen.be/id/ruimtelijke_eenheid/>
-PREFIX skos:                 <http://www.w3.org/2004/02/skos/core#>
-PREFIX vlcs:                 <https://data.omgeving.vlaanderen.be/id/conceptscheme/>
-PREFIX voorwerp:             <https://data.omv.vlaanderen.be/id/voorwerp/>
-PREFIX xsd:                  <http://www.w3.org/2001/XMLSchema#>
-PREFIX zaak:                 <https://data.omv.vlaanderen.be/id/zaak/>
-PREFIX zaak_handeling:       <https://data.omv.vlaanderen.be/id/zaakhandeling/>
+PREFIX cs:   <https://data.vlaanderen.be/ns/chemische_stof#>
+PREFIX csc:  <https://data.omgeving.vlaanderen.be/id/concept/chemische_stof/>
+PREFIX dbo:  <http://dbpedia.org/ontology/>
+PREFIX dbp:  <http://dbpedia.org/property/>
+PREFIX owl:  <http://www.w3.org/2002/07/owl#>
+PREFIX rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX vlcs: <https://data.omgeving.vlaanderen.be/id/conceptscheme/>
 
-dbo:Case  rdf:type         "rdfs:Resource";
-        adms:identifier    adms:Identifier;
-        omv:procedure      <http://purl.org/vocab/frbr/core#Expression> , omv:Procedure , cpsv:Rule , <http://purl.org/vocab/frbr/core#Endeavour>;
-        omv:verwanteZaak   dbo:Case;
-        omv:zaakhandeling  omv:JuridischeGebeurtenis , omv:JuridischWerk , omv:Rechtshandeling , m8g:Event , omv:Zaakhandeling .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap>
+        rdf:type           "rdfs:Resource";
+        skos:inScheme      skos:ConceptScheme;
+        skos:prefLabel     "http://www.w3.org/2001/XMLSchema#string";
+        skos:topConceptOf  skos:ConceptScheme .
+
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie>
+        rdf:type           "rdfs:Resource";
+        skos:inScheme      skos:ConceptScheme;
+        skos:prefLabel     "http://www.w3.org/2001/XMLSchema#string";
+        skos:topConceptOf  skos:ConceptScheme .
+
+dbo:Case  rdf:type  "rdfs:Resource";
+        <http://www.w3.org/ns/adms#identifier>
+                "rdfs:Resource";
+        <http://www.w3.org/ns/adms#identifier>
+                <http://www.w3.org/ns/adms#Identifier>;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#procedure>
+                <http://purl.org/vocab/frbr/core#Endeavour> , <http://purl.org/vocab/cpsv#Rule> , skos:Concept , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> , <http://purl.org/vocab/frbr/core#Expression> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap>;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak>
+                "rdfs:Resource";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak>
+                dbo:UnitOfWork , dbo:Case , owl:Thing;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling>
+                "rdfs:Resource";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> , <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> , <http://purl.org/vocab/cpsv#Rule> , <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> .
 
 <http://purl.org/vocab/frbr/core#Expression>
-        rdf:type  "rdfs:Resource" .
+        rdf:type           "rdfs:Resource";
+        skos:inScheme      skos:ConceptScheme;
+        skos:prefLabel     "http://www.w3.org/2001/XMLSchema#string";
+        skos:topConceptOf  skos:ConceptScheme .
 
-omv:Inhoud  rdf:type      "rdfs:Resource";
-        <http://uit.te.klaren#modaliteit>
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString";
-        omv:rechtsobject  omv:Activiteit .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure>
+        rdf:type           "rdfs:Resource";
+        skos:inScheme      skos:ConceptScheme;
+        skos:prefLabel     "http://www.w3.org/2001/XMLSchema#string";
+        skos:topConceptOf  skos:ConceptScheme;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum>
+                "http://www.w3.org/2001/XMLSchema#date";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> , skos:Concept;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verantwoordelijke>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
 
-omv:NormatieveBepaling
-        rdf:type          "rdfs:Resource";
-        <http://uit.te.klaren#modaliteit>
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString";
-        omv:rechtsobject  omv:Activiteit .
-
-omv:Procedure  rdf:type  "rdfs:Resource" .
-
-adms:Identifier  rdf:type  "rdfs:Resource";
+<http://www.w3.org/ns/adms#Identifier>
+        rdf:type       "rdfs:Resource";
         rdf:value      "http://www.w3.org/2001/XMLSchema#integer";
-        #rdfs:label     "http://www.w3.org/2001/XMLSchema#integer";
-        dc:source      "http://www.w3.org/2001/XMLSchema#string";
-        dct:type       "rdfs:Resource";
-        skos:notation  "https://data.omv.vlaanderen.be/id/concept/identifier/omgevingsloket_record_id" , "https://data.omv.vlaanderen.be/id/concept/identifier/omv_nummer" , "https://data.omv.vlaanderen.be/id/concept/identifier/voorwerp_id" .
+        rdfs:label     "http://www.w3.org/2001/XMLSchema#integer";
+        <http://purl.org/dc/elements/1.1/source>
+                "http://www.w3.org/2001/XMLSchema#string";
+        <http://purl.org/dc/terms/type>
+                skos:Concept;
+        skos:notation  "https://data.omgeving.vlaanderen.be/id/concept/identifier/omgevingsloket_record_id" , "https://data.omgeving.vlaanderen.be/id/concept/identifier/omv_nummer" , "https://data.omgeving.vlaanderen.be/id/concept/identifier/voorwerp_id" .
 
-omv:JuridischeGebeurtenis
-        rdf:type          "rdfs:Resource";
-        omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
-        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis>
+        rdf:type  "rdfs:Resource";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum>
+                "http://www.w3.org/2001/XMLSchema#date";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> , skos:Concept;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verantwoordelijke>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
 
-skos:Concept  rdf:type  "rdfs:Resource" .
+skos:Concept  rdf:type     "rdfs:Resource";
+        skos:inScheme      skos:ConceptScheme;
+        skos:prefLabel     "http://www.w3.org/2001/XMLSchema#string";
+        skos:topConceptOf  skos:ConceptScheme .
 
-omv:JuridischWerk  rdf:type  "rdfs:Resource";
-        <http://uit.te.klaren#modaliteit>
-                "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString";
-        omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
-        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk;
-        omv:rechtsobject  omv:Activiteit .
+owl:Thing  rdf:type  "rdfs:Resource";
+        <http://www.w3.org/ns/adms#identifier>
+                "rdfs:Resource";
+        <http://www.w3.org/ns/adms#identifier>
+                <http://www.w3.org/ns/adms#Identifier>;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#procedure>
+                <http://purl.org/vocab/frbr/core#Endeavour> , <http://purl.org/vocab/cpsv#Rule> , skos:Concept , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> , <http://purl.org/vocab/frbr/core#Expression> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap>;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak>
+                "rdfs:Resource";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak>
+                owl:Thing , dbo:UnitOfWork , dbo:Case;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling>
+                "rdfs:Resource";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> , <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> , <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> , <http://purl.org/vocab/cpsv#Rule> .
 
-geo:Geometry  rdf:type  "rdfs:Resource";
-        geo:asWKT  "http://www.opengis.net/ont/geosparql#wktLiteral" .
-
-omv:Rechtshandeling  rdf:type  "rdfs:Resource";
-        omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
-        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk .
-
-perceel:RuimtelijkeEenheidGeometrie
-        rdf:type   "rdfs:Resource";
-        geo:asWKT  "http://www.opengis.net/ont/geosparql#wktLiteral" .
-
-m8g:Event  rdf:type       "rdfs:Resource";
-        omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
-        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk .
-
-perceel:RuimtelijkeEenheid
-        rdf:type             "rdfs:Resource";
-        adms:identifier      adms:Identifier;
-        perceel:RuimtelijkeEenheid.geometrie
-                geo:Geometry , perceel:RuimtelijkeEenheidGeometrie;
-        perceel:RuimtelijkeEenheid.oppervlakte
+<http://www.opengis.net/ont/geosparql#Feature>
+        rdf:type  "rdfs:Resource";
+        <http://www.opengis.net/ont/geosparql#hasArea>
                 "http://www.w3.org/2001/XMLSchema#integer";
-        perceel:landgebruik  skos:Concept .
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                "rdfs:Resource";
+        <http://www.w3.org/ns/adms#identifier>
+                "rdfs:Resource";
+        <http://www.w3.org/ns/adms#identifier>
+                <http://www.w3.org/ns/adms#Identifier>;
+        <https://data.vlaanderen.be/ns/perceel#landgebruik>
+                skos:Concept .
 
-cpsv:Rule  rdf:type  "rdfs:Resource" .
+<https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk>
+        rdf:type           "rdfs:Resource";
+        skos:inScheme      skos:ConceptScheme;
+        skos:prefLabel     "http://www.w3.org/2001/XMLSchema#string";
+        skos:topConceptOf  skos:ConceptScheme;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum>
+                "http://www.w3.org/2001/XMLSchema#date";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> , skos:Concept;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verantwoordelijke>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
+
+<http://www.opengis.net/ont/geosparql#Geometry>
+        rdf:type  "rdfs:Resource";
+        <http://www.opengis.net/ont/geosparql#asWKT>
+                "http://www.opengis.net/ont/geosparql#wktLiteral" .
+
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling>
+        rdf:type  "rdfs:Resource";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum>
+                "http://www.w3.org/2001/XMLSchema#date";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> , skos:Concept;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verantwoordelijke>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
+
+<http://purl.org/dc/terms/Location>
+        rdf:type  "rdfs:Resource";
+        <http://www.opengis.net/ont/geosparql#hasArea>
+                "http://www.w3.org/2001/XMLSchema#integer";
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                "rdfs:Resource";
+        <http://www.opengis.net/ont/geosparql#hasGeometry>
+                <http://www.opengis.net/ont/geosparql#Geometry>;
+        <http://www.w3.org/ns/adms#identifier>
+                "rdfs:Resource";
+        <http://www.w3.org/ns/adms#identifier>
+                <http://www.w3.org/ns/adms#Identifier>;
+        <https://data.vlaanderen.be/ns/perceel#landgebruik>
+                skos:Concept .
+
+dbo:UnitOfWork  rdf:type  "rdfs:Resource";
+        <http://www.w3.org/ns/adms#identifier>
+                "rdfs:Resource";
+        <http://www.w3.org/ns/adms#identifier>
+                <http://www.w3.org/ns/adms#Identifier>;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#procedure>
+                <http://purl.org/vocab/frbr/core#Endeavour> , <http://purl.org/vocab/cpsv#Rule> , skos:Concept , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> , <http://purl.org/vocab/frbr/core#Expression> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap>;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak>
+                "rdfs:Resource";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verwanteZaak>
+                owl:Thing , dbo:UnitOfWork , dbo:Case;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling>
+                "rdfs:Resource";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#zaakhandeling>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling> , <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeGebeurtenis> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> , <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtshandeling> , <http://purl.org/vocab/cpsv#Rule> .
+
+<http://purl.org/vocab/cpsv#Rule>
+        rdf:type           "rdfs:Resource";
+        skos:inScheme      skos:ConceptScheme;
+        skos:prefLabel     "http://www.w3.org/2001/XMLSchema#string";
+        skos:topConceptOf  skos:ConceptScheme;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum>
+                "http://www.w3.org/2001/XMLSchema#date";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> , skos:Concept;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verantwoordelijke>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
 
 <http://purl.org/vocab/frbr/core#Endeavour>
+        rdf:type           "rdfs:Resource";
+        skos:inScheme      skos:ConceptScheme;
+        skos:prefLabel     "http://www.w3.org/2001/XMLSchema#string";
+        skos:topConceptOf  skos:ConceptScheme .
+
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit>
+        rdf:type  "rdfs:Resource";
+        <http://purl.org/dc/terms/hasPart>
+                "rdfs:Resource";
+        <http://www.w3.org/ns/locn#location>
+                "rdfs:Resource";
+        <http://www.w3.org/ns/locn#location>
+                <http://www.opengis.net/ont/geosparql#Feature> , <http://purl.org/dc/terms/Location>;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#juridischeKwalificatie>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> , skos:Concept , <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> .
+
+skos:ConceptScheme  rdf:type  "rdfs:Resource";
+        skos:hasTopConcept  <http://purl.org/vocab/frbr/core#Expression> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedure> , <http://purl.org/vocab/frbr/core#Endeavour> , <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> , <http://purl.org/vocab/cpsv#Rule> , <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischeCategorie> , <https://data.vlaanderen.be/ns/omgevingsvergunning#JuridischWerk> , skos:Concept;
+        skos:prefLabel      "http://www.w3.org/2001/XMLSchema#string" .
+
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Zaakhandeling>
+        rdf:type  "rdfs:Resource";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#ingangsdatum>
+                "http://www.w3.org/2001/XMLSchema#date";
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Procedurestap> , skos:Concept;
+        <https://data.vlaanderen.be/ns/omgevingsvergunning#verantwoordelijke>
+                <https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject> .
+
+<https://data.vlaanderen.be/ns/omgevingsvergunning#Rechtssubject>
         rdf:type  "rdfs:Resource" .
-
-omv:Activiteit  rdf:type            "rdfs:Resource";
-        omv:juridischeKwalificatie  "rdfs:Resource";
-        omv:locatie                 perceel:RuimtelijkeEenheid .
-
-omv:Zaakhandeling  rdf:type  "rdfs:Resource";
-        omv:ingangsdatum  "http://www.w3.org/2001/XMLSchema#date";
-        omv:inhoud        omv:Inhoud , omv:NormatieveBepaling , omv:JuridischWerk .
