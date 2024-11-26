@@ -7,10 +7,8 @@
 { ?x <http://www.w3.org/ns/adms#interoperabilityLevel> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
 { ?x <http://www.w3.org/ns/adms#representationTechnique> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
 { ?x <http://www.w3.org/ns/adms#sample> ?y } => { ?y a <http://www.w3.org/ns/adms#Asset> } .
-{ ?x <http://www.w3.org/ns/adms#schemeAgency> ?y } => { ?y a <http://www.w3.org/2000/01/rdf-schema#Literal> } .
 { ?x <http://www.w3.org/ns/adms#status> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
 { ?x <http://www.w3.org/ns/adms#supportedSchema> ?y } => { ?y a <http://www.w3.org/ns/adms#Asset> } .
-{ ?x <http://www.w3.org/ns/adms#versionNotes> ?y } => { ?y a <http://www.w3.org/2000/01/rdf-schema#Literal> } .
 { ?x  a <http://www.w3.org/ns/adms#AssetDistribution> } => { ?x a <http://www.w3.org/ns/dcat#Distribution> } .
 { ?x  a <http://www.w3.org/ns/adms#Asset> } => { ?x a <http://www.w3.org/ns/dcat#Dataset> } .
 { ?x  a <http://www.w3.org/ns/adms#AssetRepository> } => { ?x a <http://www.w3.org/ns/dcat#Catalog> } .

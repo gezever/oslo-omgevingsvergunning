@@ -1,0 +1,111 @@
+PREFIX :          <https://data.omgeving.vlaanderen.be/id/conceptscheme/>
+PREFIX graph:     <https://data.vlaanderen.be/id/graph/>
+PREFIX omv:       <https://data.vlaanderen.be/ns/omgevingsvergunning#>
+PREFIX procedure: <https://data.omgeving.vlaanderen.be/id/concept/procedure/>
+PREFIX skos:      <http://www.w3.org/2004/02/skos/core#>
+
+procedure:project_type_code_omv2024_vrijstelling
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2024_vrijstelling";
+        skos:topConceptOf  :procedure .
+
+:procedure  a               skos:ConceptScheme;
+            skos:hasTopConcept  procedure:project_type_code_omv2019_aanvraag , procedure:project_type_code_omv2017_afwijk_milv_expl , procedure:project_type_code_omv2017_stopzetting_iioa , procedure:project_type_code_omv2017_aanvraag , procedure:project_type_code_omv2017_vk_nieuw , procedure:project_type_code_omv2024_vrijstelling , procedure:project_type_code_omv2017_schors_ophef_iioa , procedure:project_type_code_omv2022_verlenging_pas , procedure:project_type_code_omv2017_overdracht_voll , procedure:project_type_code_omv2017_vk_bijstelling , procedure:project_type_code_omv2017_bijst_milv_nietexpl , procedure:project_type_code_omv2017_bijst_milv_expl , procedure:project_type_code_omv2017_melding , procedure:project_type_code_omv2019_bijst_milv_klasse3 , procedure:project_type_code_omv2017_omzetting , procedure:project_type_code_omv2024_tussentijdse_rundvee , procedure:project_type_code_omv2017_overdracht_deel;
+            skos:prefLabel      "procedure" .
+
+procedure:project_type_code_omv2017_schors_ophef_iioa
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_schors_ophef_iioa";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2022_verlenging_pas
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2022_verlenging_pas";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_overdracht_voll
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_overdracht_voll";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_vk_bijstelling
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_vk_bijstelling";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_bijst_milv_nietexpl
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_bijst_milv_nietexpl";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_bijst_milv_expl
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_bijst_milv_expl";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_melding
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_melding";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2019_bijst_milv_klasse3
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2019_bijst_milv_klasse3";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_omzetting
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_omzetting";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2024_tussentijdse_rundvee
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2024_tussentijdse_rundvee";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_overdracht_deel
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_overdracht_deel";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_afwijk_milv_expl
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_afwijk_milv_expl";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2019_aanvraag
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2019_aanvraag";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_vk_nieuw
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_vk_nieuw";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_aanvraag
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_aanvraag";
+        skos:topConceptOf  :procedure .
+
+procedure:project_type_code_omv2017_stopzetting_iioa
+        a                  omv:Procedurestap , skos:Concept;
+        skos:inScheme      :procedure;
+        skos:prefLabel     "project_type_code_omv2017_stopzetting_iioa";
+        skos:topConceptOf  :procedure .

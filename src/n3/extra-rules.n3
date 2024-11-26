@@ -1,0 +1,5 @@
+{ ?x <https://data.vlaanderen.be/ns/omgevingsvergunning#procedure> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/omgevingsvergunning#procedurestap> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <https://data.vlaanderen.be/ns/omgevingsvergunning#juridischeKwalificatie> ?y } => { ?y a <http://www.w3.org/2004/02/skos/core#Concept> } .
+{ ?x <http://purl.org/dc/terms/isPartOf> ?y } => { ?y a <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> } .
+{ ?x <http://purl.org/dc/terms/isPartOf> ?y } => { ?x a <https://data.vlaanderen.be/ns/omgevingsvergunning#Activiteit> } .

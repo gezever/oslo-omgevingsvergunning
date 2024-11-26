@@ -81,7 +81,7 @@
     "@type": "@id"
   },
   "geometrie": {
-    "@id": "https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.geometrie",
+    "@id": "http://www.opengis.net/ont/geosparql#hasGeometry",
     "@type": "@id"
   },
   "landgebruik": {
@@ -94,7 +94,7 @@
     "@type": "http://www.w3.org/2001/XMLSchema#integer"
   },
   "oppervlakte": {
-    "@id": "https://data.vlaanderen.be/ns/perceel#RuimtelijkeEenheid.oppervlakte",
+    "@id": "http://www.opengis.net/ont/geosparql#hasArea",
     "@type": "@id"
   },
   "asGeoJSON" : "http://www.opengis.net/ont/geosparql#asGeoJSON",
@@ -111,8 +111,8 @@
     "@type": "@id"
   },
   "reverse_is_deel_van":  {
-    "@type": "@id",
-    "@reverse": "heeft_deel"
+    "@id": "http://purl.org/dc/terms/hasPart",
+    "@type": "@id"
   },
   "heeft_deel":  {
     "@id": "http://purl.org/dc/terms/hasPart",
@@ -126,7 +126,7 @@
     "@type": "@id"
   },
   "locatie": {
-    "@id": "https://data.vlaanderen.be/ns/omgevingsvergunning#locatie",
+    "@id": "locn:location",
     "@type": "@id"
   },
   "rechtsobject": {
@@ -142,6 +142,7 @@
     "@id" : "http://uit.te.klaren#modaliteit",
     "@language" : "nl"
   },
+  "dcterms" : "http://purl.org/dc/terms/",
   "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
   "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
   "ident": "https://data.omv.vlaanderen.be/id/identificator/",
@@ -154,7 +155,7 @@
   "concept": "https://data.omv.vlaanderen.be/id/concept/",
   "dbo" : "http://dbpedia.org/ontology/",
   "eurovoc": "http://eurovoc.europa.eu/",
-  "perceel" : "https://data.vlaanderen.be/ns/perceel#",
+  "locn": "http://www.w3.org/ns/locn#",
   "skos": "http://www.w3.org/2004/02/skos/core#",
   "omv": "https://data.vlaanderen.be/ns/omgevingsvergunning#",
   "project": "https://data.omv.vlaanderen.be/id/project/",

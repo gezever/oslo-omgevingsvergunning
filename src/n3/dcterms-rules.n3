@@ -1,0 +1,3 @@
+{ ?x <http://purl.org/dc/terms/hasPart> ?y } => { ?y <http://purl.org/dc/terms/isPartOf> ?x } .
+{ ?x <http://purl.org/dc/terms/isPartOf> ?y } => { ?y <http://purl.org/dc/terms/hasPart> ?x } .
+

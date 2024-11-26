@@ -5,7 +5,7 @@ import path from "path";
 
 const prefixen = JSON.parse(fs.readFileSync('source/prefixes.json', "utf8"));
 
-var regexp_ns = new RegExp('/ns/')
+var regexp_ns = new RegExp('.*/ns/.*')
 
 const regexp_langString = new RegExp('.*langString.*')
 const regexp_XMLSchema = new RegExp('.*XMLSchema.*')
@@ -134,7 +134,7 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
             if (!fs.existsSync(path.dirname(turtle))){
                 fs.mkdirSync(path.dirname(turtle), { recursive: true });
             }
-            fs.writeFileSync(notation_3, rule_array.join('\n'));
+            fs.appendFileSync(notation_3, rule_array.join('\n') + '\n');
             fs.appendFileSync(all_rules, '\n' + rule_array.join('\n') + '\n');
             ttl_writer.end((error, result) => fs.writeFileSync(turtle, result));
             iterate(Array.from(new Set(objects)).sort())

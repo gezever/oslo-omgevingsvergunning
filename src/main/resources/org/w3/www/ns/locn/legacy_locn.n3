@@ -1,0 +1,12 @@
+{ ?x <http://www.w3.org/ns/locn#addressArea> ?y } => { ?x a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#addressId> ?y } => { ?x a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#adminUnitL1> ?y } => { ?x a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#adminUnitL2> ?y } => { ?x a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#fullAddress> ?y } => { ?x a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#poBox> ?y } => { ?x a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#postCode> ?y } => { ?x a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#postName> ?y } => { ?x a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#thoroughfare> ?y } => { ?x a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#address> ?y } => { ?y a <http://www.w3.org/ns/locn#Address> } .
+{ ?x <http://www.w3.org/ns/locn#geometry> ?y } => { ?y a <http://www.w3.org/ns/locn#Geometry> } .
+{ ?x <http://www.w3.org/ns/locn#location> ?y } => { ?y a <http://purl.org/dc/terms/Location> } .

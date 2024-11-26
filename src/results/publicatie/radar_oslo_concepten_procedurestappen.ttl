@@ -1,0 +1,219 @@
+PREFIX :              <https://data.omgeving.vlaanderen.be/id/conceptscheme/omv/>
+PREFIX graph:         <https://data.vlaanderen.be/id/graph/>
+PREFIX omv:           <https://data.vlaanderen.be/ns/omgevingsvergunning#>
+PREFIX procedurestap: <https://data.omgeving.vlaanderen.be/id/procedurestap/>
+PREFIX skos:          <http://www.w3.org/2004/02/skos/core#>
+
+procedurestap:fase_gebeurtenis_code_bevestigen_intrekken_aanvraag
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_bevestigen_intrekken_aanvraag";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_intrekken_dossier
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_intrekken_dossier";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_analoog_beroepschrift
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_analoog_beroepschrift";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_intrekken_beslissing
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_intrekken_beslissing";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_intrekking_dossier
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_intrekking_dossier";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_melding_niet_rechtsgeldig
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_melding_niet_rechtsgeldig";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_bevestigen_wijzigingsverzoek
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_bevestigen_wijzigingsverzoek";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_aktenemen_melding
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_aktenemen_melding";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_betekening_derden
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_betekening_derden";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_indienen_beroep
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_indienen_beroep";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_erratum_beslissing
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_erratum_beslissing";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_geven_beslissing_zaakderwegen
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_geven_beslissing_zaakderwegen";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_erratum_melding_niet_rechtsgeldig
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_erratum_melding_niet_rechtsgeldig";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_intrekking_beroepschrift
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_intrekking_beroepschrift";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_intrekken_beroepschrift
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_intrekken_beroepschrift";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_doorverwijzen_dossier
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_doorverwijzen_dossier";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_melden_aanplak_aktename_melding
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_melden_aanplak_aktename_melding";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_erratum_aktenemen_melding
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_erratum_aktenemen_melding";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_intrekking_beroepschrift_derde
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_intrekking_beroepschrift_derde";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_indienen_gedigitaliseerd_dossier
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_indienen_gedigitaliseerd_dossier";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_aanvaarden_overgemaakte_versie
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_aanvaarden_overgemaakte_versie";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_bevestigen_intrekking_beroepschrift_bsac
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_bevestigen_intrekking_beroepschrift_bsac";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_melden_aanplak_beslissing
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_melden_aanplak_beslissing";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_indienen_dossier
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_indienen_dossier";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_opladen_beslissing_zaakderwegen
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_opladen_beslissing_zaakderwegen";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_intrekking_beroepschrift_bsac
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_intrekking_beroepschrift_bsac";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_corrigeren_aanplak_beslissing
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_corrigeren_aanplak_beslissing";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_indienen_beroepschrift_bsac
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_indienen_beroepschrift_bsac";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_intrekking_analoog_beroepschrift
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_intrekking_analoog_beroepschrift";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_intrekken_beroepschrift_bsac
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_intrekken_beroepschrift_bsac";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_aanplak_beslissing
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_aanplak_beslissing";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_aanplak_openbaar_onderzoek
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_aanplak_openbaar_onderzoek";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_beslissing
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_beslissing";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_registreren_ontvangst_analoog_beroepschrift_bsac
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_registreren_ontvangst_analoog_beroepschrift_bsac";
+        skos:topConceptOf  :procedurestap .
+
+procedurestap:fase_gebeurtenis_code_intrekken_beroepschrift_derde
+        a                  skos:Concept;
+        skos:inScheme      :procedurestap;
+        skos:prefLabel     "fase_gebeurtenis_code_intrekken_beroepschrift_derde";
+        skos:topConceptOf  :procedurestap .
+
+:procedurestap  a           skos:ConceptScheme;
+                skos:hasTopConcept  procedurestap:fase_gebeurtenis_code_bevestigen_intrekken_aanvraag , procedurestap:fase_gebeurtenis_code_intrekken_dossier , procedurestap:fase_gebeurtenis_code_registreren_analoog_beroepschrift , procedurestap:fase_gebeurtenis_code_intrekken_beslissing , procedurestap:fase_gebeurtenis_code_registreren_intrekking_dossier , procedurestap:fase_gebeurtenis_code_melding_niet_rechtsgeldig , procedurestap:fase_gebeurtenis_code_bevestigen_wijzigingsverzoek , procedurestap:fase_gebeurtenis_code_aktenemen_melding , procedurestap:fase_gebeurtenis_code_betekening_derden , procedurestap:fase_gebeurtenis_code_indienen_beroep , procedurestap:fase_gebeurtenis_code_registreren_erratum_beslissing , procedurestap:fase_gebeurtenis_code_geven_beslissing_zaakderwegen , procedurestap:fase_gebeurtenis_code_erratum_melding_niet_rechtsgeldig , procedurestap:fase_gebeurtenis_code_registreren_intrekking_beroepschrift , procedurestap:fase_gebeurtenis_code_intrekken_beroepschrift , procedurestap:fase_gebeurtenis_code_doorverwijzen_dossier , procedurestap:fase_gebeurtenis_code_melden_aanplak_aktename_melding , procedurestap:fase_gebeurtenis_code_erratum_aktenemen_melding , procedurestap:fase_gebeurtenis_code_registreren_intrekking_beroepschrift_derde , procedurestap:fase_gebeurtenis_code_indienen_gedigitaliseerd_dossier , procedurestap:fase_gebeurtenis_code_aanvaarden_overgemaakte_versie , procedurestap:fase_gebeurtenis_code_bevestigen_intrekking_beroepschrift_bsac , procedurestap:fase_gebeurtenis_code_melden_aanplak_beslissing , procedurestap:fase_gebeurtenis_code_indienen_dossier , procedurestap:fase_gebeurtenis_code_opladen_beslissing_zaakderwegen , procedurestap:fase_gebeurtenis_code_registreren_intrekking_beroepschrift_bsac , procedurestap:fase_gebeurtenis_code_corrigeren_aanplak_beslissing , procedurestap:fase_gebeurtenis_code_intrekken_beroepschrift_derde , procedurestap:fase_gebeurtenis_code_registreren_ontvangst_analoog_beroepschrift_bsac , procedurestap:fase_gebeurtenis_code_registreren_beslissing , procedurestap:fase_gebeurtenis_code_registreren_aanplak_openbaar_onderzoek , procedurestap:fase_gebeurtenis_code_registreren_aanplak_beslissing , procedurestap:fase_gebeurtenis_code_intrekken_beroepschrift_bsac , procedurestap:fase_gebeurtenis_code_registreren_intrekking_analoog_beroepschrift , procedurestap:fase_gebeurtenis_code_indienen_beroepschrift_bsac;
+                skos:prefLabel      "procedurestappen" .

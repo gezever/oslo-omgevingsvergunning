@@ -1,41 +1,61 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
-@prefix activiteit: <https://data.omv.vlaanderen.be/id/activiteit/>.
-@prefix ident: <https://data.omv.vlaanderen.be/id/identificator/>.
 @prefix geo: <http://www.opengis.net/ont/geosparql#>.
-@prefix geometry: <https://data.omv.vlaanderen.be/id/geometry/>.
-@prefix project_type_code: <https://data.omv.vlaanderen.be/id/concept/procedure/project_type_code/>.
-@prefix juridische_categorie: <https://data.omv.vlaanderen.be/id/concept/juridische_categorie/>.
-@prefix ruimtelijke_eenheid: <https://data.omv.vlaanderen.be/id/ruimtelijke_eenheid/>.
+@prefix geometry: <https://data.omgeving.vlaanderen.be/id/geometry/>.
+@prefix conc_p: <https://data.omgeving.vlaanderen.be/id/concept/procedure/>.
+@prefix juridische_categorie: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/>.
+@prefix ruimtelijke_eenheid: <https://data.omgeving.vlaanderen.be/id/ruimtelijke_eenheid/>.
 @prefix adms: <http://www.w3.org/ns/adms#>.
-@prefix concept: <https://data.omv.vlaanderen.be/id/concept/>.
+@prefix concept: <https://data.omgeving.vlaanderen.be/id/concept/>.
 @prefix dbo: <http://dbpedia.org/ontology/>.
 @prefix eurovoc: <http://eurovoc.europa.eu/>.
 @prefix perceel: <https://data.vlaanderen.be/ns/perceel#>.
+@prefix identificator: <https://data.omgeving.vlaanderen.be/id/identificator/>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix locn: <http://www.w3.org/ns/locn#>.
 @prefix omv: <https://data.vlaanderen.be/ns/omgevingsvergunning#>.
-@prefix project: <https://data.omv.vlaanderen.be/id/project/>.
-@prefix voorwerp: <https://data.omv.vlaanderen.be/id/voorwerp/>.
-@prefix zaak_handeling: <https://data.omv.vlaanderen.be/id/zaakhandeling/>.
-@prefix zaak: <https://data.omv.vlaanderen.be/id/zaak/>.
-@prefix omv_id: <https://data.omv.vlaanderen.be/id/concept/identifier/>.
+@prefix project: <https://data.omgeving.vlaanderen.be/id/project/>.
+@prefix voorwerp: <https://data.omgeving.vlaanderen.be/id/voorwerp/>.
+@prefix omv_id: <https://data.omgeving.vlaanderen.be/id/concept/identifier/>.
 @prefix dct: <http://purl.org/dc/terms/>.
-@prefix inh: <https://data.omv.vlaanderen.be/id/inhoud/>.
+@prefix inh: <https://data.omgeving.vlaanderen.be/id/inhoud/>.
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix dc: <http://purl.org/dc/elements/1.1/>.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
 @prefix cpsv: <http://purl.org/vocab/cpsv#>.
 @prefix m8g: <http://data.europa.eu/m8g/>.
 @prefix frbr: <http://purl.org/vocab/frbr/core#>.
+@prefix rechtssubject: <https://data.omgeving.vlaanderen.be/id/rechtssubject/>.
+@prefix procedurestap: <https://data.omgeving.vlaanderen.be/id/procedurestap/>.
+@prefix zaakhandeling: <https://data.omgeving.vlaanderen.be/id/zaakhandeling/>.
+@prefix identifier: <https://data.omgeving.vlaanderen.be/id/identifier/>.
+@prefix zaak: <https://data.omgeving.vlaanderen.be/id/zaak/>.
+@prefix crs: <http://www.opengis.net/def/crs/EPSG/0/>.
+@prefix location: <https://data.omgeving.vlaanderen.be/id/location/>.
+@prefix activiteit: <https://data.omgeving.vlaanderen.be/id/activiteit/>.
+@prefix stedenbouwkundig_code: <https://data.omgeving.vlaanderen.be/id/concept/stedenbouwkundig_code/>.
+@prefix handeling_code: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/handeling_code/>.
+@prefix functie_tobe_code: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/functie_tobe_code/>.
+@prefix functie_tobe_cascade: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/functie_tobe_cascade/>.
+@prefix voorwerptype_code: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/voorwerptype_code/>.
+@prefix iioa_klasse: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/iioa_klasse/>.
+@prefix actuele_rubriek_klasse: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/actuele_rubriek_klasse/>.
+@prefix actuele_rubriek: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/actuele_rubriek/>.
+@prefix stedenbouwkundigtype_code: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/stedenbouwkundigtype_code/>.
+@prefix terreinobjecttype_code: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/terreinobjecttype_code/>.
+@prefix verkavelingtype_code: <https://data.omgeving.vlaanderen.be/id/concept/juridische_categorie/verkavelingtype_code/>.
+@prefix verkavelingtype_code2: <https://data.omgeving.vlaanderen.be/id/concept/verkavelingtype_code/>.
+@prefix conceptscheme: <https://data.omgeving.vlaanderen.be/id/conceptscheme/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
 
 <http://dbpedia.org/ontology/> <http://open.vocab.org/terms/defines> dbo:Case.
 <http://dbpedia.org/ontology/data/definitions.ttl> <http://open.vocab.org/terms/describes> dbo:Case.
 dbo:LegalCase rdfs:subClassOf dbo:Case.
-dbo:Case a <http://www.w3.org/2002/07/owl#Class>;
+dbo:Case a owl:Class;
     rdfs:subClassOf dbo:UnitOfWork;
     rdfs:label "dossier"@fr, "case"@en, "zaak"@nl, "cás"@ga, "Sache"@de, "معاملہ"@ur, "υπόθεση"@el, "케이스"@ko;
     rdfs:isDefinedBy <http://dbpedia.org/ontology/>;
     rdfs:comment "Een zaak is het geheel aan werk gedaan om tot een bestuurlijke of zakelijke beslissing te komen. Een zaak slaat doorgaans neer in een verzameling documenten."@de, "A case is the total of work done to prepare for an administrative or business decision. As a rule, a case is reflected in a set of documents."@en, "ایک کیس انتظامی یا کاروباری فیصلے کی تیاری کے لیے کیے گئے کام کی کل ہے۔ ایک اصول کے طور پر ، ایک کیس دستاویزات کے ایک سیٹ میں ظاہر ہوتا ہے۔"@ur;
     <http://www.w3.org/2007/05/powder-s#describedby> <http://dbpedia.org/ontology/data/definitions.ttl>;
-    <http://www.w3.org/2002/07/owl#sameAs> dbo:Case;
+    owl:sameAs dbo:Case;
     <http://www.w3.org/ns/prov#wasDerivedFrom> <http://mappings.dbpedia.org/index.php/OntologyClass:Case>.
 dbo:procedure rdfs:domain dbo:Case.

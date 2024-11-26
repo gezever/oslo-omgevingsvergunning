@@ -1,0 +1,35 @@
+prefix graph: <https://data.vlaanderen.be/id/graph/>
+PREFIX skos:  <http://www.w3.org/2004/02/skos/core#>
+PREFIX omv: <https://data.vlaanderen.be/ns/omgevingsvergunning#>
+
+CONSTRUCT
+
+{
+    ?s ?p ?o ;
+    skos:prefLabel ?label ;
+    skos:topConceptOf ?conceptscheme ;
+    skos:inScheme ?conceptscheme .
+
+    ?conceptscheme skos:prefLabel ?conceptscheme_label ; a skos:ConceptScheme ; skos:hasTopConcept ?s .
+}
+
+WHERE
+{
+    {
+        ?s a skos:Concept ; ?p ?o .
+        BIND (REPLACE(str(?s), ".*/(.*)", "$1") AS ?label)
+        BIND (REPLACE(str(?s), "https://data.omgeving.vlaanderen.be/id/concept/(.*)/.*", "$1") AS ?conceptscheme_label)
+        BIND (IRI(CONCAT("https://data.omgeving.vlaanderen.be/id/conceptscheme/", REPLACE(str(?s), "https://data.omgeving.vlaanderen.be/id/concept/(.*)/.*", "$1"))) AS ?conceptscheme)
+        FILTER NOT EXISTS { ?s a omv:Procedurestap }
+    }
+    UNION
+    {
+        ?s a skos:Concept, omv:Procedurestap  ; ?p ?o .
+        BIND (REPLACE(str(?s), ".*/(.*)", "$1") AS ?label)
+        BIND ("Conceptschema procedurestappen" AS ?conceptscheme_label)
+        BIND (<https://data.omgeving.vlaanderen.be/id/conceptscheme/procedurestap> AS ?conceptscheme)
+
+    }
+
+}
+
