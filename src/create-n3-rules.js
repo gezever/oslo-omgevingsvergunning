@@ -2,6 +2,7 @@ import { rdfDereferencer } from "rdf-dereference" ;
 import N3 from 'n3';
 import fs from "fs";
 import path from "path";
+import quad from 'rdf-quad';
 
 const prefixen = JSON.parse(fs.readFileSync('source/prefixes.json', "utf8"));
 
@@ -10,7 +11,7 @@ var regexp_ns = new RegExp('.*/ns/.*')
 const regexp_langString = new RegExp('.*langString.*')
 const regexp_XMLSchema = new RegExp('.*XMLSchema.*')
 const regexp_Class = new RegExp('.*#Class.*')
-const regexp_blank_node = new RegExp('_:.*')
+const regexp_blank_node = new RegExp('_:.*|b.*')
 const regexp_Literal = new RegExp('.*Literal.*')
 
 
@@ -54,7 +55,9 @@ function paden(url){
     }
     return {"pad": pad, "turtle": turtle, "notation_3": notation_3}
 }
+function restyle_quad(q){
 
+}
 
 async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad, turtle, notation_3) {
     var objects = [];
@@ -66,20 +69,21 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
         console.log(url);
         data.on('data', (quad) => {
             ttl_writer.addQuad(quad);
-           if (regexp_uri.test(quad.subject.id) || regexp_uri.test(quad.subject.value)) {
-                if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#domain") {
+
+           if (regexp_uri.test(quad.subject.id) || regexp_uri.test(quad.subject.value) ) {
+                if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#domain" && !regexp_blank_node.test(quad.object.id) ) {
                     rule_array.push(domain_rule(quad.subject.id,  quad.object.id ))
                     if (!regexp_uri.test(quad.object.id)) {
                         objects.push(quad.object.id)
                     }
-                } else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#domain") {
+                } else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#domain" && !regexp_blank_node.test(quad.object.value)) {
                    rule_array.push(domain_rule(quad.subject.value,  quad.object.value ))
                    if (!regexp_uri.test(quad.object.value)) {
                        objects.push(quad.object.value)
                    }
                }                ;
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#range") {
-                    if (!regexp_langString.test(quad.object.id) && !regexp_XMLSchema.test(quad.object.id) && !regexp_Literal.test(quad.object.id)) {
+                    if (!regexp_langString.test(quad.object.id) && !regexp_XMLSchema.test(quad.object.id) && !regexp_Literal.test(quad.object.id) && !regexp_blank_node.test(quad.object.id) ) {
                         rule_array.push(range_rule(quad.subject.id, quad.object.id))
                         if (!regexp_uri.test(quad.object.id)) {
                             objects.push(quad.object.id)
@@ -87,7 +91,7 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
                     }
                     ;
                 } else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#range") {
-                    if (!regexp_langString.test(quad.object.value) && !regexp_XMLSchema.test(quad.object.value ) && !regexp_Literal.test(quad.object.value)) {
+                    if (!regexp_langString.test(quad.object.value) && !regexp_XMLSchema.test(quad.object.value ) && !regexp_Literal.test(quad.object.value)&& !regexp_blank_node.test(quad.object.value) ) {
                         rule_array.push(range_rule(quad.subject.value, quad.object.value))
                         if (!regexp_uri.test(quad.object.value)) {
                             objects.push(quad.object.value)
@@ -150,7 +154,8 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
     }
 }
 
-async function iterate(uris) {
+async function iterate(array) {
+    const uris = array.filter(n => n.startsWith("http"));
     for (let uri of uris) {
         await sleep(1000)
         var url = uri.split('#')[0];
@@ -166,5 +171,5 @@ async function iterate(uris) {
 }
 //const my_url = 'http://purl.org/dc/terms/FileFormat'
 //const my_url = 'http://xmlns.com/foaf/0.1/homepage'
-const my_url = 'https://data.vlaanderen.be/ns/omgevingsvergunning'
+const my_url = 'http://www.w3.org/ns/dcat#'
 iterate([my_url])
