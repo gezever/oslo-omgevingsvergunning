@@ -2,7 +2,6 @@ import { rdfDereferencer } from "rdf-dereference" ;
 import N3 from 'n3';
 import fs from "fs";
 import path from "path";
-import quad from 'rdf-quad';
 
 const prefixen = JSON.parse(fs.readFileSync('source/prefixes.json', "utf8"));
 
@@ -55,8 +54,18 @@ function paden(url){
     }
     return {"pad": pad, "turtle": turtle, "notation_3": notation_3}
 }
-function restyle_quad(q){
 
+function remap_quad(q){
+    if (q.subject.value) {
+        q.subject.id = q.subject.value
+    }
+    if (q.object.value) {
+        q.object.id = q.object.value
+    }
+    if (q.predicate.value) {
+        q.predicate.id = q.predicate.value
+    }
+    return q
 }
 
 async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad, turtle, notation_3) {
@@ -69,19 +78,14 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
         console.log(url);
         data.on('data', (quad) => {
             ttl_writer.addQuad(quad);
-
-           if (regexp_uri.test(quad.subject.id) || regexp_uri.test(quad.subject.value) ) {
+            quad = remap_quad(quad)
+           if (regexp_uri.test(quad.subject.id) ) {
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#domain" && !regexp_blank_node.test(quad.object.id) ) {
                     rule_array.push(domain_rule(quad.subject.id,  quad.object.id ))
                     if (!regexp_uri.test(quad.object.id)) {
                         objects.push(quad.object.id)
                     }
-                } else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#domain" && !regexp_blank_node.test(quad.object.value)) {
-                   rule_array.push(domain_rule(quad.subject.value,  quad.object.value ))
-                   if (!regexp_uri.test(quad.object.value)) {
-                       objects.push(quad.object.value)
-                   }
-               }                ;
+                }             ;
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#range") {
                     if (!regexp_langString.test(quad.object.id) && !regexp_XMLSchema.test(quad.object.id) && !regexp_Literal.test(quad.object.id) && !regexp_blank_node.test(quad.object.id) ) {
                         rule_array.push(range_rule(quad.subject.id, quad.object.id))
@@ -90,15 +94,7 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
                         }
                     }
                     ;
-                } else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#range") {
-                    if (!regexp_langString.test(quad.object.value) && !regexp_XMLSchema.test(quad.object.value ) && !regexp_Literal.test(quad.object.value)&& !regexp_blank_node.test(quad.object.value) ) {
-                        rule_array.push(range_rule(quad.subject.value, quad.object.value))
-                        if (!regexp_uri.test(quad.object.value)) {
-                            objects.push(quad.object.value)
-                        }
-                    }
-                   ;
-               }
+                }
                ;
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#subClassOf") {
                     if (!regexp_Class.test(quad.object.id) && !regexp_blank_node.test(quad.object.id)) {
@@ -108,28 +104,14 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
                         }
                     }
                     ;
-                }else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#subClassOf") {
-                    if (!regexp_Class.test(quad.object.value) && !regexp_blank_node.test(quad.object.value)) {
-                        rule_array.push(subclass_rule(quad.subject.value, quad.object.value))
-                        if (!regexp_uri.test(quad.object.value)) {
-                            objects.push(quad.object.value)
-                        }
-                    }
-                   ;
-               };
+                }
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#subPropertyOf") {
                     rule_array.push(subproperty_rule(quad.subject.id, quad.object.id))
                     if (!regexp_uri.test(quad.object.id)) {
                         objects.push(quad.object.id)
                     }
                     ;
-                }else if (quad.predicate.value === "http://www.w3.org/2000/01/rdf-schema#subPropertyOf") {
-                   rule_array.push(subproperty_rule(quad.subject.value, quad.object.value))
-                   if (!regexp_uri.test(quad.object.value)) {
-                       objects.push(quad.object.value)
-                   }
-                   ;
-               }
+                }
 
           }
         })
