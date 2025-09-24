@@ -96,7 +96,7 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
         data.on('data', (quad) => {
             ttl_writer.addQuad(quad);
             quad = remap_quad(quad)
-           if (regexp_uri.test(quad.subject.id) && quad.object.termType !== "BlankNode") {
+            if (regexp_uri.test(quad.subject.id) && quad.object.termType !== "BlankNode") {
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#domain" && !regexp_blank_node.test(quad.object.id) ) {
                     rule_array.push(domain_rule(quad.subject.id,  quad.object.id ))
                     if (!regexp_uri.test(quad.object.id)) {
@@ -112,7 +112,7 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
                     }
                     ;
                 }
-               ;
+                ;
                 if (quad.predicate.id === "http://www.w3.org/2000/01/rdf-schema#subClassOf") {
                     if (!regexp_Class.test(quad.object.id) && !regexp_blank_node.test(quad.object.id)) {
                         rule_array.push(subclass_rule(quad.subject.id, quad.object.id))
@@ -129,36 +129,36 @@ async function deref(_url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad,
                     }
                     ;
                 }
-               if (quad.predicate.id === "http://www.w3.org/2002/07/owl#equivalentClass") {
-                   rule_array.push(equivalentClass_rule(quad.subject.id, quad.object.id));
+                if (quad.predicate.id === "http://www.w3.org/2002/07/owl#equivalentClass") {
+                    rule_array.push(equivalentClass_rule(quad.subject.id, quad.object.id));
 
-               }
-               if (quad.predicate.id === "http://www.w3.org/2002/07/owl#inverseOf") {
-                   rule_array.push(inverseOf_rule(quad.subject.id, quad.object.id));
+                }
+                if (quad.predicate.id === "http://www.w3.org/2002/07/owl#inverseOf") {
+                    rule_array.push(inverseOf_rule(quad.subject.id, quad.object.id));
 
-               }
-               if (quad.predicate.id === "http://www.w3.org/2002/07/owl#SymmetricProperty") {
-                   rule_array.push(symmetricProperty_rule(quad.subject.id));
+                }
+                if (quad.predicate.id === "http://www.w3.org/2002/07/owl#SymmetricProperty") {
+                    rule_array.push(symmetricProperty_rule(quad.subject.id));
 
-               }
-               if (quad.predicate.id === "http://www.w3.org/2002/07/owl#TransitiveProperty") {
-                   rule_array.push(transitiveProperty_rule(quad.subject.id));
+                }
+                if (quad.predicate.id === "http://www.w3.org/2002/07/owl#TransitiveProperty") {
+                    rule_array.push(transitiveProperty_rule(quad.subject.id));
 
-               }
+                }
 
 
-           }
-        })
-        .on('error', (error) => console.error(error))
-        .on('end', () => {
-            if (!fs.existsSync(path.dirname(turtle))){
-                fs.mkdirSync(path.dirname(turtle), { recursive: true });
             }
-            fs.appendFileSync(notation_3, rule_array.join('\n') + '\n');
-            fs.appendFileSync(all_rules, '\n' + rule_array.join('\n') + '\n');
-            ttl_writer.end((error, result) => fs.writeFileSync(turtle, result));
-            iterate(Array.from(new Set(objects)).sort())
-        });
+        })
+            .on('error', (error) => console.error(error))
+            .on('end', () => {
+                if (!fs.existsSync(path.dirname(turtle))){
+                    fs.mkdirSync(path.dirname(turtle), { recursive: true });
+                }
+                fs.appendFileSync(notation_3, rule_array.join('\n') + '\n');
+                fs.appendFileSync(all_rules, '\n' + rule_array.join('\n') + '\n');
+                ttl_writer.end((error, result) => fs.writeFileSync(turtle, result));
+                iterate(Array.from(new Set(objects)).sort())
+            });
     }
     catch(error) {
         console.log('no such ' + _url);
@@ -185,7 +185,30 @@ async function iterate(array) {
         deref(url, uri, regexp_uri, regexp_ns, regexp_url, domain,  pad, turtle, notation_3)
     }
 }
-//const my_url = 'http://purl.org/dc/terms/FileFormat'
-//const my_url = 'http://xmlns.com/foaf/0.1/homepage'
-const my_url = 'https://data.vlaanderen.be/standaarden'
-iterate([my_url])
+async function oslo_trajecten(url) {
+    var objects = [];
+    try {
+        const { data, url: derefUrl } = await rdfDereferencer.dereference(url);
+        console.log(derefUrl); // dit is de uiteindelijke URL die gedereferenceerd is
+        data.on('data', (quad) => {
+            quad = remap_quad(quad);
+            if (quad.subject.termType !== "BlankNode") {
+                objects.push(quad.subject.id);
+            }
+        }).on('error', (error) => console.error(error))
+            .on('end', () => {
+                iterate(Array.from(new Set(objects)).sort());
+            });
+    }
+    catch(error) {
+        console.log('no such ' + url);
+        console.error(error); // toon ook de echte fout
+    }
+}
+
+
+const url = "https://data.vlaanderen.be/standaarden";
+const test = await oslo_trajecten(url)
+
+console.log('no such ' + url);
+
